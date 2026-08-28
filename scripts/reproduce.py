@@ -24,6 +24,8 @@ def main():
     run(sys.executable, "scripts/audit_p1_ambient_certificate.py")
     run(sys.executable, "scripts/freeze_p1_source_envelope_separator.py")
     run(sys.executable, "scripts/audit_p1_source_envelope_separator.py")
+    run(sys.executable, "scripts/freeze_p1_envelope_connector_selector.py")
+    run(sys.executable, "scripts/audit_p1_envelope_connector_selector.py")
     run(sys.executable, "scripts/freeze_single_source_law.py")
     run(sys.executable, "scripts/audit_single_source_law.py")
     run(sys.executable, "scripts/check_derivations.py")

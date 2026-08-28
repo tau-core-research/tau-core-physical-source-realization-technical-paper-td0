@@ -96,6 +96,12 @@ def main():
     p1_envelope_audit = json.loads(
         (DERIVED / "p3_clp3_p1_source_envelope_separator_audit.json").read_text()
     )
+    p1_connector_selector = json.loads(
+        (DERIVED / "p3_clp3_p1_envelope_connector_selector.json").read_text()
+    )
+    p1_connector_audit = json.loads(
+        (DERIVED / "p3_clp3_p1_envelope_connector_selector_audit.json").read_text()
+    )
     single_source_law = json.loads(
         (DERIVED / "p3_clp3_single_source_law.json").read_text()
     )
@@ -158,6 +164,33 @@ def main():
         and p1_envelope_audit["physical_base_seed_packet_export_authorized"]
         is False
     )
+    checks["p1_connector_selector_audit_passes"] = (
+        p1_connector_audit["passed"] == p1_connector_audit["total"]
+    )
+    checks["p1_connector_rank_ladder_closes_the_declared_pusc_envelope"] = (
+        p1_connector_audit["diagnostics"]["algebra_dimensions"]
+        == {
+            "p3_only": 256,
+            "p3_plus_u": 512,
+            "p3_plus_v": 512,
+            "p3_plus_u_and_v": 1024,
+        }
+    )
+    checks["p1_connector_action_has_positive_wrong_family_controls"] = (
+        p1_connector_audit["diagnostics"]["good_connector_defect"] == 0.0
+        and p1_connector_audit["diagnostics"]["zero_u_defect"] > 0.0
+        and p1_connector_audit["diagnostics"]["zero_v_defect"] > 0.0
+        and p1_connector_audit["diagnostics"]["scaled_u_defect"] > 0.0
+        and p1_connector_audit["diagnostics"]["wrong_v_defect"] > 0.0
+    )
+    checks["p1_connector_completion_is_conditional_and_nature_bounded"] = (
+        p1_connector_selector["source_freeze_payload"]["terminal_data_used"]
+        is False
+        and p1_connector_audit["physical_connector_ownership"] == "OPEN"
+        and p1_connector_audit["physical_P1_exhaustivity_proved"] is False
+        and p1_connector_audit["physical_base_seed_packet_export_authorized"]
+        is False
+    )
     checks["single_source_law_audit_passes"] = single_source_audit["passed"] == single_source_audit["total"]
     checks["single_source_law_compresses_p4_through_p7"] = single_source_audit["verdict"] == "P4_P7_SINGLE_ACTION_COMPRESSION_PASS"
     checks["single_source_law_does_not_self_certify_p1"] = single_source_audit["P1_physical_source_language_ownership_proved"] is False
@@ -203,6 +236,10 @@ def main():
             {"id": "PSR18", "status": "proved_conditional", "claim": "The independently declared pre-body PUSC simple envelope gives a candidate ambient Cl_10(C) isomorphic to M_32(C), with faithful normalized-trace GNS algebra dimension 1024."},
             {"id": "PSR19", "status": "proved_conditional_no_go", "claim": "Under the envelope-ontic interpretation and a physical typed embedding, the 256-dimensional P3/CLP3 algebra is component-complete but fails global P1 by the exact faithful-GNS rank ratio 256/1024=1/4."},
             {"id": "PSR20", "status": "proved_no_go", "claim": "The same local P3 packet is compatible with an ontic-envelope branch and a metric-auxiliary branch, so local seed data do not select the ambient ontology; Nature ownership remains open."},
+            {"id": "PSR21", "status": "proved_internal_finite", "claim": "In the declared 32-dimensional Cl_10 representation, the P3 algebra is the four-block algebra selected by the commuting chirality and record involutions, with four rank-eight central projections and equal normalized-trace weights."},
+            {"id": "PSR22", "status": "proved_conditional", "claim": "The homogeneous connectors u=gamma_8 and v=gamma_10 give the exact algebra-dimension ladder 256, 512, 512, 1024; within this declared connector class both are necessary and together generate M_32(C)."},
+            {"id": "PSR23", "status": "proved_conditional", "claim": "A single nonnegative Hilbert-Schmidt connector-defect action has a zero-defect Cl_10 witness and rejects absent, rescaled and wrong-grading connector controls once the connector domain and relation grammar are source-owned."},
+            {"id": "PSR24", "status": "proved_no_go", "claim": "The connector action cannot derive the existence of its own typed u/v variables from P3-local data, and simple M_32(C) has no nontrivial star-ideal quotient to M_8(C)^{oplus 4}; Nature-level connector ownership remains open."},
         ],
     }
     (DERIVED / "theorem_ledger.json").write_text(json.dumps(ledger, indent=2) + "\n")

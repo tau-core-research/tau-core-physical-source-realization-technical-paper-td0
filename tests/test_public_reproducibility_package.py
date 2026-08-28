@@ -21,6 +21,8 @@ def test_publication_files_exist():
         "data/derived/p3_clp3_p1_ambient_certificate_audit.json",
         "data/derived/p3_clp3_p1_source_envelope_separator.json",
         "data/derived/p3_clp3_p1_source_envelope_separator_audit.json",
+        "data/derived/p3_clp3_p1_envelope_connector_selector.json",
+        "data/derived/p3_clp3_p1_envelope_connector_selector_audit.json",
         "data/derived/p3_clp3_single_source_law.json",
         "data/derived/p3_clp3_single_source_law_audit.json",
         "arxiv_submission_source.zip",
@@ -36,7 +38,7 @@ def test_claim_ledger_is_bounded():
     assert ledger["nature_level_validation"] is False
     assert ledger["unrestricted_parent_selection_derived"] is False
     assert ledger["empirical_data_used"] is False
-    assert len(ledger["results"]) == 20
+    assert len(ledger["results"]) == 24
 
 
 def test_p3_clp3_source_freeze_is_endpoint_blind_and_bounded():
@@ -119,6 +121,36 @@ def test_p1_source_envelope_separator_retypes_global_exhaustivity():
         "eligible_as_upstream_p1_ambient"
     ] is False
     assert audit["nature_level_ambient_choice"] == "OPEN"
+    assert audit["physical_P1_exhaustivity_proved"] is False
+
+
+def test_p1_envelope_connector_selector_is_exact_and_claim_bounded():
+    packet = json.loads(
+        (ROOT / "data/derived/p3_clp3_p1_envelope_connector_selector.json").read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_envelope_connector_selector_audit.json"
+        ).read_text()
+    )
+    payload = packet["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 24
+    assert audit["verdict"] == (
+        "TWO_CONNECTOR_ONTIC_PUSC_COMPLETION_PASS_NATURE_SELECTION_OPEN"
+    )
+    assert audit["diagnostics"]["algebra_dimensions"] == {
+        "p3_only": 256,
+        "p3_plus_u": 512,
+        "p3_plus_v": 512,
+        "p3_plus_u_and_v": 1024,
+    }
+    assert audit["diagnostics"]["good_connector_defect"] == 0.0
+    assert audit["diagnostics"]["zero_u_defect"] > 0.0
+    assert payload["ontology_decision"][
+        "simple_m32_has_no_nontrivial_star_ideal_for_a_p3_null_quotient"
+    ] is True
+    assert audit["physical_connector_ownership"] == "OPEN"
     assert audit["physical_P1_exhaustivity_proved"] is False
 
 

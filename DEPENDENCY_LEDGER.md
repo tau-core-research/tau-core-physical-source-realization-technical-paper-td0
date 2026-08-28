@@ -17,6 +17,8 @@ or promoted by the standalone TD-0 package.
 | Finite faithful-GNS ambient-rank criterion for P1 | This repository | Conditional theorem given an independently frozen finite physical source algebra, faithful state and physical-null quotient | Converts P1 into an exact rank test relative to that independent ambient |
 | Pre-body `PUSC-P1` simple source envelope | Central Tau Core parent derivation (`FCC-SIMPLETRACE1`) | Conditional source declaration; `Cl_10(C)=M_32(C)` with normalized trace; Nature ownership open | Supplies the first seed-independent candidate ambient for a global P1 separator |
 | P3/PUSC envelope separator | This repository | Conditional theorem under an ontic PUSC envelope and a physical typed embedding | Retains P3 component completeness but gives global faithful-GNS rank `256/1024`; proves local P3 data cannot choose ontic versus metric-auxiliary envelope interpretation |
+| Two-connector P3-to-PUSC completion | This repository | Exact finite theorem in the declared `Cl_10` grading class; connector-domain ownership remains open | Shows that `u=gamma_8` and `v=gamma_10` give the rank ladder `256,512,512,1024` and supplies one nonnegative relation-defect action with explicit controls |
+| Simplicity obstruction to a P3 null quotient | Standard finite-dimensional C-star algebra | `M_32(C)` is simple | Forbids retaining an ontic `M_32(C)` while quotienting its missing directions to the four-block P3 algebra by a nontrivial star ideal |
 | P1 source-language exhaustivity for Nature | No current theorem owner | Open physical premise | The self-certification no-go proves that the action cannot establish P1 from its own residual language; the present P3 ambient control is not independently owned |
 | Nature occupation of the complete source packet | No current theorem owner | Open | Requires independent source evidence or a source-frozen discriminator |
 | Body stationarity, channel/readout descent and terminal laws | TD-I, TD-II and TD-III technical companions | Downstream and separately scoped | Consume the TD-0 type; they are not repeated here |
@@ -64,3 +66,10 @@ auxiliary metric completion, this comparison is not the physical P1 test.
 The P3-local packet is identical in both interpretations and therefore cannot
 select between them. Nature-level ambient ownership remains the irreducible
 input.
+
+Inside the declared PUSC Clifford factorization, this input is now finite. If
+the enriched source owns and occupies the two homogeneous connectors `u,v`,
+the expanded seed algebra generates the full ontic envelope and the faithful
+GNS ratio becomes `1024/1024`. If it does not, the P3 action cannot create
+those typed variables. The remaining gap is therefore physical connector
+incidence/occupation, not another matrix-algebra dimension calculation.

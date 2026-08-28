@@ -63,6 +63,23 @@ physical ambient algebra. This exact fork sharpens P1 but does not decide
 which branch Nature occupies. The post-body `Cl_16(C)` continuation is kept
 as a downstream control and is explicitly forbidden as an upstream P1 input.
 
+A fifth, 24-check connector audit resolves the finite algebraic part of that
+fork. In one explicit 32-dimensional `Cl_10(C)` representation, the P3
+algebra is the four-block algebra selected by commuting chirality and record
+involutions. Two homogeneous source connectors,
+
+```text
+u = gamma_8,  v = gamma_10,  gamma_9 = -i u r,
+```
+
+give the exact dimension ladder `256 -> 512 -> 1024`: neither connector alone
+fills the PUSC envelope, while both generate `M_32(C)`. A single nonnegative
+connector-defect action enforces their Clifford relations and rejects absent,
+rescaled and wrong-grading controls. This is a conditional ontic completion,
+not Nature selection: the current P3 packet does not supply the typed `u,v`
+domain. Because `M_32(C)` is simple, its missing directions also cannot be
+removed by a nontrivial star-ideal quotient to `M_8(C)^{oplus 4}`.
+
 The P3/CLP3 file exports only a `BaseSeedPacketCandidate`. Its ownership
 certificate explicitly forbids promotion to a physical `BaseSeedPacket` until
 the missing Nature-selection premises are independently supplied.

@@ -42,7 +42,7 @@
 Complete Seed Presentations, Spectral Selection, and the Nature-Occupation Boundary\\[3pt]
 \large An unnumbered technical derivation companion}
 \author{Jozsef Olcsak\\Independent researcher}
-\date{Version 0.3 --- 28 August 2026}
+\date{Version 0.4 --- 28 August 2026}
 
 \begin{document}
 \maketitle
@@ -76,7 +76,12 @@ the independently declared pre-body PUSC simple envelope gives the conditional
 comparison $256/1024=1/4$: if that envelope is ontic and the typed embedding
 is physical, P3 is component-complete but not globally exhaustive.  If the
 envelope is only an auxiliary metric completion, the physical ambient remains
-unidentified.  Hidden spectator, role-rotation, isospectral,
+unidentified.  An explicit $32$-dimensional Clifford factorization then shows
+that two homogeneous connectors give the exact algebra ladder
+$256,512,512,1024$ and together generate $M_{32}(\mathbb C)$.  A nonnegative
+connector-defect action selects this full zero locus conditionally, but cannot
+derive the existence of its own connector variables from P3-local data.
+Hidden spectator, role-rotation, isospectral,
 component-zero-jet, nonfaithful-state and off-shell
 deformation controls show the exact boundary: the narrow Tau reduct neither
 owns the variational priority nor proves that Nature occupies the selected
@@ -591,6 +596,132 @@ PBSE is post-body.  Using it to construct the seed premise would reverse the
 forward order in \eqref{eq:forward}.  It is retained only as a downstream
 consistency control.
 
+\section{Two connectors close the ontic PUSC algebra conditionally}
+
+The preceding separator leaves the positive ontic branch unspecified.  It
+can be made explicit without introducing terminal information.  Work in the
+irreducible $32$-dimensional representation of
+$\operatorname{Cl}_{10}(\mathbb C)$ with self-adjoint generators
+$\gamma_1,\ldots,\gamma_{10}$ satisfying
+\begin{equation}
+ \{\gamma_a,\gamma_b\}=2\delta_{ab}\id.
+ \label{eq:cl10rels}
+\end{equation}
+Define the commuting self-adjoint involutions
+\begin{equation}
+ \chi=i\gamma_1\cdots\gamma_7,
+ \qquad r=i\gamma_8\gamma_9,
+ \qquad
+ p_{st}={1\over4}(\id+s\chi)(\id+tr),
+ \quad s,t\in\{+1,-1\}.
+ \label{eq:p3blocks}
+\end{equation}
+The four $p_{st}$ are orthogonal rank-eight projections summing to the
+identity.  They give
+\begin{equation}
+ \mathfrak A_0=C^*(\gamma_1,\ldots,\gamma_7,r)
+ \simeq M_8(\mathbb C)^{\oplus4},
+ \label{eq:a0fourblocks}
+\end{equation}
+which is the P3 algebra in Eq.~\eqref{eq:p3insidepusc}.
+
+\begin{theorem}[Two-connector PUSC completion]
+Set
+\begin{equation}
+ u=\gamma_8,
+ \qquad v=\gamma_{10},
+ \qquad \gamma_9=-iur.
+ \label{eq:uvconnectors}
+\end{equation}
+Then
+\begin{align}
+ \dim_{\mathbb C}C^*(\mathfrak A_0)&=256,\nonumber\\
+ \dim_{\mathbb C}C^*(\mathfrak A_0,u)
+ =\dim_{\mathbb C}C^*(\mathfrak A_0,v)&=512,\nonumber\\
+ C^*(\mathfrak A_0,u,v)&=M_{32}(\mathbb C),
+ \qquad \dim_{\mathbb C}=1024.
+ \label{eq:connectorladder}
+\end{align}
+Thus neither of these two declared homogeneous connector types alone is
+globally exhaustive, while the pair is sufficient.  This is a minimality
+statement inside the stated two-type Clifford grading, not among all possible
+parent-algebra extensions.
+\end{theorem}
+
+\begin{proof}
+The generator $u$ flips both joint labels,
+$(s,t)\mapsto(-s,-t)$, whereas $v$ flips only chirality,
+$(s,t)\mapsto(-s,t)$.  Each therefore joins the four P3 blocks into two
+connected pairs.  Their union connects all four blocks.  Because every
+diagonal block already contains its full $M_8(\mathbb C)$ algebra, matrix
+units transported along a connected block graph generate every off-diagonal
+$8\times8$ block.  This gives the dimensions in
+Eq.~\eqref{eq:connectorladder}.  Equivalently, $u$ and $r$ recover
+$\gamma_9$, so $\gamma_1,\ldots,\gamma_7,u,-iur,v$ satisfy the ten Clifford
+relations and generate the simple algebra
+$\operatorname{Cl}_{10}(\mathbb C)\simeq M_{32}(\mathbb C)$.
+\end{proof}
+
+The connector relations can be enforced by one nonnegative source action.
+With $\|X\|_2^2=\operatorname{tr}_{32}(X^\dagger X)$, define
+\begin{align}
+ \mathcal D_{\rm conn}(u,v)
+ ={}&\|u-u^\dagger\|_2^2+\|u^2-\id\|_2^2
+     +\|\{u,r\}\|_2^2
+     +\sum_{a=1}^7\|\{u,\gamma_a\}\|_2^2\nonumber\\
+ &+\|v-v^\dagger\|_2^2+\|v^2-\id\|_2^2
+     +\|[v,r]\|_2^2
+     +\sum_{a=1}^7\|\{v,\gamma_a\}\|_2^2
+     +\|\{u,v\}\|_2^2.
+ \label{eq:connectoraction}
+\end{align}
+
+\begin{proposition}[Conditional connector actualization]
+Suppose the enriched pre-body source owns the typed variables $(u,v)$ and
+treats Eq.~\eqref{eq:connectoraction} as an exact primary compatibility term,
+or adds it with positive weight to nonnegative terms sharing its zero locus.
+Then its connector-sector minimum is zero, every minimizer supplies a unital
+$32$-dimensional representation of $\operatorname{Cl}_{10}(\mathbb C)$, and
+the expanded seed algebra has faithful-GNS rank $1024/1024$ relative to the
+ontic PUSC envelope.
+\end{proposition}
+
+\begin{proof}
+Every term in Eq.~\eqref{eq:connectoraction} is nonnegative and the pair in
+Eq.~\eqref{eq:uvconnectors} has zero defect.  At any zero, define
+$\widetilde\gamma_9=-iur$.  The zero relations make
+$\gamma_1,\ldots,\gamma_7,u,\widetilde\gamma_9,v$ ten self-adjoint Clifford
+generators.  Their unital representation on $\mathbb C^{32}$ is faithful
+because $M_{32}(\mathbb C)$ is simple, and equality of dimensions makes its
+image all of $M_{32}(\mathbb C)$.  The faithful-GNS theorem then gives full
+rank.
+\end{proof}
+
+\begin{nogo}[The action does not create its own connector domain]
+Equation~\eqref{eq:connectoraction} distinguishes absent, rescaled and
+wrong-grading connector controls only after $(u,v)$ and their typed relation
+slots have been supplied.  A functional on $\mathfrak A_0$ alone cannot vary
+in variables outside its domain.  Hence the action constructs a conditional
+ontic completion but does not prove that the current P3 source or Nature owns
+the two connector incidences.
+\end{nogo}
+
+There is also no intermediate repair by quotient.  The ontic ambient
+$M_{32}(\mathbb C)$ is simple, so it has no nontrivial two-sided star ideal
+whose quotient is $M_8(\mathbb C)^{\oplus4}$.  Therefore the exact finite fork
+is
+\begin{equation}
+ \boxed{\begin{aligned}
+ \text{ontic PUSC}+\text{global P1}
+ &\Longrightarrow \text{physical connector completion (or equivalent incidence)},\\
+ \text{P3 kept globally complete}
+ &\Longrightarrow \text{PUSC auxiliary/non-ontic, or a different ambient}.
+ \end{aligned}}
+ \label{eq:connectorfork}
+\end{equation}
+The remaining question is physical source ownership of the connector packet,
+not its algebraic sufficiency.
+
 \section{Exact compatibility before complexity}
 
 \begin{definition}[Source defect and exact fibre]
@@ -940,6 +1071,11 @@ would weaken or reject the selected completion.
  $256/1024$ and is therefore component-complete but not globally exhaustive.
  The metric-auxiliary interpretation remains indistinguishable from P3-local
  data, and Nature does not presently select either branch.
+ \item[Connector completion.] In the declared $32$-dimensional Clifford
+ grading, two homogeneous connectors give the exact algebra ladder
+ $256,512,512,1024$.  Their nonnegative defect action conditionally restores
+ full P1 rank in an ontic PUSC envelope, but current P3 data do not own the
+ connector domain and Nature occupation remains open.
  \item[Open.] Nature occupation requires independent source evidence or a
  source-frozen discriminator.  A Tau-specific terminal signal belongs
  downstream of TD-III.
@@ -962,8 +1098,9 @@ The decisive remaining physical statement is now narrower:
 \begin{equation}
  \boxed{\begin{gathered}
  \text{Is the pre-body source envelope ontic or metric-auxiliary,}\\
- \text{and does the occupied seed have faithful full GNS rank}\\
- \text{in the resulting independently owned physical algebra,}\\
+ \text{does the physical source own the two PUSC connector incidences,}\\
+ \text{and does the resulting occupied seed have faithful full GNS rank}\\
+ \text{in the independently owned physical algebra,}\\
  \text{and }\mathcal L_{\rm 1src}\text{ on its physical component?}
  \end{gathered}}
  \label{eq:nature}

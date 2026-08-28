@@ -1,0 +1,104 @@
+{
+  "schema": "tau_core_p1_envelope_connector_selector_audit_v1",
+  "candidate_id": "P3-CLP3-P1-CONNECTOR-v1",
+  "source_fingerprint_sha256": "aac195c7ca8fd593ac6c2a9e17fa5f9a6793412c37046fe3e9f552f26d2eb777",
+  "checks": {
+    "fingerprint_matches_payload": true,
+    "endpoint_blind_freeze": true,
+    "ten_self_adjoint_clifford_generators": true,
+    "record_and_chirality_are_commuting_involutions": true,
+    "p3_roles_commute_with_record": true,
+    "p3_chirality_is_central_on_role_algebra": true,
+    "four_central_projectors_are_rank_eight": true,
+    "central_projectors_are_orthogonal_and_complete": true,
+    "normalized_trace_has_equal_quarter_block_weights": true,
+    "gamma_nine_is_recovered_from_u_and_record": true,
+    "u_has_declared_record_and_role_grading": true,
+    "v_has_declared_record_and_role_grading": true,
+    "each_single_connector_leaves_two_components": true,
+    "two_connector_union_is_connected": true,
+    "component_formula_matches_declared_rank_ladder": true,
+    "cl10_words_fill_m32_by_trace_orthogonality": true,
+    "declared_connector_witness_has_zero_defect": true,
+    "zero_connector_controls_have_positive_defect": true,
+    "scaled_and_wrong_grading_controls_have_positive_defect": true,
+    "nonnegative_zero_witness_attains_global_defect_minimum": true,
+    "connector_completion_restores_conditional_full_gns_rank": true,
+    "p3_only_rank_ratio_remains_one_quarter": true,
+    "simple_m32_cannot_have_p3_as_a_nontrivial_star_quotient": true,
+    "nature_claim_and_packet_export_remain_closed": true
+  },
+  "passed": 24,
+  "total": 24,
+  "diagnostics": {
+    "central_block_ranks": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "central_trace_weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "u_block_edges": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "v_block_edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "component_sizes": {
+      "p3_only": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "p3_plus_u": [
+        2,
+        2
+      ],
+      "p3_plus_v": [
+        2,
+        2
+      ],
+      "p3_plus_u_and_v": [
+        4
+      ]
+    },
+    "algebra_dimensions": {
+      "p3_only": 256,
+      "p3_plus_u": 512,
+      "p3_plus_v": 512,
+      "p3_plus_u_and_v": 1024
+    },
+    "good_connector_defect": 0.0,
+    "zero_u_defect": 1.0,
+    "zero_v_defect": 1.0,
+    "scaled_u_defect": 0.1295999999999999,
+    "wrong_v_defect": 8.0,
+    "nonidentity_clifford_trace_max": 0.0,
+    "clifford_word_norm_defect_max": 0.0
+  },
+  "verdict": "TWO_CONNECTOR_ONTIC_PUSC_COMPLETION_PASS_NATURE_SELECTION_OPEN",
+  "physical_connector_ownership": "OPEN",
+  "nature_level_occupation": false,
+  "physical_P1_exhaustivity_proved": false,
+  "physical_base_seed_packet_export_authorized": false
+}

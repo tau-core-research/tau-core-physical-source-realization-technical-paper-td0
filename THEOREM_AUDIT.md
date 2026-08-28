@@ -32,6 +32,11 @@ that Nature occupies the selected completion.
 | P3 global P1 against ontic PUSC | Rejected conditionally | physical typed embedding of the P3 algebra into the ontic pre-body PUSC envelope | exact rank is `256/1024`, while component-relative P1 remains true |
 | Envelope ontology from local P3 data | Not identifiable | compare ontic-envelope and metric-auxiliary interpretations with the same local P3 packet | requires an independent physical source law; local closure cannot decide it |
 | Staged `Cl_16(C)` envelope as P1 ambient | Ineligible upstream | PBSE is post-body | using it to construct the seed premise would reverse the forward generative order |
+| Four-block P3 factorization inside `Cl_10` | Proven on the explicit finite representation | `chi=i gamma_1...gamma_7`, `r=i gamma_8 gamma_9` | four orthogonal rank-eight central blocks with trace weight `1/4` |
+| Two-connector PUSC completion | Proven conditionally in the declared homogeneous connector class | source-owned `u=gamma_8`, `v=gamma_10` and their typed Clifford relations | exact algebra dimensions `256,512,512,1024`; unrestricted minimality over all parent completions is not claimed |
+| Single connector-defect action | Proven conditionally | connector variables and relation grammar supplied before minimization | nonnegative zero witness; absent, scaled and wrong-grading controls are positive |
+| P3 quotient of ontic `M_32(C)` | Impossible as a nontrivial star-ideal quotient | simplicity of `M_32(C)` | retaining P3 as globally complete requires a non-ontic/auxiliary PUSC reading, a different ambient, or expansion by physical connectors |
+| Physical ownership of the two connectors | Not established | enriched base--seed incidence and Nature occupation | the action enforces a supplied connector grammar but cannot create its own typed domain |
 | Schur-neutral body handoff | Proven | positive invertible source-independent `K_B` and typed load `j_B(s)` | supplies a regular TD-I input without back-selecting the source completion |
 
 ## Circularity audit
@@ -75,3 +80,11 @@ declared P3 component. Treating the same Clifford envelope as an auxiliary
 metric completion avoids that rejection but restores ambient
 non-identifiability. Current source laws do not select between these two
 interpretations.
+
+The connector theorem replaces the unspecified positive ontic branch by an
+explicit finite completion. In the declared `Cl_10` grading, the two
+homogeneous connector modes generate the missing off-block algebra and restore
+the conditional rank equality `1024/1024`. The accompanying defect action
+selects their Clifford zero locus only after those variables and relations are
+supplied. This closes the algebraic realization problem but not the physical
+source-ownership problem.
