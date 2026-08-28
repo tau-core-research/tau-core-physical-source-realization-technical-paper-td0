@@ -31,6 +31,8 @@ def test_publication_files_exist():
         "data/derived/p3_clp3_p1_record_clifford_source_completion_audit.json",
         "data/derived/p3_clp3_p1_joint_graded_representation.json",
         "data/derived/p3_clp3_p1_joint_graded_representation_audit.json",
+        "data/derived/p3_clp3_p1_joint_carrier_minimality.json",
+        "data/derived/p3_clp3_p1_joint_carrier_minimality_audit.json",
         "data/derived/p3_clp3_single_source_law.json",
         "data/derived/p3_clp3_single_source_law_audit.json",
         "arxiv_submission_source.zip",
@@ -46,7 +48,7 @@ def test_claim_ledger_is_bounded():
     assert ledger["nature_level_validation"] is False
     assert ledger["unrestricted_parent_selection_derived"] is False
     assert ledger["empirical_data_used"] is False
-    assert len(ledger["results"]) == 37
+    assert len(ledger["results"]) == 40
 
 
 def test_p3_clp3_source_freeze_is_endpoint_blind_and_bounded():
@@ -278,6 +280,41 @@ def test_p1_joint_graded_representation_retypes_igl_but_not_ownership():
     assert payload["equivalence_theorem"][
         "new_independent_dynamical_coefficient"
     ] is False
+    assert audit["physical_source_ownership"] == "OPEN"
+    assert audit["nature_level_occupation"] is False
+
+
+def test_p1_joint_carrier_minimality_selects_internality_conditionally():
+    packet = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_joint_carrier_minimality.json"
+        ).read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_joint_carrier_minimality_audit.json"
+        ).read_text()
+    )
+    payload = packet["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 18
+    assert audit["verdict"] == (
+        "SAME_ENVELOPE_SELECTED_BY_JOINT_CARRIER_MINIMALITY_"
+        "UNDER_FROZEN_HEAT_TRACE_ASSUMPTIONS_PHYSICAL_OWNERSHIP_OPEN"
+    )
+    assert audit["diagnostics"]["minimal_faithful_carrier_dimension"] == 32
+    assert audit["diagnostics"]["minimal_multiplicity_cases"] == [
+        [1, 1, 1, 1]
+    ]
+    assert audit["diagnostics"]["heat_trace_ratio"] == 2.0
+    assert audit["checks"][
+        "normalized_trace_erases_duplicate_penalty"
+    ]
+    assert audit["checks"]["changed_compression_can_reverse_selector"]
+    assert payload["claim_boundary"][
+        "same_envelope_follows_under_selection_assumptions"
+    ] is True
     assert audit["physical_source_ownership"] == "OPEN"
     assert audit["nature_level_occupation"] is False
 

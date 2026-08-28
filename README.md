@@ -134,6 +134,18 @@ locality. Thus IGL is a finite representation defect, not a fitted new gain.
 The source origin and Nature occupation of the same-envelope joint realization
 remain open.
 
+A tenth, 18-check joint-carrier audit connects that result to the existing
+spectral selector. The joint algebra is `M_8(C)^{oplus 4}`, so every faithful
+carrier has dimension `8*(m_1+m_2+m_3+m_4)` with all multiplicities positive.
+Its unique minimum is 32 at `(1,1,1,1)`, attained by the internal JGR
+realization. The external tensor-record control has dimension 64. If all
+candidates share the frozen positive 32-dimensional compression, the
+unnormalized heat trace penalizes that duplicate by an exact factor 2, or
+`log(2)` in complexity. A normalized trace erases the penalty, and changing
+the compression can reverse it. Hence the same-envelope class follows
+conditionally from the already declared selector, but common physical
+ownership and Nature occupation of those premises remain open.
+
 The P3/CLP3 file exports only a `BaseSeedPacketCandidate`. Its ownership
 certificate explicitly forbids promotion to a physical `BaseSeedPacket` until
 the missing Nature-selection premises are independently supplied.

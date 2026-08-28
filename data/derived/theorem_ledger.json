@@ -187,6 +187,21 @@
       "id": "PSR37",
       "status": "open",
       "claim": "IGL-P1 can be reinterpreted as the finite relation defect of same-envelope joint graded realization rather than a new fitted gain, but the current source still does not derive or physically occupy that realization."
+    },
+    {
+      "id": "PSR38",
+      "status": "proved",
+      "claim": "The finite joint algebra Cl_7(C) graded-tensor A_port is M_8(C)^{oplus 4}; every faithful finite representation has carrier dimension 8 sum_i m_i with all m_i>=1, so the unique minimal multiplicity vector is (1,1,1,1) and the minimal carrier dimension is 32."
+    },
+    {
+      "id": "PSR39",
+      "status": "proved_conditional",
+      "claim": "The internal JGR realization attains the 32-dimensional faithful minimum. Under the frozen positive source compression and unnormalized heat-trace priority, every faithful proper carrier extension has strictly larger heat trace, so the selected class is same-envelope and hence satisfies IGL."
+    },
+    {
+      "id": "PSR40",
+      "status": "proved_no_go_open",
+      "claim": "Carrier minimality does not follow from normalized trace, changed-compression comparison, nonfaithful smaller carriers or ungraded realization. Physical common ownership and Nature occupation of the joint grammar and unnormalized same-compression heat-trace priority remain open."
     }
   ]
 }

@@ -135,6 +135,18 @@ def main():
             / "p3_clp3_p1_joint_graded_representation_audit.json"
         ).read_text()
     )
+    p1_joint_carrier_minimality = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_joint_carrier_minimality.json"
+        ).read_text()
+    )
+    p1_joint_carrier_minimality_audit = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_joint_carrier_minimality_audit.json"
+        ).read_text()
+    )
     single_source_law = json.loads(
         (DERIVED / "p3_clp3_single_source_law.json").read_text()
     )
@@ -340,6 +352,43 @@ def main():
         ]["same_envelope_joint_graded_representation_owned"]
         is False
     )
+    checks["p1_joint_carrier_minimality_audit_passes"] = (
+        p1_joint_carrier_minimality_audit["passed"]
+        == p1_joint_carrier_minimality_audit["total"]
+    )
+    checks["p1_minimal_faithful_joint_carrier_is_32"] = (
+        p1_joint_carrier_minimality_audit["checks"][
+            "minimal_faithful_carrier_dimension_is_32"
+        ]
+        and p1_joint_carrier_minimality_audit["checks"][
+            "minimal_faithful_multiplicity_is_unique"
+        ]
+        and p1_joint_carrier_minimality_audit["checks"][
+            "internal_realization_attains_minimum"
+        ]
+    )
+    checks["p1_heat_trace_excludes_same_compression_external_extension"] = (
+        p1_joint_carrier_minimality_audit["checks"][
+            "unnormalized_heat_trace_strictly_penalizes_extension"
+        ]
+        and p1_joint_carrier_minimality_audit["checks"][
+            "jgr_then_supplies_the_igl_landing"
+        ]
+    )
+    checks["p1_carrier_selection_assumptions_are_necessary_and_open"] = (
+        p1_joint_carrier_minimality_audit["checks"][
+            "normalized_trace_erases_duplicate_penalty"
+        ]
+        and p1_joint_carrier_minimality_audit["checks"][
+            "changed_compression_can_reverse_selector"
+        ]
+        and p1_joint_carrier_minimality_audit["physical_source_ownership"]
+        == "OPEN"
+        and p1_joint_carrier_minimality["source_freeze_payload"][
+            "claim_boundary"
+        ]["nature_selection_proved"]
+        is False
+    )
     checks["single_source_law_audit_passes"] = single_source_audit["passed"] == single_source_audit["total"]
     checks["single_source_law_compresses_p4_through_p7"] = single_source_audit["verdict"] == "P4_P7_SINGLE_ACTION_COMPRESSION_PASS"
     checks["single_source_law_does_not_self_certify_p1"] = single_source_audit["P1_physical_source_language_ownership_proved"] is False
@@ -402,6 +451,9 @@ def main():
             {"id": "PSR35", "status": "proved_conditional", "claim": "A faithful trace-preserving graded star representation of Cl(E) graded-tensor A_port in the same Cl_10 ontic envelope, extending the fixed role embedding, is equivalent to a trace-preserving binary-record landing in the even relative commutant."},
             {"id": "PSR36", "status": "proved_no_go", "claim": "Abstract joint-algebra ownership alone does not force internal landing: a faithful external tensor-factor realization preserves the abstract graded product but is not a same-envelope representation; an odd internal control additionally proves that grading cannot be omitted."},
             {"id": "PSR37", "status": "open", "claim": "IGL-P1 can be reinterpreted as the finite relation defect of same-envelope joint graded realization rather than a new fitted gain, but the current source still does not derive or physically occupy that realization."},
+            {"id": "PSR38", "status": "proved", "claim": "The finite joint algebra Cl_7(C) graded-tensor A_port is M_8(C)^{oplus 4}; every faithful finite representation has carrier dimension 8 sum_i m_i with all m_i>=1, so the unique minimal multiplicity vector is (1,1,1,1) and the minimal carrier dimension is 32."},
+            {"id": "PSR39", "status": "proved_conditional", "claim": "The internal JGR realization attains the 32-dimensional faithful minimum. Under the frozen positive source compression and unnormalized heat-trace priority, every faithful proper carrier extension has strictly larger heat trace, so the selected class is same-envelope and hence satisfies IGL."},
+            {"id": "PSR40", "status": "proved_no_go_open", "claim": "Carrier minimality does not follow from normalized trace, changed-compression comparison, nonfaithful smaller carriers or ungraded realization. Physical common ownership and Nature occupation of the joint grammar and unnormalized same-compression heat-trace priority remain open."},
         ],
     }
     (DERIVED / "theorem_ledger.json").write_text(json.dumps(ledger, indent=2) + "\n")

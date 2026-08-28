@@ -1,0 +1,58 @@
+{
+  "checks": {
+    "fingerprint_matches_payload": true,
+    "upstream_jgr_packet_is_fingerprint_locked": true,
+    "endpoint_blind_freeze": true,
+    "upstream_jgr_audit_passes": true,
+    "four_simple_blocks_have_size_eight": true,
+    "minimal_faithful_carrier_dimension_is_32": true,
+    "minimal_faithful_multiplicity_is_unique": true,
+    "internal_realization_attains_minimum": true,
+    "external_tensor_model_is_a_proper_duplication": true,
+    "unnormalized_heat_trace_strictly_penalizes_extension": true,
+    "complexity_gap_is_log_two_for_duplicate": true,
+    "normalized_trace_erases_duplicate_penalty": true,
+    "changed_compression_can_reverse_selector": true,
+    "dimension_24_control_is_nonfaithful": true,
+    "same_carrier_means_same_full_matrix_envelope": true,
+    "jgr_then_supplies_the_igl_landing": true,
+    "new_fit_parameter_is_absent": true,
+    "physical_selection_remains_open": true
+  },
+  "passed": 18,
+  "total": 18,
+  "verdict": "SAME_ENVELOPE_SELECTED_BY_JOINT_CARRIER_MINIMALITY_UNDER_FROZEN_HEAT_TRACE_ASSUMPTIONS_PHYSICAL_OWNERSHIP_OPEN",
+  "diagnostics": {
+    "internal_block_ranks": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "external_block_ranks": [
+      16,
+      16,
+      16,
+      16
+    ],
+    "minimal_faithful_carrier_dimension": 32,
+    "minimal_multiplicity_cases": [
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "internal_heat_trace": 8.252797127913395,
+    "external_heat_trace": 16.50559425582679,
+    "heat_trace_ratio": 2.0,
+    "complexity_gap": 0.693147180559945,
+    "internal_normalized_heat_trace": 0.2578999102472936,
+    "external_normalized_heat_trace": 0.2578999102472936,
+    "changed_compression_heat_trace": 0.0007493528199026096
+  },
+  "exact_remaining_source_datum": "common physical ownership and occupation of the frozen joint grammar plus the unnormalized same-compression heat-trace priority",
+  "physical_source_ownership": "OPEN",
+  "nature_level_occupation": false
+}

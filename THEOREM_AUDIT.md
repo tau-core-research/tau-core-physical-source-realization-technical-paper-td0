@@ -51,6 +51,10 @@ that Nature occupies the selected completion.
 | Abstract joint algebra implies internal landing | Disproved | compare internal and external faithful realizations | the external tensor-factor model has joint rank `256` but no record image in the original ontic envelope |
 | Grading and tensor locality in JGR | Independently necessary | odd internal and even role-mixing controls | ordinary faithfulness or evenness alone does not imply the typed joint realization |
 | Physical ownership of JGR-P1 | Not established | enriched source must require same-envelope joint graded realization before minimization | the equivalence retypes the blocker but does not prove Nature occupation |
+| Minimal faithful joint carrier | Proven | `Cl_7(C) graded_tensor A_port = M_8(C)^{oplus 4}` and finite faithful star representation | carrier dimension is `8 sum m_i >= 32`, with unique minimum multiplicities `(1,1,1,1)` |
+| JCM heat-trace selection of same-envelope realization | Proven conditionally | faithful graded candidates, internal 32-dimensional witness, positive common compression and unnormalized heat-trace priority | every proper carrier extension has strictly larger complexity; the selected 32-dimensional class lies in `M_32(C)=Cl_10(C)` and satisfies JGR/IGL |
+| Normalized-trace or changed-compression selection | Disproved | explicit duplicate and shifted-spectrum controls | normalized trace erases multiplicity cost; without common compression an extension can win |
+| Physical ownership of JCM premises | Not established | enriched source must co-own the joint grammar, positive common-compression comparison and unnormalized priority | no Nature occupation or physical packet export follows yet |
 | Schur-neutral body handoff | Proven | positive invertible source-independent `K_B` and typed load `j_B(s)` | supplies a regular TD-I input without back-selecting the source completion |
 
 ## Circularity audit
@@ -142,3 +146,12 @@ not remove the physical premise: an external faithful representation shows
 that abstract joint-algebra ownership is weaker than same-envelope
 internality, while the odd and role-mixing controls show that grading and
 tensor locality cannot be dropped.
+
+The JCM theorem supplies a conditional selection mechanism rather than a new
+landing law. The joint algebra has four simple size-eight blocks, so its
+minimal faithful carrier is 32-dimensional and is already realized by the
+internal PUSC packet. Proper same-compression extensions cost more under the
+existing unnormalized heat trace. This closes same-envelope selection inside
+that combined source packet. It does not prove that the physical source
+co-owns the joint grammar and selector; normalized-trace and changed-
+compression controls show that neither premise may be suppressed.

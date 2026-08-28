@@ -5,7 +5,7 @@ type: article
 authors:
   - family-names: Olcsak
     given-names: Jozsef
-version: 0.8.0
+version: 0.9.0
 date-released: 2026-08-28
 license: MIT
 repository-code: "https://github.com/tau-core-research/tau-core-physical-source-realization-technical-paper-td0"

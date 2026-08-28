@@ -42,7 +42,7 @@
 Complete Seed Presentations, Spectral Selection, and the Nature-Occupation Boundary\\[3pt]
 \large An unnumbered technical derivation companion}
 \author{Jozsef Olcsak\\Independent researcher}
-\date{Version 0.8 --- 28 August 2026}
+\date{Version 0.9 --- 28 August 2026}
 
 \begin{document}
 \maketitle
@@ -112,7 +112,15 @@ representation of the already present role and record algebras inside the
 same ontic $\operatorname{Cl}_{10}$ envelope.  External-factor, odd and
 role-mixing controls show that same-envelope internality, grading and tensor
 locality are each essential.  Current source laws still do not derive that
-joint realization.
+joint realization.  We then connect this blocker to the already defined
+spectral selector.  The joint algebra is $M_8(\mathbb C)^{\oplus4}$, so its
+minimal faithful carrier has dimension $32$ with one copy of every simple
+block.  The internal JGR realization attains this minimum, whereas the
+external tensor-record model is a proper $64$-dimensional extension.  Under
+the frozen same-compression premise, the unnormalised heat trace therefore
+selects the internal class strictly.  Normalised-trace and changed-compression
+controls show exactly why this remains conditional on common physical
+ownership of the joint grammar and spectral priority.
 Hidden spectator, role-rotation, isospectral,
 component-zero-jet, nonfaithful-state and off-shell
 deformation controls show the exact boundary: the narrow Tau reduct neither
@@ -1144,6 +1152,107 @@ that same envelope.  Therefore JGR--P1 is presently a precise enriched-source
 candidate, not a proved property of Nature and not authorization to export a
 physical \texttt{BaseSeedPacket}.
 
+\subsection{Joint-carrier minimality and the spectral selection route}
+
+The external same-reduct control can be separated from the internal class by
+an existing source principle rather than by adding another incidence
+coefficient.  The finite joint algebra has the Wedderburn decomposition
+\begin{equation}
+ \mathfrak A_J
+ :=\operatorname{Cl}_7(\mathbb C)\widehat\otimes A_{\rm port}
+ \simeq M_8(\mathbb C)^{\oplus4}.
+ \label{eq:jointwedderburn}
+\end{equation}
+
+\begin{lemma}[Minimal faithful joint carrier]
+Every finite-dimensional $*$-representation of $\mathfrak A_J$ has carrier
+\begin{equation}
+ H_\pi\simeq
+ \bigoplus_{\alpha=1}^{4}
+ \bigl(\mathbb C^8\otimes\mathbb C^{m_\alpha}\bigr),
+ \qquad m_\alpha\in\mathbb Z_{\ge0}.
+ \label{eq:jointmultiplicity}
+\end{equation}
+It is faithful exactly when every $m_\alpha\ge1$.  Consequently
+$\dim H_\pi\ge32$, with equality exactly at
+$(m_1,m_2,m_3,m_4)=(1,1,1,1)$.
+\label{lem:minjointcarrier}
+\end{lemma}
+
+\begin{proof}
+Finite-dimensional representations of a direct sum of full matrix algebras
+are direct sums of their defining simple modules with nonnegative integer
+multiplicities.  A missing block is the kernel of the corresponding central
+projection, so faithfulness is equivalent to strictly positive
+multiplicities.  Equation~\eqref{eq:jointmultiplicity} then gives
+$\dim H_\pi=8\sum_\alpha m_\alpha\ge32$, and equality forces every
+multiplicity to be one.
+\end{proof}
+
+The internal JGR construction has four rank-eight central blocks on
+$H_0=\mathbb C^{32}$ and therefore attains this lower bound.  The external
+tensor-record control acts on $H_0\otimes\mathbb C^2$ and has multiplicities
+$(2,2,2,2)$, hence dimension $64$.
+
+\begin{theorem}[JCM--P1 joint-carrier selection]
+Assume:
+\begin{enumerate}
+ \item the physical source owns the graded joint grammar $\mathfrak A_J$ and
+ admits only faithful graded realizations extending the frozen role
+ representation and equal record trace;
+ \item the internal $32$-dimensional JGR witness is admissible;
+ \item every larger candidate carries a positive source operator whose
+ compression to $H_0$ is the same frozen $K_0$;
+ \item the source priority minimizes the unnormalised heat-trace complexity
+ \begin{equation*}
+  C_{\rm HT}=\log\operatorname{Tr}\exp(-K/\mathcal A_*).
+ \end{equation*}
+\end{enumerate}
+Then every proper carrier extension has strictly larger complexity than the
+internal witness.  The selected faithful class has dimension $32$, is
+represented inside
+$B(H_0)=M_{32}(\mathbb C)=\operatorname{Cl}_{10}(\mathbb C)$, and satisfies
+JGR--P1 and IGL--P1.  Its record landing is unique modulo the previously
+proved $\operatorname{Spin}(3)$ gauge orbit.
+\label{thm:jcmselection}
+\end{theorem}
+
+\begin{proof}
+Lemma~\ref{lem:minjointcarrier} shows that no faithful candidate can have
+dimension below $32$, while the internal witness realizes equality.  Any
+larger candidate satisfying premise 3 is a proper positive
+common-compression extension of $(H_0,K_0)$.  The strict extension theorem,
+Theorem~\ref{thm:strict_extension}, gives
+\begin{equation}
+ \operatorname{Tr}_{H}e^{-K/\mathcal A_*}
+ >\operatorname{Tr}_{H_0}e^{-K_0/\mathcal A_*}.
+ \label{eq:jcmstrict}
+\end{equation}
+The logarithm preserves the inequality, so no proper extension minimizes the
+declared complexity.  On a $32$-dimensional carrier every represented
+operator lies in $B(H_0)=M_{32}(\mathbb C)$; the graded tensor grammar makes
+the record factor even and commuting with the role factor.  Thus the selected
+class is same-envelope JGR, and Theorem~\ref{thm:jgrigl} gives the IGL zero
+condition.  The landing-orbit theorem removes the remaining representative
+choice as gauge.
+\end{proof}
+
+The assumptions are sharp in the directions relevant here.  If the heat
+trace is divided by carrier dimension, a duplicated external representation
+has exactly the same normalized trace as the internal one.  If the source
+compression may change, shifting the enlarged spectrum upward can give it a
+smaller heat trace.  A $24$-dimensional three-block carrier is smaller but
+nonfaithful.  Finally, carrier minimality alone does not impose grading or
+tensor locality; those enter through the already frozen joint grammar.
+
+This theorem is a real reduction of the source blocker, but not Nature-level
+closure.  It shows that no additional landing gain or separate internality
+potential is needed \emph{if} the physical source co-owns the joint grammar,
+the same-compression Hodge comparison and the unnormalised heat-trace
+priority.  The present corpus proves these ingredients in conditional packets
+but does not yet prove their common physical ownership or that Nature occupies
+their minimizer.
+
 \section{Exact compatibility before complexity}
 
 \begin{definition}[Source defect and exact fibre]
@@ -1216,6 +1325,7 @@ physical premise.
 \section{Strict finite extension theorem}
 
 \begin{theorem}[Proper common-compression extensions cost more]
+\label{thm:strict_extension}
 Let $K$ be a positive Hermitian operator on an $n$-dimensional source carrier
 $H$.  Let $\widetilde K$ be positive Hermitian on a proper extension
 $\widetilde H=H\oplus H_h$ of dimension $n+m$, $m>0$, and assume its
@@ -1524,6 +1634,14 @@ would weaken or reject the selected completion.
  External-factor, odd and role-mixing controls prove that internality,
  grading and tensor locality are distinct requirements.  This retypes IGL as
  a representation defect but does not derive JGR--P1 from the source.
+ \item[Joint-carrier selection.] The joint algebra is
+ $M_8(\mathbb C)^{\oplus4}$, so the unique minimal faithful multiplicity
+ vector is $(1,1,1,1)$ on a $32$-dimensional carrier.  The internal JGR
+ witness attains it.  Under the positive common-compression and unnormalised
+ heat-trace premises, every external proper extension is strictly more
+ complex, so the selected class is same-envelope.  Normalised-trace and
+ changed-compression controls prove these premises essential; their common
+ physical ownership and Nature occupation remain open.
  \item[Open.] Nature occupation requires independent source evidence or a
  source-frozen discriminator.  A Tau-specific terminal signal belongs
  downstream of TD-III.
@@ -1546,7 +1664,8 @@ The decisive remaining physical statement is now narrower:
 \begin{equation}
  \boxed{\begin{gathered}
  \text{Is the pre-body source envelope ontic or metric-auxiliary,}\\
- \text{does it own a same-envelope joint graded role--record realization,}\\
+ \text{does it co-own the joint role--record grammar and the}\\
+ \text{unnormalised same-compression heat-trace priority,}\\
  \text{and therefore occupy the unique even-relative-commutant landing orbit,}\\
  \text{and does the resulting occupied seed have faithful full GNS rank}\\
  \text{in the independently owned physical algebra,}\\
