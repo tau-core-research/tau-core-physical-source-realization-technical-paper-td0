@@ -222,6 +222,26 @@
       "id": "PSR44",
       "status": "open",
       "claim": "The physical source has not yet been shown to co-own the joint grammar, source-Hodge intertwining, spectral sufficiency, tensor additivity and spectator-stable well-posed minimization; Nature occupation and BaseSeedPacket export remain unauthorized."
+    },
+    {
+      "id": "PSR45",
+      "status": "proved_conditional",
+      "claim": "For finite graded star representations of one nilpotent differential grammar, a degree-preserving isometric full-star intertwiner automatically transports the differential, codifferential and Hodge Laplacian."
+    },
+    {
+      "id": "PSR46",
+      "status": "proved_conditional",
+      "claim": "The same dagger-functorial intertwiner transports the harmonic spectral projector and therefore the dimensionless positive Hodge operator Delta+P_H; multiplying by the common action unit preserves the result and derives common compression."
+    },
+    {
+      "id": "PSR47",
+      "status": "proved_no_go",
+      "claim": "Intertwining the unstarred differential alone is insufficient because complement-to-source incidence can change the codifferential and Hodge compression. Nonisometric intertwiners and independently assigned harmonic projectors are also insufficient."
+    },
+    {
+      "id": "PSR48",
+      "status": "open",
+      "claim": "The current joint role-record grammar has not been shown to co-own the nilpotent differential generator and its star on the same physical carrier; Nature occupation and BaseSeedPacket export remain unauthorized."
     }
   ]
 }

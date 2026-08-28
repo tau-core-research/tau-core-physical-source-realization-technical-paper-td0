@@ -159,6 +159,18 @@ def main():
             / "p3_clp3_p1_spectral_priority_origin_audit.json"
         ).read_text()
     )
+    p1_hodge_functorial_origin = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_hodge_functorial_origin.json"
+        ).read_text()
+    )
+    p1_hodge_functorial_origin_audit = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_hodge_functorial_origin_audit.json"
+        ).read_text()
+    )
     single_source_law = json.loads(
         (DERIVED / "p3_clp3_single_source_law.json").read_text()
     )
@@ -447,6 +459,52 @@ def main():
         ]["nature_selection_proved"]
         is False
     )
+    checks["p1_hodge_functorial_origin_audit_passes"] = (
+        p1_hodge_functorial_origin_audit["passed"]
+        == p1_hodge_functorial_origin_audit["total"]
+        == 20
+    )
+    checks["p1_complete_star_differential_grammar_derives_hodge_transport"] = (
+        p1_hodge_functorial_origin_audit["checks"][
+            "differential_intertwines"
+        ]
+        and p1_hodge_functorial_origin_audit["checks"][
+            "codifferential_intertwines"
+        ]
+        and p1_hodge_functorial_origin_audit["checks"][
+            "laplacian_intertwines"
+        ]
+        and p1_hodge_functorial_origin_audit["checks"][
+            "harmonic_projector_intertwines"
+        ]
+        and p1_hodge_functorial_origin_audit["checks"][
+            "same_compression_is_derived"
+        ]
+    )
+    checks["p1_unstarred_chain_map_and_nonisometric_controls_are_rejected"] = (
+        p1_hodge_functorial_origin_audit["checks"][
+            "unstarred_cochain_control_preserves_d_only"
+        ]
+        and p1_hodge_functorial_origin_audit["checks"][
+            "unstarred_cochain_control_changes_hodge_operator"
+        ]
+        and p1_hodge_functorial_origin_audit["checks"][
+            "nonisometric_control_breaks_compression_normalization"
+        ]
+        and p1_hodge_functorial_origin_audit["checks"][
+            "independent_harmonic_policy_is_not_derived"
+        ]
+    )
+    checks["p1_physical_star_differential_ownership_remains_open"] = (
+        p1_hodge_functorial_origin_audit["physical_source_ownership"]
+        == "OPEN"
+        and p1_hodge_functorial_origin_audit["nature_level_occupation"]
+        is False
+        and p1_hodge_functorial_origin["source_freeze_payload"][
+            "claim_boundary"
+        ]["current_joint_role_record_grammar_contains_q_and_q_star"]
+        is False
+    )
     checks["single_source_law_audit_passes"] = single_source_audit["passed"] == single_source_audit["total"]
     checks["single_source_law_compresses_p4_through_p7"] = single_source_audit["verdict"] == "P4_P7_SINGLE_ACTION_COMPRESSION_PASS"
     checks["single_source_law_does_not_self_certify_p1"] = single_source_audit["P1_physical_source_language_ownership_proved"] is False
@@ -516,6 +574,10 @@ def main():
             {"id": "PSR42", "status": "proved_conditional", "claim": "For continuous spectral-only tensor-additive complexity, finite faithful spectator closure plus attained equality-rigid minimization excludes c<=0 in C(Z)=c log Z; primitive derivative calibration fixes c=1."},
             {"id": "PSR43", "status": "proved_conditional_no_go", "claim": "An isometric Hodge intertwiner K_X J=J K_0 implies the common-compression identity J^*K_XJ=K_0. Algebra representation alone does not imply intertwining, and changed compression can reverse heat-trace selection."},
             {"id": "PSR44", "status": "open", "claim": "The physical source has not yet been shown to co-own the joint grammar, source-Hodge intertwining, spectral sufficiency, tensor additivity and spectator-stable well-posed minimization; Nature occupation and BaseSeedPacket export remain unauthorized."},
+            {"id": "PSR45", "status": "proved_conditional", "claim": "For finite graded star representations of one nilpotent differential grammar, a degree-preserving isometric full-star intertwiner automatically transports the differential, codifferential and Hodge Laplacian."},
+            {"id": "PSR46", "status": "proved_conditional", "claim": "The same dagger-functorial intertwiner transports the harmonic spectral projector and therefore the dimensionless positive Hodge operator Delta+P_H; multiplying by the common action unit preserves the result and derives common compression."},
+            {"id": "PSR47", "status": "proved_no_go", "claim": "Intertwining the unstarred differential alone is insufficient because complement-to-source incidence can change the codifferential and Hodge compression. Nonisometric intertwiners and independently assigned harmonic projectors are also insufficient."},
+            {"id": "PSR48", "status": "open", "claim": "The current joint role-record grammar has not been shown to co-own the nilpotent differential generator and its star on the same physical carrier; Nature occupation and BaseSeedPacket export remain unauthorized."},
         ],
     }
     (DERIVED / "theorem_ledger.json").write_text(json.dumps(ledger, indent=2) + "\n")

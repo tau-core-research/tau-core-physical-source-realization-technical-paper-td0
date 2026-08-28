@@ -159,6 +159,18 @@ nonintertwining and nonlinear-functional controls delimit the theorem. The
 result proves structural uniqueness on the declared class, not that the
 physical source owns that class or that Nature occupies its minimizer.
 
+A twelfth, 20-check dagger-functorial Hodge audit derives the remaining
+common-compression premise from a more primitive source condition. If the
+same finite graded star grammar contains an odd nilpotent differential `q`
+and its star, a degree-preserving isometric full-star intertwiner transports
+`d`, `d^*`, the Hodge Laplacian, its harmonic projector and therefore
+`Khat = Delta + P_H`. Common compression then follows automatically. A
+forward cochain map alone fails: an explicit complement-to-source incidence
+preserves `d_X J = J d_0` while changing `d_X^*` and the Hodge compression.
+Nonisometric and independent-projector controls expose the other necessary
+premises. The current role--record JGR packet has not yet been shown to own
+this star-closed differential generator on the same physical carrier.
+
 The P3/CLP3 file exports only a `BaseSeedPacketCandidate`. Its ownership
 certificate explicitly forbids promotion to a physical `BaseSeedPacket` until
 the missing Nature-selection premises are independently supplied.

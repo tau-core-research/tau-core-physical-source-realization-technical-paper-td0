@@ -26,6 +26,7 @@ or promoted by the standalone TD-0 package.
 | Same-envelope joint graded realization (`JGR-P1`) | This repository | Conditional equivalence theorem in the frozen canonical PUSC realization | Retypes the IGL zero locus as a faithful trace-preserving graded representation of `Cl(E) graded_tensor A_port` inside the same ontic `Cl_10`; external, odd and role-mixing controls preserve the ownership boundary |
 | Joint-carrier minimality (`JCM-P1`) | This repository | Conditional theorem given physical ownership of the joint grammar, faithful graded candidates, common frozen positive compression and unnormalized heat-trace priority | Proves the minimal faithful carrier is 32, attained internally; proper external extensions cost more, while normalized-trace and changed-compression controls expose the exact assumptions |
 | Spectral-priority structural origin (`UTR/SPS/HCI-P1`) | This repository | Conditional theorem packet given positive linear direct-sum-compatible trace evaluation, continuous tensor-additive spectral sufficiency, spectator-stable attained equality-rigid minimization, primitive calibration and source-Hodge intertwining | Derives ordinary unnormalized trace, positive unit logarithmic sign and common compression; does not prove physical ownership of those structural premises |
+| Dagger-functorial Hodge origin (`DHF-P1`) | This repository | Conditional finite theorem given one star-closed nilpotent differential grammar, graded star representations and a degree-preserving isometric full-star intertwiner | Derives differential, codifferential, Laplacian, harmonic-projector and Hodge transport; forward-only, nonisometric and independent-projector controls preserve the physical ownership boundary |
 | Simplicity obstruction to a P3 null quotient | Standard finite-dimensional C-star algebra | `M_32(C)` is simple | Forbids retaining an ontic `M_32(C)` while quotienting its missing directions to the four-block P3 algebra by a nontrivial star ideal |
 | P1 source-language exhaustivity for Nature | No current theorem owner | Open physical premise | The self-certification no-go proves that the action cannot establish P1 from its own residual language; the present P3 ambient control is not independently owned |
 | Nature occupation of the complete source packet | No current theorem owner | Open | Requires independent source evidence or a source-frozen discriminator |
@@ -132,3 +133,11 @@ intertwining supplies common compression. The exact remaining premise is now
 common physical ownership of the joint grammar and these structural laws.
 The theorem does not infer that ownership from the internal minimum or from
 any downstream readout.
+
+DHF-P1 further replaces source-Hodge intertwining by a more primitive typed
+condition: the joint physical presentation must contain the differential
+generator and its star, and the candidate inclusion must intertwine that
+complete star grammar isometrically. Once supplied, Hodge transport and
+common compression are theorems. The current role--record JGR presentation
+does not yet prove that this differential extension is physically co-owned,
+so the Nature-level blocker is narrowed rather than closed.

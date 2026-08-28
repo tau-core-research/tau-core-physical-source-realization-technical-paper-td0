@@ -57,7 +57,10 @@ that Nature occupies the selected completion.
 | Compatible-trace rigidity (`UTR-P1`) | Proven conditionally | positive linear unitary-invariant carrier functionals, orthogonal direct-sum compatibility and primitive calibration | uniquely gives ordinary unnormalized matrix trace; normalized trace fails the sum law |
 | Spectator-stable spectral priority (`SPS-P1`) | Proven conditionally | continuous spectral sufficiency, tensor additivity, finite faithful spectator closure, attained equality-rigid minimization and primitive response calibration | gives `C(Z)=log Z`; zero sign creates ties and negative sign rewards unbounded duplication |
 | Hodge-compression intertwining (`HCI-P1`) | Proven | isometric `J` and `K_X J=J K_0` | gives `J^* K_X J=K_0`; algebra representation alone is insufficient |
-| Physical ownership of JCM/priority-origin premises | Not established | enriched source must co-own the joint grammar, source-Hodge intertwining, spectral sufficiency, tensor additivity and spectator-stable well-posedness | no Nature occupation or physical packet export follows yet |
+| Dagger-functorial Hodge transport (`DHF-P1`) | Proven conditionally | one finite graded star differential grammar with odd nilpotent `q`, graded star representations, and a degree-preserving isometric full-star intertwiner | transports `d`, `d^*`, `Delta`, `P_H` and `K`; HCI and common compression follow |
+| Unstarred cochain map as Hodge transport | Disproved | explicit complement-to-source incidence | preserves `d_X J=J d_0` while changing `d_X^*`, the Hodge operator and its compression |
+| Isometry and spectral harmonic policy | Independently necessary | scaled-intertwiner and independently assigned-projector controls | operator intertwining without isometry does not normalize compression; a free projector need not be functorial |
+| Physical ownership of JCM/priority-origin premises | Not established | enriched source must co-own the joint role--record grammar and star-closed differential generator on the same carrier, plus spectral sufficiency, tensor additivity and spectator-stable well-posedness | no Nature occupation or physical packet export follows yet |
 | Schur-neutral body handoff | Proven | positive invertible source-independent `K_B` and typed load `j_B(s)` | supplies a regular TD-I input without back-selecting the source completion |
 
 ## Circularity audit
@@ -168,3 +171,13 @@ Hodge intertwiner, and the present source has not been shown to own spectral
 sufficiency or the well-posed candidate class. Structural uniqueness is
 therefore proved conditionally; physical co-ownership and occupation remain
 open.
+
+DHF-P1 now derives HCI from one deeper grammar-level statement. When the
+physical star presentation contains the nilpotent differential generator,
+full-star representation automatically transports both the forward and
+adjoint incidence, hence the Laplacian, harmonic projector and Hodge
+operator. This is strictly stronger than a forward chain map: the explicit
+same-chain control changes Hodge compression through the missing adjoint
+relation. The formula-level Hodge premise is therefore removed, but its
+physical source content is not. Current JGR owns role--record algebra, not yet
+the differential generator in that same carrier.

@@ -38,6 +38,8 @@ def main():
     run(sys.executable, "scripts/audit_p1_joint_carrier_minimality.py")
     run(sys.executable, "scripts/freeze_p1_spectral_priority_origin.py")
     run(sys.executable, "scripts/audit_p1_spectral_priority_origin.py")
+    run(sys.executable, "scripts/freeze_p1_hodge_functorial_origin.py")
+    run(sys.executable, "scripts/audit_p1_hodge_functorial_origin.py")
     run(sys.executable, "scripts/freeze_single_source_law.py")
     run(sys.executable, "scripts/audit_single_source_law.py")
     run(sys.executable, "scripts/check_derivations.py")

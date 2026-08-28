@@ -42,7 +42,7 @@
 Complete Seed Presentations, Spectral Selection, and the Nature-Occupation Boundary\\[3pt]
 \large An unnumbered technical derivation companion}
 \author{Jozsef Olcsak\\Independent researcher}
-\date{Version 0.10 --- 28 August 2026}
+\date{Version 0.11 --- 28 August 2026}
 
 \begin{document}
 \maketitle
@@ -126,9 +126,14 @@ ordinary unnormalised trace; tensor additivity gives $c\log Z$, while
 spectator-stable attained equality-rigid minimisation forces $c>0$ and
 primitive response calibration fixes $c=1$; and source-Hodge intertwining
 derives the same-compression identity.  Algebraic representation alone does
-not imply that intertwining.  Thus the selector's form is structurally unique
-on the declared class, while common physical ownership of that class and
-Nature occupation remain open.
+not imply that intertwining.  We then derive the intertwining itself from a
+stronger but natural source condition: an isometric representation of the
+complete star-closed differential grammar transports the differential, its
+adjoint, the Hodge Laplacian and its harmonic projector, hence the positive
+Hodge operator and its compression.  A cochain map that omits the adjoint has
+an explicit finite countermodel.  Thus the selector's form is structurally
+unique on the declared dagger-functorial class, while common physical
+ownership of that class and Nature occupation remain open.
 Hidden spectator, role-rotation, isospectral,
 component-zero-jet, nonfaithful-state and off-shell
 deformation controls show the exact boundary: the narrow Tau reduct neither
@@ -1343,23 +1348,98 @@ Left-multiply Eq.~\eqref{eq:hciintertwining} by $J^*$ and use
 $J^*J=\id_{H_0}$.
 \end{proof}
 
-The converse needed for physical closure does not follow from algebraic
-representation alone.  A faithful enlarged representation can assign a
-shifted $K_X$ on the embedded source block, violating
-Eq.~\eqref{eq:hciintertwining}; its heat trace can then be smaller than the
-base heat trace.  Likewise, a nonlinear unitarily invariant functional need
-not satisfy the linear trace theorem.  The executable controls realize these
-failures explicitly.
+\begin{theorem}[DHF--P1 dagger-functorial Hodge transport]
+Let $\mathfrak A_\delta$ be a finite graded star algebra containing an odd
+generator $q$ with $q^2=0$.  Let $\pi_i$ be graded star representations on
+$H_i$, $i\in\{0,X\}$, and define
+\begin{equation}
+ d_i=\pi_i(q),\qquad
+ \Delta_i=d_id_i^*+d_i^*d_i,\qquad
+ P_{H,i}=\mathbf 1_{\{0\}}(\Delta_i).
+ \label{eq:dhfhodge}
+\end{equation}
+Suppose $J:H_0\to H_X$ is a degree-preserving isometry intertwining the
+complete star grammar,
+\begin{equation}
+ J\pi_0(a)=\pi_X(a)J
+ \qquad(a\in\mathfrak A_\delta).
+ \label{eq:dhfstarintertwiner}
+\end{equation}
+Then
+\begin{align}
+ d_XJ&=Jd_0,&d_X^*J&=Jd_0^*,\notag\\
+ \Delta_XJ&=J\Delta_0,&P_{H,X}J&=JP_{H,0}.
+ \label{eq:dhfchain}
+\end{align}
+Consequently, for the dimensionless Hodge operator
+$\widehat K_i=\Delta_i+P_{H,i}$ and the action-valued operator
+$K_i=\mathcal A_*\widehat K_i$,
+\begin{equation}
+ K_XJ=JK_0,
+ \qquad J^*K_XJ=K_0.
+ \label{eq:dhfcompression}
+\end{equation}
+\label{thm:dhfhodge}
+\end{theorem}
+
+\begin{proof}
+Equation~\eqref{eq:dhfstarintertwiner} with $a=q$ gives
+$d_XJ=Jd_0$.  Since the representations preserve the star, the same equation
+with $a=q^*$ gives $d_X^*J=Jd_0^*$.  Substitution into
+Eq.~\eqref{eq:dhfhodge} gives $\Delta_XJ=J\Delta_0$.  Taking adjoints shows
+that $JH_0$ is reducing for the self-adjoint $\Delta_X$.  Finite spectral
+functional calculus therefore transports its zero spectral projector:
+$P_{H,X}J=JP_{H,0}$.  Adding the two intertwined terms and multiplying by the
+common action unit proves the first identity in
+Eq.~\eqref{eq:dhfcompression}; Lemma~\ref{lem:hcicompression} proves the
+second.
+\end{proof}
+
+\begin{nogo}[An unstarred cochain map is insufficient]
+There are finite graded complexes and an isometric $J$ for which
+$d_XJ=Jd_0$ but $d_X^*J\ne Jd_0^*$ and
+$J^*\widehat K_XJ\ne\widehat K_0$.
+\label{nogo:unstarredchain}
+\end{nogo}
+
+\begin{proof}
+Take $H_0^0=H_0^1=\mathbb C^2$ with
+$d_0=\operatorname{diag}(2,0)$, and
+$H_X^0=H_X^1=\mathbb C^3$ with
+\begin{equation}
+ d_X=
+ \begin{pmatrix}
+  2&0&5/4\\0&0&0\\0&0&3
+ \end{pmatrix}.
+ \label{eq:dhfcontrol}
+\end{equation}
+Let $J$ embed the first two coordinates in each degree.  The first two
+columns give $d_XJ=Jd_0$, but the third entry in the first row gives a
+nonzero complement component in $d_X^*J$.  Direct substitution into
+$d_Xd_X^*+d_X^*d_X$ changes the compression.  Thus star closure, not merely
+the forward cochain relation, is essential.
+\end{proof}
+
+A scaled nonisometric intertwiner still obeys the operator equation but gives
+$J^*K_XJ\ne K_0$, so isometry is independently necessary.  An independently
+assigned projector can likewise fail to transport even when the Laplacian
+does; $P_H$ must be its zero spectral projector rather than a free harmonic
+policy.  Finally, a faithful role--record representation that contains no
+differential generator does not determine any Hodge operator.  These controls
+separate algebraic JGR from dagger-differential JGR.
 
 Combining Theorems~\ref{thm:utrtrace} and \ref{thm:spssign} with
-Lemma~\ref{lem:hcicompression} removes the three formula-level choices in
+Theorem~\ref{thm:dhfhodge} and Lemma~\ref{lem:hcicompression} removes the
+three formula-level choices in
 Theorem~\ref{thm:jcmselection} \emph{conditional on} physical ownership of
 the structural packet.  The remaining issue is therefore not which trace,
 sign or compression formula to choose.  It is whether the enriched source
-co-owns the joint grammar, source-Hodge intertwining, spectral sufficiency,
-tensor additivity and spectator-stable well-posed minimization, and whether
-Nature occupies the resulting minimum.  None of those ownership or
-occupation statements is proved here.
+co-owns the joint role--record grammar and the complete star-closed
+differential generator on the same carrier, together with spectral
+sufficiency, tensor additivity and spectator-stable well-posed minimization,
+and whether Nature occupies the resulting minimum.  The concrete P3/JGR
+packet has not yet been shown to contain that joint differential grammar.
+None of those ownership or occupation statements is proved here.
 
 \section{Exact compatibility before complexity}
 
@@ -1757,6 +1837,12 @@ would weaken or reject the selected completion.
  and Hodge intertwining derives common compression.  The formula is therefore
  unique on this declared structural class; physical ownership of the class is
  not established.
+ \item[Dagger-functorial Hodge origin.] If the same physical star grammar
+ contains the nilpotent differential generator and its adjoint, every
+ degree-preserving isometric full-star intertwiner automatically transports
+ the Laplacian, harmonic projector and Hodge operator.  A forward cochain map
+ alone fails by explicit counterexample.  Current JGR has not yet been shown
+ to own this differential extension.
  \item[Open.] Nature occupation requires independent source evidence or a
  source-frozen discriminator.  A Tau-specific terminal signal belongs
  downstream of TD-III.
@@ -1780,7 +1866,8 @@ The decisive remaining physical statement is now narrower:
  \boxed{\begin{gathered}
  \text{Is the pre-body source envelope ontic or metric-auxiliary,}\\
  \text{does it co-own the joint role--record grammar and the}\\
- \text{source-Hodge intertwining, spectral sufficiency, tensor additivity,}\\
+ \text{the complete star-closed differential grammar on the same carrier,}\\
+ \text{spectral sufficiency, tensor additivity,}\\
  \text{and spectator-stable well-posed heat-trace priority,}\\
  \text{and therefore occupy the unique even-relative-commutant landing orbit,}\\
  \text{and does the resulting occupied seed have faithful full GNS rank}\\
