@@ -37,6 +37,9 @@ that Nature occupies the selected completion.
 | Single connector-defect action | Proven conditionally | connector variables and relation grammar supplied before minimization | nonnegative zero witness; absent, scaled and wrong-grading controls are positive |
 | P3 quotient of ontic `M_32(C)` | Impossible as a nontrivial star-ideal quotient | simplicity of `M_32(C)` | retaining P3 as globally complete requires a non-ontic/auxiliary PUSC reading, a different ambient, or expansion by physical connectors |
 | Physical ownership of the two connectors | Not established | enriched base--seed incidence and Nature occupation | the action enforces a supplied connector grammar but cannot create its own typed domain |
+| Record--Clifford reduction | Proven conditionally | ontic `Cl_10`, canonical P3 seven-plane and one even trace-preserving binary-record embedding whose adjoint action preserves the three-dimensional vector complement | gives the exact `2+1` split and makes the old connector pair a gauge frame rather than two independent primitives |
+| Graded embedding from the current local reduct | Disproved | compare extensions with identical local P3/record four-block data | odd-twist and chirality-misaligned controls fail global parity or complement preservation |
+| Physical ownership of the graded embedding | Not established | one enriched cross relation tying the binary record algebra to the even PUSC complement, plus Nature occupation | this replaces, but does not solve, separate `u,v` ownership |
 | Schur-neutral body handoff | Proven | positive invertible source-independent `K_B` and typed load `j_B(s)` | supplies a regular TD-I input without back-selecting the source completion |
 
 ## Circularity audit
@@ -88,3 +91,12 @@ the conditional rank equality `1024/1024`. The accompanying defect action
 selects their Clifford zero locus only after those variables and relations are
 supplied. This closes the algebraic realization problem but not the physical
 source-ownership problem.
+
+The record--Clifford theorem sharpens that last boundary. Once a graded
+embedding of the already present binary record algebra into the already
+present three-dimensional PUSC complement is supplied, its record involution
+forces a `2+1` adjoint split. The earlier two connector generators are only a
+choice of frame in this split. Thus separate connector primitives are not
+needed. However, explicit same-reduct controls prove that P3, PUSC and record
+data without a cross-grading relation do not entail the embedding. Physical
+selection and occupation of that one relation remain open.

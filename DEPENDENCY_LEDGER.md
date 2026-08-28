@@ -18,6 +18,7 @@ or promoted by the standalone TD-0 package.
 | Pre-body `PUSC-P1` simple source envelope | Central Tau Core parent derivation (`FCC-SIMPLETRACE1`) | Conditional source declaration; `Cl_10(C)=M_32(C)` with normalized trace; Nature ownership open | Supplies the first seed-independent candidate ambient for a global P1 separator |
 | P3/PUSC envelope separator | This repository | Conditional theorem under an ontic PUSC envelope and a physical typed embedding | Retains P3 component completeness but gives global faithful-GNS rank `256/1024`; proves local P3 data cannot choose ontic versus metric-auxiliary envelope interpretation |
 | Two-connector P3-to-PUSC completion | This repository | Exact finite theorem in the declared `Cl_10` grading class; connector-domain ownership remains open | Shows that `u=gamma_8` and `v=gamma_10` give the rank ladder `256,512,512,1024` and supplies one nonnegative relation-defect action with explicit controls |
+| Record--Clifford connector reduction | This repository | Conditional theorem given an ontic `Cl_10` envelope, the P3 seven-plane and one even trace-preserving binary-record embedding preserving the vector complement | Derives the connector pair as a gauge frame of one `2+1` adjoint split; same-reduct controls show the embedding is not selected by current local source laws |
 | Simplicity obstruction to a P3 null quotient | Standard finite-dimensional C-star algebra | `M_32(C)` is simple | Forbids retaining an ontic `M_32(C)` while quotienting its missing directions to the four-block P3 algebra by a nontrivial star ideal |
 | P1 source-language exhaustivity for Nature | No current theorem owner | Open physical premise | The self-certification no-go proves that the action cannot establish P1 from its own residual language; the present P3 ambient control is not independently owned |
 | Nature occupation of the complete source packet | No current theorem owner | Open | Requires independent source evidence or a source-frozen discriminator |
@@ -67,9 +68,11 @@ The P3-local packet is identical in both interpretations and therefore cannot
 select between them. Nature-level ambient ownership remains the irreducible
 input.
 
-Inside the declared PUSC Clifford factorization, this input is now finite. If
-the enriched source owns and occupies the two homogeneous connectors `u,v`,
-the expanded seed algebra generates the full ontic envelope and the faithful
-GNS ratio becomes `1024/1024`. If it does not, the P3 action cannot create
-those typed variables. The remaining gap is therefore physical connector
-incidence/occupation, not another matrix-algebra dimension calculation.
+Inside the declared PUSC Clifford factorization, this input is now finite. A
+graded embedding of the existing binary record algebra into the even algebra
+of the three-dimensional PUSC complement forces the old `u,v` packet as a
+gauge frame and restores the faithful GNS ratio `1024/1024`. The current
+PUSC and record actions do not contain the cross relation selecting this
+embedding. The remaining gap is therefore ownership and occupation of one
+graded record--Clifford incidence, not two new connector primitives and not
+another matrix-algebra dimension calculation.

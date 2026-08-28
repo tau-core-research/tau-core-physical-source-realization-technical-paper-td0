@@ -102,6 +102,12 @@ def main():
     p1_connector_audit = json.loads(
         (DERIVED / "p3_clp3_p1_envelope_connector_selector_audit.json").read_text()
     )
+    p1_record_embedding = json.loads(
+        (DERIVED / "p3_clp3_p1_record_clifford_embedding.json").read_text()
+    )
+    p1_record_embedding_audit = json.loads(
+        (DERIVED / "p3_clp3_p1_record_clifford_embedding_audit.json").read_text()
+    )
     single_source_law = json.loads(
         (DERIVED / "p3_clp3_single_source_law.json").read_text()
     )
@@ -191,6 +197,38 @@ def main():
         and p1_connector_audit["physical_base_seed_packet_export_authorized"]
         is False
     )
+    checks["p1_record_clifford_embedding_audit_passes"] = (
+        p1_record_embedding_audit["passed"]
+        == p1_record_embedding_audit["total"]
+    )
+    checks["p1_connector_pair_reduces_to_one_graded_embedding"] = (
+        p1_record_embedding_audit["diagnostics"]["good_adjoint_eigenvalues"]
+        == [-1.0, -1.0, 1.0]
+        and p1_record_embedding["source_freeze_payload"][
+            "conditional_consequence"
+        ]["connector_variables_are_independent_primitives"]
+        is False
+    )
+    checks["p1_record_embedding_has_adversarial_nonentailment_controls"] = (
+        p1_record_embedding_audit["checks"][
+            "odd_twist_preserves_local_p3_record_reduct"
+        ]
+        and p1_record_embedding_audit["checks"][
+            "misaligned_control_preserves_local_p3_record_reduct"
+        ]
+        and p1_record_embedding_audit["checks"][
+            "local_reduct_does_not_entail_graded_embedding"
+        ]
+    )
+    checks["p1_record_embedding_selection_is_open_and_nature_bounded"] = (
+        p1_record_embedding_audit[
+            "physical_record_clifford_embedding_ownership"
+        ]
+        == "OPEN"
+        and p1_record_embedding_audit["nature_level_occupation"] is False
+        and p1_record_embedding_audit["physical_P1_exhaustivity_proved"]
+        is False
+    )
     checks["single_source_law_audit_passes"] = single_source_audit["passed"] == single_source_audit["total"]
     checks["single_source_law_compresses_p4_through_p7"] = single_source_audit["verdict"] == "P4_P7_SINGLE_ACTION_COMPRESSION_PASS"
     checks["single_source_law_does_not_self_certify_p1"] = single_source_audit["P1_physical_source_language_ownership_proved"] is False
@@ -240,6 +278,10 @@ def main():
             {"id": "PSR22", "status": "proved_conditional", "claim": "The homogeneous connectors u=gamma_8 and v=gamma_10 give the exact algebra-dimension ladder 256, 512, 512, 1024; within this declared connector class both are necessary and together generate M_32(C)."},
             {"id": "PSR23", "status": "proved_conditional", "claim": "A single nonnegative Hilbert-Schmidt connector-defect action has a zero-defect Cl_10 witness and rejects absent, rescaled and wrong-grading connector controls once the connector domain and relation grammar are source-owned."},
             {"id": "PSR24", "status": "proved_no_go", "claim": "The connector action cannot derive the existence of its own typed u/v variables from P3-local data, and simple M_32(C) has no nontrivial star-ideal quotient to M_8(C)^{oplus 4}; Nature-level connector ownership remains open."},
+            {"id": "PSR25", "status": "proved_conditional", "claim": "Given an ontic Cl_10 envelope, the canonical seven-dimensional P3 role subspace, and an even Clifford-compatible embedding of the equal-weight binary record algebra, the record involution splits the three-dimensional complement into a two-dimensional minus eigenspace and a one-dimensional plus eigenspace."},
+            {"id": "PSR26", "status": "proved_conditional", "claim": "The prior u/v connector pair is a gauge-fixed orthonormal frame of that single graded record--Clifford embedding; any tested O(2)-rotated frame closes the same Cl_10 algebra, so u and v need not be separately owned source primitives."},
+            {"id": "PSR27", "status": "proved_no_go", "claim": "The current P3/PUSC plus binary-record reduct does not entail the graded embedding: odd-twist and chirality-misaligned involutions preserve the local four-block P3/record data while violating global evenness or vector-complement preservation."},
+            {"id": "PSR28", "status": "open", "claim": "Physical source selection and Nature occupation of the graded record--Clifford embedding remain unproved; therefore physical P1 exhaustivity and BaseSeedPacket export remain unauthorized."},
         ],
     }
     (DERIVED / "theorem_ledger.json").write_text(json.dumps(ledger, indent=2) + "\n")

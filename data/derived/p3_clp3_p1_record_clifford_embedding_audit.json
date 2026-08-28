@@ -1,0 +1,126 @@
+{
+  "checks": {
+    "fingerprint_matches_payload": true,
+    "upstream_connector_packet_is_fingerprint_locked": true,
+    "endpoint_blind_freeze": true,
+    "ten_generator_clifford_relations_hold": true,
+    "p3_space_has_dimension_seven_and_complement_three": true,
+    "global_grading_is_self_adjoint_involution": true,
+    "good_record_is_self_adjoint_traceless_involution": true,
+    "good_record_commutes_with_p3_roles": true,
+    "good_record_is_globally_even": true,
+    "good_record_and_p3_chirality_give_four_rank_eight_blocks": true,
+    "good_local_p3_record_algebra_has_dimension_256": true,
+    "good_record_preserves_vector_complement": true,
+    "adjoint_action_is_orthogonal_involution": true,
+    "adjoint_split_is_exactly_two_minus_one_plus": true,
+    "adjoint_split_projectors_have_ranks_two_and_one": true,
+    "adjoint_orientation_is_proper": true,
+    "record_recovers_companion_for_multiple_gauge_frames": true,
+    "every_tested_gauge_frame_closes_full_cl10": true,
+    "connector_content_is_gauge_invariant": true,
+    "odd_twist_preserves_local_p3_record_reduct": true,
+    "odd_twist_local_algebra_dimension_remains_256": true,
+    "odd_twist_fails_global_evenness": true,
+    "odd_twist_reverses_the_two_plus_one_split": true,
+    "misaligned_control_preserves_local_p3_record_reduct": true,
+    "misaligned_local_algebra_dimension_remains_256": true,
+    "misaligned_control_fails_global_evenness": true,
+    "misaligned_control_does_not_preserve_vector_complement": true,
+    "local_reduct_does_not_entail_graded_embedding": true,
+    "current_source_selection_remains_open": true,
+    "nature_and_physical_export_remain_closed": true,
+    "primitive_count_is_reduced_not_nature_closed": true
+  },
+  "passed": 31,
+  "total": 31,
+  "verdict": "CONNECTOR_PAIR_REDUCED_TO_ONE_GRADED_RECORD_CLIFFORD_EMBEDDING_CURRENT_SOURCE_SELECTION_OPEN",
+  "diagnostics": {
+    "good_adjoint_matrix": [
+      [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "good_adjoint_eigenvalues": [
+      -1.0,
+      -1.0,
+      1.0
+    ],
+    "good_complement_preservation_residual": 0.0,
+    "gauge_frames": [
+      {
+        "theta": 0.0,
+        "frame_valid": true,
+        "word_count": 1024,
+        "max_nonidentity_trace": 0.0,
+        "max_word_unitarity_defect": 0.0
+      },
+      {
+        "theta": 0.37,
+        "frame_valid": true,
+        "word_count": 1024,
+        "max_nonidentity_trace": 0.0,
+        "max_word_unitarity_defect": 2.5190365128962236e-16
+      },
+      {
+        "theta": 1.1,
+        "frame_valid": true,
+        "word_count": 1024,
+        "max_nonidentity_trace": 0.0,
+        "max_word_unitarity_defect": 1.7071865465446533e-16
+      }
+    ],
+    "odd_adjoint_matrix": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "odd_complement_preservation_residual": 0.0,
+    "misaligned_adjoint_matrix": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "misaligned_complement_preservation_residual": 5.656854249492381
+  },
+  "physical_record_clifford_embedding_ownership": "OPEN",
+  "nature_level_occupation": false,
+  "physical_P1_exhaustivity_proved": false,
+  "physical_base_seed_packet_export_authorized": false
+}

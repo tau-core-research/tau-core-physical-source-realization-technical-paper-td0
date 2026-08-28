@@ -80,6 +80,19 @@ not Nature selection: the current P3 packet does not supply the typed `u,v`
 domain. Because `M_32(C)` is simple, its missing directions also cannot be
 removed by a nontrivial star-ideal quotient to `M_8(C)^{oplus 4}`.
 
+A sixth, 31-check record--Clifford audit removes the artificial need to own
+`u` and `v` as two separate primitives. Conditional on one even,
+trace-preserving embedding of the existing binary record algebra into the
+even Clifford algebra of the three-dimensional PUSC complement, the record
+involution has adjoint spectrum `(-1,-1,+1)`. Its two-dimensional minus plane
+and one-dimensional plus line reproduce the connector frame; rotations and
+signs are gauge, and every audited frame still generates `Cl_10(C)`. Two
+explicit controls preserve the same local P3/record four-block data while
+failing global parity or complement preservation. Therefore the present
+source does not yet derive the embedding. The physical blocker is narrower:
+one graded record--Clifford incidence and its occupation, not two independent
+connector variables.
+
 The P3/CLP3 file exports only a `BaseSeedPacketCandidate`. Its ownership
 certificate explicitly forbids promotion to a physical `BaseSeedPacket` until
 the missing Nature-selection premises are independently supplied.

@@ -122,6 +122,26 @@
       "id": "PSR24",
       "status": "proved_no_go",
       "claim": "The connector action cannot derive the existence of its own typed u/v variables from P3-local data, and simple M_32(C) has no nontrivial star-ideal quotient to M_8(C)^{oplus 4}; Nature-level connector ownership remains open."
+    },
+    {
+      "id": "PSR25",
+      "status": "proved_conditional",
+      "claim": "Given an ontic Cl_10 envelope, the canonical seven-dimensional P3 role subspace, and an even Clifford-compatible embedding of the equal-weight binary record algebra, the record involution splits the three-dimensional complement into a two-dimensional minus eigenspace and a one-dimensional plus eigenspace."
+    },
+    {
+      "id": "PSR26",
+      "status": "proved_conditional",
+      "claim": "The prior u/v connector pair is a gauge-fixed orthonormal frame of that single graded record--Clifford embedding; any tested O(2)-rotated frame closes the same Cl_10 algebra, so u and v need not be separately owned source primitives."
+    },
+    {
+      "id": "PSR27",
+      "status": "proved_no_go",
+      "claim": "The current P3/PUSC plus binary-record reduct does not entail the graded embedding: odd-twist and chirality-misaligned involutions preserve the local four-block P3/record data while violating global evenness or vector-complement preservation."
+    },
+    {
+      "id": "PSR28",
+      "status": "open",
+      "claim": "Physical source selection and Nature occupation of the graded record--Clifford embedding remain unproved; therefore physical P1 exhaustivity and BaseSeedPacket export remain unauthorized."
     }
   ]
 }

@@ -42,7 +42,7 @@
 Complete Seed Presentations, Spectral Selection, and the Nature-Occupation Boundary\\[3pt]
 \large An unnumbered technical derivation companion}
 \author{Jozsef Olcsak\\Independent researcher}
-\date{Version 0.4 --- 28 August 2026}
+\date{Version 0.5 --- 28 August 2026}
 
 \begin{document}
 \maketitle
@@ -80,7 +80,17 @@ unidentified.  An explicit $32$-dimensional Clifford factorization then shows
 that two homogeneous connectors give the exact algebra ladder
 $256,512,512,1024$ and together generate $M_{32}(\mathbb C)$.  A nonnegative
 connector-defect action selects this full zero locus conditionally, but cannot
-derive the existence of its own connector variables from P3-local data.
+derive the existence of its own connector variables from P3-local data.  We
+then remove an unnecessary part of that assumption.  If the binary record
+algebra has one even Clifford-compatible embedding into the commutant of the
+seven-dimensional P3 role space, its record involution canonically splits the
+three-dimensional Clifford complement into dimensions $2+1$.  The two
+connectors are only a gauge-fixed orthonormal frame of this split and need not
+be independently owned primitives.  Odd-twist and chirality-misaligned
+countermodels preserve the same local P3/record reduct while violating the
+required grading or complement preservation.  Thus the current source still
+does not entail the embedding; the physical blocker is reduced from two
+connector incidences to one graded record--Clifford incidence.
 Hidden spectator, role-rotation, isospectral,
 component-zero-jet, nonfaithful-state and off-shell
 deformation controls show the exact boundary: the narrow Tau reduct neither
@@ -720,7 +730,128 @@ is
  \label{eq:connectorfork}
 \end{equation}
 The remaining question is physical source ownership of the connector packet,
-not its algebraic sufficiency.
+not its algebraic sufficiency.  The next result shows that even this wording
+contains avoidable primitive structure.
+
+\section{The connector pair is one graded record--Clifford embedding}
+
+Let
+\begin{equation}
+ E=\operatorname{span}_{\mathbb R}\{\gamma_1,\ldots,\gamma_7\},
+ \qquad W=E^\perp\subset\mathbb R^{10},
+ \qquad \dim W=3,
+ \label{eq:ewsplit}
+\end{equation}
+where the orthogonality is the PUSC Clifford metric.  Let
+$A_{\rm port}=\mathbb Cp_+\oplus\mathbb Cp_-$ be the equal-weight binary
+record algebra and $r=p_+-p_-$.  The new premise is not the independent
+existence of $u$ and $v$, but one typed embedding
+\begin{equation}
+ \iota_{\rm rec}:A_{\rm port}\hookrightarrow
+ \operatorname{Comm}(\operatorname{Cl}(E))\cap
+ \operatorname{Cl}(W)^{\rm even},
+ \qquad R=\iota_{\rm rec}(r),
+ \label{eq:recordembedding}
+\end{equation}
+which is unital, star preserving, trace preserving and whose adjoint action
+preserves the vector subspace $W$.  These are source-side typing conditions;
+Eq.~\eqref{eq:recordembedding} is not inferred from a terminal fit.
+
+\begin{theorem}[Record--Clifford reduction]
+Assume the ontic $\operatorname{Cl}_{10}(\mathbb C)$ envelope,
+Eq.~\eqref{eq:ewsplit}, and the graded embedding
+Eq.~\eqref{eq:recordembedding}.  Then
+\begin{equation}
+ W_-=\ker(\operatorname{Ad}_R+\id)\cap W,
+ \qquad
+ W_+=\ker(\operatorname{Ad}_R-\id)\cap W
+ \label{eq:wpm}
+\end{equation}
+have dimensions $2$ and $1$, respectively.  For any unit
+$u\in W_-$ and unit $v\in W_+$, define
+\begin{equation}
+ w=-iuR.
+ \label{eq:companion}
+\end{equation}
+Then $(u,w,v)$ is an orthonormal Clifford frame of $W$ and
+\begin{equation}
+ C^*(\operatorname{Cl}(E),u,w,v)
+ =\operatorname{Cl}_{10}(\mathbb C)\simeq M_{32}(\mathbb C).
+ \label{eq:embeddingcloses}
+\end{equation}
+Consequently the earlier $(u,v)$ connector packet is a gauge choice inside
+one record--Clifford embedding, rather than two independently required source
+primitives.
+\end{theorem}
+
+\begin{proof}
+The even complex Clifford algebra of the three-dimensional complement is
+$\operatorname{Cl}(W)^{\rm even}\simeq M_2(\mathbb C)$.  A self-adjoint,
+traceless involution in this algebra is unitarily conjugate, within
+$\operatorname{Spin}(W)$, to $i\gamma_8\gamma_9$.  Its adjoint action on
+$W$ is therefore the proper orthogonal half-turn with spectrum
+$(-1,-1,+1)$, proving Eq.~\eqref{eq:wpm}.  If $u$ lies in its minus plane,
+the even involution rotates $u$ to the orthogonal companion
+$w=-iuR$; the plus line supplies $v$.  These three vectors square to the
+identity and anticommute pairwise.  Together with the seven vectors spanning
+$E$ they are ten Clifford generators, proving
+Eq.~\eqref{eq:embeddingcloses}.  Rotating the oriented $(u,w)$ frame by
+$SO(2)$, or reversing the sign of $v$, changes the representative but not the
+generated algebra or the embedding class.
+\end{proof}
+
+The cross-typing can be written as a nonnegative diagnostic.  With
+$\Gamma_{10}=i\gamma_1\cdots\gamma_{10}$, an orthonormal basis $e_j$ of
+$W$, and $\Pi_W$ the Clifford-vector projection onto $W$, set
+\begin{align}
+ \mathcal D_{\rm emb}(R)={}&
+ \|R-R^\dagger\|_2^2+\|R^2-\id\|_2^2
+ +|\operatorname{tr}_{32}R|^2
+ +\sum_{a=1}^7\|[R,\gamma_a]\|_2^2\nonumber\\
+ &+\|[R,\Gamma_{10}]\|_2^2
+ +\sum_{j=1}^3
+ \|(\id-\Pi_W)(R\gamma(e_j)R)\|_2^2.
+ \label{eq:embeddingdefect}
+\end{align}
+Its zero set contains the desired graded embeddings.  As before, this
+functional tests a supplied record-to-envelope incidence; it cannot create
+that incidence outside its own variational domain.
+
+\begin{nogo}[The present PUSC and record reducts do not entail the embedding]
+The existing local data permit inequivalent extensions.  For an even witness
+$R_{\rm ev}=i\gamma_8\gamma_9$, the odd twist
+\begin{equation}
+ R_{\rm odd}=\chi R_{\rm ev}
+ \label{eq:oddtwist}
+\end{equation}
+is again a self-adjoint traceless involution, commutes with every P3 role and
+retains four equal rank-eight joint blocks with $\chi$, but anticommutes with
+$\Gamma_{10}$.  More strongly, with
+$P_{\chi\pm}=(\id\pm\chi)/2$,
+\begin{equation}
+ R_{\rm mis}=P_{\chi+}(i\gamma_8\gamma_9)
+ +P_{\chi-}(i\gamma_9\gamma_{10})
+ \label{eq:misalignedrecord}
+\end{equation}
+has the same local four-block record/P3 data, while it is not globally even
+and $\operatorname{Ad}_{R_{\rm mis}}$ does not preserve $W$.  Therefore the
+PUSC metric, the P3 role algebra and the binary record algebra, without an
+additional cross relation, do not logically force
+Eq.~\eqref{eq:recordembedding}.
+\end{nogo}
+
+This changes the open physical question but does not close it:
+\begin{equation}
+ \boxed{
+ \text{separate ownership of }u,v
+ \quad\longrightarrow\quad
+ \text{ownership and occupation of one graded }\iota_{\rm rec}.}
+ \label{eq:blockerreduction}
+\end{equation}
+The reduction is substantive: all frame angles and signs are gauge.  The
+surviving datum is a single typed relation between an already present record
+algebra and an already present PUSC complement.  Current Tau source laws do
+not yet select this relation, and Nature occupation remains open.
 
 \section{Exact compatibility before complexity}
 
@@ -1076,6 +1207,12 @@ would weaken or reject the selected completion.
  $256,512,512,1024$.  Their nonnegative defect action conditionally restores
  full P1 rank in an ontic PUSC envelope, but current P3 data do not own the
  connector domain and Nature occupation remains open.
+ \item[Record--Clifford reduction.] Conditional on one even,
+ trace-preserving record embedding into the PUSC complement, the connector
+ pair is only a gauge-fixed frame of a canonical $2+1$ adjoint split.  Separate
+ $u,v$ source ownership is therefore unnecessary.  Explicit odd and
+ chirality-misaligned controls prove that the current local P3/PUSC/record
+ reduct does not entail this cross-embedding.
  \item[Open.] Nature occupation requires independent source evidence or a
  source-frozen discriminator.  A Tau-specific terminal signal belongs
  downstream of TD-III.
@@ -1098,7 +1235,7 @@ The decisive remaining physical statement is now narrower:
 \begin{equation}
  \boxed{\begin{gathered}
  \text{Is the pre-body source envelope ontic or metric-auxiliary,}\\
- \text{does the physical source own the two PUSC connector incidences,}\\
+ \text{does the physical source own and occupy one graded record--Clifford embedding,}\\
  \text{and does the resulting occupied seed have faithful full GNS rank}\\
  \text{in the independently owned physical algebra,}\\
  \text{and }\mathcal L_{\rm 1src}\text{ on its physical component?}

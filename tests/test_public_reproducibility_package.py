@@ -23,6 +23,8 @@ def test_publication_files_exist():
         "data/derived/p3_clp3_p1_source_envelope_separator_audit.json",
         "data/derived/p3_clp3_p1_envelope_connector_selector.json",
         "data/derived/p3_clp3_p1_envelope_connector_selector_audit.json",
+        "data/derived/p3_clp3_p1_record_clifford_embedding.json",
+        "data/derived/p3_clp3_p1_record_clifford_embedding_audit.json",
         "data/derived/p3_clp3_single_source_law.json",
         "data/derived/p3_clp3_single_source_law_audit.json",
         "arxiv_submission_source.zip",
@@ -38,7 +40,7 @@ def test_claim_ledger_is_bounded():
     assert ledger["nature_level_validation"] is False
     assert ledger["unrestricted_parent_selection_derived"] is False
     assert ledger["empirical_data_used"] is False
-    assert len(ledger["results"]) == 24
+    assert len(ledger["results"]) == 28
 
 
 def test_p3_clp3_source_freeze_is_endpoint_blind_and_bounded():
@@ -152,6 +154,35 @@ def test_p1_envelope_connector_selector_is_exact_and_claim_bounded():
     ] is True
     assert audit["physical_connector_ownership"] == "OPEN"
     assert audit["physical_P1_exhaustivity_proved"] is False
+
+
+def test_p1_record_clifford_embedding_reduces_primitives_but_not_ownership():
+    packet = json.loads(
+        (ROOT / "data/derived/p3_clp3_p1_record_clifford_embedding.json").read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_record_clifford_embedding_audit.json"
+        ).read_text()
+    )
+    payload = packet["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 31
+    assert audit["verdict"] == (
+        "CONNECTOR_PAIR_REDUCED_TO_ONE_GRADED_RECORD_CLIFFORD_EMBEDDING_"
+        "CURRENT_SOURCE_SELECTION_OPEN"
+    )
+    assert audit["diagnostics"]["good_adjoint_eigenvalues"] == [
+        -1.0,
+        -1.0,
+        1.0,
+    ]
+    assert audit["checks"]["local_reduct_does_not_entail_graded_embedding"]
+    assert payload["conditional_consequence"][
+        "connector_variables_are_independent_primitives"
+    ] is False
+    assert audit["physical_record_clifford_embedding_ownership"] == "OPEN"
+    assert audit["nature_level_occupation"] is False
 
 
 def test_derivation_audit_passes():
