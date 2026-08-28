@@ -1,0 +1,42 @@
+{
+  "schema": "tau_core_p1_source_envelope_separator_audit_v1",
+  "candidate_id": "P3-CLP3-P1-SEPARATOR-v1",
+  "source_fingerprint_sha256": "8e884200435ca133259d744921b918fbbf05fde13a6c00315b9cdb77d807241a",
+  "checks": {
+    "fingerprint_matches_payload": true,
+    "endpoint_blind_freeze": true,
+    "prebody_source_candidate_is_independent_of_p3": true,
+    "cl10_matrix_size_is_32": true,
+    "cl10_algebra_dimension_is_1024": true,
+    "p3_seed_algebra_is_four_m8_blocks": true,
+    "unital_block_embedding_fills_carrier": true,
+    "equal_block_multiplicity_gives_quarter_trace_weights": true,
+    "mathematical_embedding_exists_but_physical_ownership_open": true,
+    "faithful_gns_seed_rank_is_256": true,
+    "faithful_gns_prebody_rank_is_1024": true,
+    "global_rank_gap_is_768": true,
+    "prebody_rank_ratio_is_one_quarter": true,
+    "component_p1_survives_global_p1_fails_conditionally": true,
+    "cl16_matrix_size_is_256": true,
+    "cl16_algebra_dimension_is_65536": true,
+    "staged_envelope_is_not_upstream_p1_input": true,
+    "staged_seed_ratio_is_one_over_256": true,
+    "local_packet_cannot_choose_envelope_ontology": true,
+    "nature_ownership_and_export_remain_closed": true,
+    "claim_boundary_retains_only_component_completeness": true
+  },
+  "passed": 21,
+  "total": 21,
+  "diagnostics": {
+    "p3_component_algebra_dimension": 256,
+    "prebody_pusc_algebra_dimension": 1024,
+    "prebody_missing_directions": 768,
+    "prebody_rank_ratio": 0.25,
+    "staged_cl16_algebra_dimension": 65536,
+    "staged_rank_ratio": 0.00390625
+  },
+  "verdict": "P3_COMPONENT_COMPLETE_GLOBAL_P1_FAILS_IF_PREBODY_ENVELOPE_IS_ONTIC",
+  "nature_level_ambient_choice": "OPEN",
+  "physical_P1_exhaustivity_proved": false,
+  "physical_base_seed_packet_export_authorized": false
+}

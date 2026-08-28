@@ -28,6 +28,10 @@ that Nature occupies the selected completion.
 | Finite faithful-GNS ambient exhaustivity | Proven conditionally | independently frozen finite physical source algebra, frozen physical null quotient and faithful state | certifies equality to the supplied ambient, not that Nature owns that ambient |
 | P3/CLP3 ambient-rank control | Proven on the declared finite ambient | regular-GNS rank `256/256` | physically ineligible because the ambient dimension was taken from the candidate presentation |
 | Hidden ambient and nonfaithful-state controls | Proven | one omitted local direction, one direct-sum component and one zero-weight state direction | shows local Gram closure or a nonfaithful quotient is insufficient for P1 |
+| Pre-body PUSC ambient candidate | Proven conditionally | the declared `PUSC-P1` simple-envelope source law | gives `Cl_10(C)=M_32(C)`, faithful trace-GNS dimension `1024`; Nature ownership is not proved |
+| P3 global P1 against ontic PUSC | Rejected conditionally | physical typed embedding of the P3 algebra into the ontic pre-body PUSC envelope | exact rank is `256/1024`, while component-relative P1 remains true |
+| Envelope ontology from local P3 data | Not identifiable | compare ontic-envelope and metric-auxiliary interpretations with the same local P3 packet | requires an independent physical source law; local closure cannot decide it |
+| Staged `Cl_16(C)` envelope as P1 ambient | Ineligible upstream | PBSE is post-body | using it to construct the seed premise would reverse the forward generative order |
 | Schur-neutral body handoff | Proven | positive invertible source-independent `K_B` and typed load `j_B(s)` | supplies a regular TD-I input without back-selecting the source completion |
 
 ## Circularity audit
@@ -61,3 +65,13 @@ GNS embedding injective, and full seed-generated GNS rank is then equivalent
 to equality with that ambient algebra. The current P3/CLP3 control passes the
 finite rank equality but not the independence gate, so physical P1 ownership
 remains open.
+
+The pre-body PUSC declaration supplies the first candidate-independent
+ambient that can actually be inserted into this theorem. It does not turn the
+previous `256/256` control into a physical success. Instead, under the
+ontic-envelope and physical-embedding assumptions, it changes the comparison
+to `256/1024` and rejects *global* P1 while preserving completeness of the
+declared P3 component. Treating the same Clifford envelope as an auxiliary
+metric completion avoids that rejection but restores ambient
+non-identifiability. Current source laws do not select between these two
+interpretations.

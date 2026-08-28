@@ -22,6 +22,8 @@ def main():
     run(sys.executable, "scripts/audit_p3_clp3_instantiation.py")
     run(sys.executable, "scripts/freeze_p1_ambient_certificate.py")
     run(sys.executable, "scripts/audit_p1_ambient_certificate.py")
+    run(sys.executable, "scripts/freeze_p1_source_envelope_separator.py")
+    run(sys.executable, "scripts/audit_p1_source_envelope_separator.py")
     run(sys.executable, "scripts/freeze_single_source_law.py")
     run(sys.executable, "scripts/audit_single_source_law.py")
     run(sys.executable, "scripts/check_derivations.py")

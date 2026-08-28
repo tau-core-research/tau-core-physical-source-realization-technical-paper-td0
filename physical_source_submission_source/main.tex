@@ -8,6 +8,7 @@
 \usepackage{microtype}
 \usepackage{hyperref}
 \usepackage[numbers,sort&compress]{natbib}
+\emergencystretch=1em
 
 \hypersetup{
   colorlinks=true,
@@ -41,7 +42,7 @@
 Complete Seed Presentations, Spectral Selection, and the Nature-Occupation Boundary\\[3pt]
 \large An unnumbered technical derivation companion}
 \author{Jozsef Olcsak\\Independent researcher}
-\date{Version 0.2 --- 28 August 2026}
+\date{Version 0.3 --- 28 August 2026}
 
 \begin{document}
 \maketitle
@@ -70,8 +71,12 @@ language in which its own residuals are defined.  We then prove the exact
 finite replacement: relative to an independently frozen physical source
 algebra with faithful state, P1 is equivalent to full rank of the
 seed-generated regular-GNS span.  The present P3/CLP3 control has rank
-$256/256$, but its ambient was not obtained independently and therefore does
-not certify physical P1.  Hidden spectator, role-rotation, isospectral,
+$256/256$ only relative to its candidate-derived component.  Using instead
+the independently declared pre-body PUSC simple envelope gives the conditional
+comparison $256/1024=1/4$: if that envelope is ontic and the typed embedding
+is physical, P3 is component-complete but not globally exhaustive.  If the
+envelope is only an auxiliary metric completion, the physical ambient remains
+unidentified.  Hidden spectator, role-rotation, isospectral,
 component-zero-jet, nonfaithful-state and off-shell
 deformation controls show the exact boundary: the narrow Tau reduct neither
 owns the variational priority nor proves that Nature occupies the selected
@@ -511,6 +516,81 @@ P3/CLP3 presentation rather than frozen by an independent parent-source
 manifest.  The theorem therefore converts the remaining logical gap into a
 precise input obligation; it does not hide the gap in a rank calculation.
 
+\section{The pre-body source-envelope separator}
+
+The central parent derivation contains a comparison object that is independent
+of the P3 presentation.  Under the declared protected unital source calculus
+PUSC-P1, the ten-dimensional pre-body curvature carrier enters one simple
+complex Clifford envelope with normalized trace:
+\begin{equation}
+ \mathfrak A_{\rm PUSC}
+ =\operatorname{Cl}_{10}(\mathbb C)
+ \simeq M_{32}(\mathbb C),
+ \qquad
+ \dim_{\mathbb C}\mathfrak A_{\rm PUSC}=32^2=1024.
+ \label{eq:puscambient}
+\end{equation}
+PUSC-P1 is a source-side declaration made before body formation and contains
+no P3 terminal data.  It is nevertheless conditional: neither old-bare Tau
+nor present evidence proves that Nature owns this envelope.
+
+The P3 component algebra is
+\begin{equation}
+ \Aseed^{P3}
+ \simeq \operatorname{Cl}_{7}(\mathbb C)
+       \otimes(\mathbb C\oplus\mathbb C)
+ \simeq M_8(\mathbb C)^{\oplus4},
+ \qquad
+ \dim_{\mathbb C}\Aseed^{P3}=256.
+ \label{eq:p3insidepusc}
+\end{equation}
+There is a unital star embedding of four $M_8(\mathbb C)$ blocks into
+$M_{32}(\mathbb C)$ with multiplicity one.  The normalized matrix trace then
+restricts to equal central weights $1/4$ on the four P3 blocks.  This proves
+mathematical compatibility of the two finite algebras; physical ownership of
+the typed embedding remains an additional premise.
+
+\begin{theorem}[P3/PUSC faithful-GNS separator]
+Assume that (i) the pre-body PUSC envelope in
+\eqref{eq:puscambient} is the ontic physical source algebra after the physical
+null quotient, (ii) its normalized trace is the physical faithful state, and
+(iii) the preceding typed P3 embedding is source-owned.  Then
+\begin{equation}
+ \operatorname{rank}\operatorname{Vec}_{\omega}(\Aseed^{P3})=256
+ <1024=\dim_{\mathbb C}\mathfrak A_{\rm PUSC}.
+ \label{eq:p3puscrank}
+\end{equation}
+Consequently the P3 presentation is complete on its declared component but
+fails global P1 relative to the ontic PUSC envelope.
+\end{theorem}
+
+\begin{proof}
+The faithful-GNS map is injective, so the dimension of the P3-generated GNS
+subspace equals the algebra dimension in \eqref{eq:p3insidepusc}.  The ambient
+GNS space has dimension equal to the algebra dimension in
+\eqref{eq:puscambient}.  Equation \eqref{eq:p3puscrank} is therefore exact, and
+the finite faithful-GNS exhaustivity theorem excludes equality.  Restricting
+the comparison to the included P3 algebra recovers component completeness.
+\end{proof}
+
+\begin{nogo}[Local P3 data do not select the envelope ontology]
+Two interpretations retain the same P3 algebra, trace restriction, local
+Gram data and seed action.  In the first, the whole PUSC Clifford envelope is
+physical and \eqref{eq:p3puscrank} rejects global P1.  In the second, that
+Clifford algebra is only an auxiliary norm/trace completion and the physical
+source algebra is a smaller, independently unspecified object.  P3-local data
+therefore cannot decide which interpretation is physical.  The first branch
+is a conditional global no-go; the second restores ambient
+non-identifiability rather than proving global completeness.
+\end{nogo}
+
+The later PUSC--PBSE continuation
+$\operatorname{Cl}_{16}(\mathbb C)\simeq M_{256}(\mathbb C)$ has algebra
+dimension $65536$, but it is not admissible as the upstream P1 comparison:
+PBSE is post-body.  Using it to construct the seed premise would reverse the
+forward order in \eqref{eq:forward}.  It is retained only as a downstream
+consistency control.
+
 \section{Exact compatibility before complexity}
 
 \begin{definition}[Source defect and exact fibre]
@@ -854,6 +934,12 @@ would weaken or reject the selected completion.
  for seed-language exhaustivity relative to that ambient.  The P3/CLP3
  $256/256$ control is mathematically complete but physically ineligible
  because its ambient is not independently owned.
+ \item[Pre-body separator.] PUSC-P1 supplies an independent
+ candidate ambient $\operatorname{Cl}_{10}(\mathbb C)$.  Under the
+ envelope-ontic and physical-embedding premises, P3 has faithful-GNS rank
+ $256/1024$ and is therefore component-complete but not globally exhaustive.
+ The metric-auxiliary interpretation remains indistinguishable from P3-local
+ data, and Nature does not presently select either branch.
  \item[Open.] Nature occupation requires independent source evidence or a
  source-frozen discriminator.  A Tau-specific terminal signal belongs
  downstream of TD-III.
@@ -875,8 +961,9 @@ source selection.
 The decisive remaining physical statement is now narrower:
 \begin{equation}
  \boxed{\begin{gathered}
- \text{Does Nature supply an independent ambient source algebra}\\
- \text{on which the seed language has faithful full GNS rank,}\\
+ \text{Is the pre-body source envelope ontic or metric-auxiliary,}\\
+ \text{and does the occupied seed have faithful full GNS rank}\\
+ \text{in the resulting independently owned physical algebra,}\\
  \text{and }\mathcal L_{\rm 1src}\text{ on its physical component?}
  \end{gathered}}
  \label{eq:nature}

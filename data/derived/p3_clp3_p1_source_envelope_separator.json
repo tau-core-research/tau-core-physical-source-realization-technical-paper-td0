@@ -1,0 +1,66 @@
+{
+  "schema": "tau_core_p1_source_envelope_separator_v1",
+  "source_freeze_payload": {
+    "candidate_id": "P3-CLP3-P1-SEPARATOR-v1",
+    "upstream_seed_candidate_id": "P3-CLP3-CSP-v1",
+    "upstream_seed_fingerprint_sha256": "fec6f6490202649e249d2cc791d6f919f3a071e80c3de02f6b4dd83622aa3b72",
+    "terminal_data_used": false,
+    "endpoint_fitted_parameters": [],
+    "independent_source_candidate": {
+      "name": "PUSC-P1 pre-body simple defect envelope",
+      "canonical_owner": "docs/tau_core_hypergraph_pre_response_carrier_derivation_001.md#definition-pusc-p1-protected-unital-source-calculus",
+      "relation_row_count": 10,
+      "algebra": "Cl_10(C) isomorphic to M_32(C)",
+      "matrix_size": 32,
+      "complex_algebra_dimension": 1024,
+      "faithful_state": "normalized matrix trace",
+      "source_first": true,
+      "derived_from_p3_seed_candidate": false,
+      "nature_ownership_proved": false
+    },
+    "typed_embedding_candidate": {
+      "seed_algebra": "Cl_7(C) tensor (C direct-sum C)",
+      "seed_isomorphism_class": "M_8(C) direct-sum M_8(C) direct-sum M_8(C) direct-sum M_8(C)",
+      "seed_complex_algebra_dimension": 256,
+      "embedding": "unital block-diagonal star embedding of four M_8(C) blocks into M_32(C), each with multiplicity one",
+      "ambient_trace_restriction": "equal central weights 1/4",
+      "mathematical_embedding_exists": true,
+      "source_owned_typed_embedding_proved": false
+    },
+    "faithful_gns_rank_test": {
+      "seed_generated_rank": 256,
+      "prebody_ambient_rank": 1024,
+      "rank_ratio": 0.25,
+      "missing_ambient_directions": 768,
+      "component_relative_p1": true,
+      "global_p1_if_prebody_envelope_is_ontic": false
+    },
+    "downstream_control_only": {
+      "name": "PUSC-PBSE common staged envelope",
+      "relation_row_count": 16,
+      "algebra": "Cl_16(C) isomorphic to M_256(C)",
+      "matrix_size": 256,
+      "complex_algebra_dimension": 65536,
+      "seed_rank_ratio": 0.00390625,
+      "eligible_as_upstream_p1_ambient": false,
+      "reason": "PBSE is post-body, so using the staged Cl_16 envelope to construct an upstream seed-completeness premise would reverse the Tau generative order"
+    },
+    "ontology_separator": {
+      "envelope_ontic_branch": "if the pre-body Cl_10 envelope is the physical source algebra and the typed embedding is physical, P3 global P1 fails by rank",
+      "metric_auxiliary_branch": "if the Clifford envelope is only a norm/trace completion, the P3 local packet cannot identify the smaller physical algebra",
+      "same_p3_local_packet_in_both_branches": true,
+      "local_p3_data_selects_branch": false,
+      "nature_level_decision": "OPEN"
+    },
+    "claim_boundary": {
+      "independent_prebody_ambient_candidate_found": true,
+      "conditional_global_p1_pass": false,
+      "conditional_global_p1_rejected_under_envelope_ontic_branch": true,
+      "p3_component_completeness_retained": true,
+      "nature_ambient_source_algebra_owned": false,
+      "nature_occupation_proved": false,
+      "physical_base_seed_packet_export_authorized": false
+    }
+  },
+  "source_fingerprint_sha256": "8e884200435ca133259d744921b918fbbf05fde13a6c00315b9cdb77d807241a"
+}

@@ -30,7 +30,12 @@ def gram_defect(j_map: np.ndarray) -> float:
     target_identity = np.eye(j_map.shape[0])
     source_defect = j_map.T @ j_map - source_identity
     target_defect = j_map @ j_map.T - target_identity
-    return float(np.sum(source_defect**2) + np.sum(target_defect**2))
+    defect = float(np.sum(source_defect**2) + np.sum(target_defect**2))
+    # Analytically unitary witnesses can retain platform/BLAS-dependent roundoff
+    # after the matrix products above.  Canonicalize only values below the
+    # squared audit tolerance so regenerated JSON remains stable without
+    # weakening any pass/fail criterion.
+    return 0.0 if defect < TOL**2 else defect
 
 
 def body_square(b: np.ndarray, b0: np.ndarray, hessian: np.ndarray, load: np.ndarray) -> float:

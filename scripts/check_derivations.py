@@ -90,6 +90,12 @@ def main():
     p1_ambient_audit = json.loads(
         (DERIVED / "p3_clp3_p1_ambient_certificate_audit.json").read_text()
     )
+    p1_envelope_separator = json.loads(
+        (DERIVED / "p3_clp3_p1_source_envelope_separator.json").read_text()
+    )
+    p1_envelope_audit = json.loads(
+        (DERIVED / "p3_clp3_p1_source_envelope_separator_audit.json").read_text()
+    )
     single_source_law = json.loads(
         (DERIVED / "p3_clp3_single_source_law.json").read_text()
     )
@@ -125,6 +131,32 @@ def main():
         is False
         and p1_ambient_audit["physical_P1_certificate_eligible"] is False
         and p1_ambient_audit["P1_physical_exhaustivity_proved"] is False
+    )
+    checks["p1_source_envelope_separator_audit_passes"] = (
+        p1_envelope_audit["passed"] == p1_envelope_audit["total"]
+    )
+    checks["p1_prebody_envelope_exposes_global_rank_gap"] = (
+        p1_envelope_audit["diagnostics"]["p3_component_algebra_dimension"]
+        == 256
+        and p1_envelope_audit["diagnostics"]["prebody_pusc_algebra_dimension"]
+        == 1024
+        and p1_envelope_audit["diagnostics"]["prebody_rank_ratio"] == 0.25
+    )
+    checks["p1_envelope_separator_preserves_forward_order"] = (
+        p1_envelope_separator["source_freeze_payload"]["independent_source_candidate"][
+            "source_first"
+        ]
+        is True
+        and p1_envelope_separator["source_freeze_payload"][
+            "downstream_control_only"
+        ]["eligible_as_upstream_p1_ambient"]
+        is False
+    )
+    checks["p1_envelope_result_is_nature_bounded"] = (
+        p1_envelope_audit["nature_level_ambient_choice"] == "OPEN"
+        and p1_envelope_audit["physical_P1_exhaustivity_proved"] is False
+        and p1_envelope_audit["physical_base_seed_packet_export_authorized"]
+        is False
     )
     checks["single_source_law_audit_passes"] = single_source_audit["passed"] == single_source_audit["total"]
     checks["single_source_law_compresses_p4_through_p7"] = single_source_audit["verdict"] == "P4_P7_SINGLE_ACTION_COMPRESSION_PASS"
@@ -168,6 +200,9 @@ def main():
             {"id": "PSR15", "status": "proved_conditional", "claim": "For a finite independently frozen physical source algebra with faithful state, the seed language is exhaustive exactly when its regular-GNS span has full ambient rank."},
             {"id": "PSR16", "status": "proved_no_go", "claim": "A missing same-component relation, a hidden central component, or a nonfaithful ambient state defeats an otherwise local source-completeness test."},
             {"id": "PSR17", "status": "proved_internal_finite", "claim": "The P3/CLP3 regular-GNS control has rank 256 on its declared 256-dimensional ambient, but is not a physical P1 certificate because that ambient was not independently derived from the seed candidate."},
+            {"id": "PSR18", "status": "proved_conditional", "claim": "The independently declared pre-body PUSC simple envelope gives a candidate ambient Cl_10(C) isomorphic to M_32(C), with faithful normalized-trace GNS algebra dimension 1024."},
+            {"id": "PSR19", "status": "proved_conditional_no_go", "claim": "Under the envelope-ontic interpretation and a physical typed embedding, the 256-dimensional P3/CLP3 algebra is component-complete but fails global P1 by the exact faithful-GNS rank ratio 256/1024=1/4."},
+            {"id": "PSR20", "status": "proved_no_go", "claim": "The same local P3 packet is compatible with an ontic-envelope branch and a metric-auxiliary branch, so local seed data do not select the ambient ontology; Nature ownership remains open."},
         ],
     }
     (DERIVED / "theorem_ledger.json").write_text(json.dumps(ledger, indent=2) + "\n")

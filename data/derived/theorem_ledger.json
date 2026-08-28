@@ -87,6 +87,21 @@
       "id": "PSR17",
       "status": "proved_internal_finite",
       "claim": "The P3/CLP3 regular-GNS control has rank 256 on its declared 256-dimensional ambient, but is not a physical P1 certificate because that ambient was not independently derived from the seed candidate."
+    },
+    {
+      "id": "PSR18",
+      "status": "proved_conditional",
+      "claim": "The independently declared pre-body PUSC simple envelope gives a candidate ambient Cl_10(C) isomorphic to M_32(C), with faithful normalized-trace GNS algebra dimension 1024."
+    },
+    {
+      "id": "PSR19",
+      "status": "proved_conditional_no_go",
+      "claim": "Under the envelope-ontic interpretation and a physical typed embedding, the 256-dimensional P3/CLP3 algebra is component-complete but fails global P1 by the exact faithful-GNS rank ratio 256/1024=1/4."
+    },
+    {
+      "id": "PSR20",
+      "status": "proved_no_go",
+      "claim": "The same local P3 packet is compatible with an ontic-envelope branch and a metric-auxiliary branch, so local seed data do not select the ambient ontology; Nature ownership remains open."
     }
   ]
 }

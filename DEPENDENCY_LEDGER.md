@@ -15,6 +15,8 @@ or promoted by the standalone TD-0 package.
 | P3/CLP3 finite seed-presentation candidate | This repository | Source-frozen candidate; finite checks pass; physical export unauthorized | Provides a concrete counterexample-resistant instantiation |
 | One nonnegative source action compressing P4--P7 | This repository | Conditional theorem given P1 and the stated realization/positivity/component assumptions | Replaces four independent selector premises inside the declared completion |
 | Finite faithful-GNS ambient-rank criterion for P1 | This repository | Conditional theorem given an independently frozen finite physical source algebra, faithful state and physical-null quotient | Converts P1 into an exact rank test relative to that independent ambient |
+| Pre-body `PUSC-P1` simple source envelope | Central Tau Core parent derivation (`FCC-SIMPLETRACE1`) | Conditional source declaration; `Cl_10(C)=M_32(C)` with normalized trace; Nature ownership open | Supplies the first seed-independent candidate ambient for a global P1 separator |
+| P3/PUSC envelope separator | This repository | Conditional theorem under an ontic PUSC envelope and a physical typed embedding | Retains P3 component completeness but gives global faithful-GNS rank `256/1024`; proves local P3 data cannot choose ontic versus metric-auxiliary envelope interpretation |
 | P1 source-language exhaustivity for Nature | No current theorem owner | Open physical premise | The self-certification no-go proves that the action cannot establish P1 from its own residual language; the present P3 ambient control is not independently owned |
 | Nature occupation of the complete source packet | No current theorem owner | Open | Requires independent source evidence or a source-frozen discriminator |
 | Body stationarity, channel/readout descent and terminal laws | TD-I, TD-II and TD-III technical companions | Downstream and separately scoped | Consume the TD-0 type; they are not repeated here |
@@ -47,3 +49,18 @@ closure(pi_omega(A_s) Omega_omega) = H_omega
 The equivalence is exact under faithfulness. It is not an independent argument
 that the current P3/CLP3 declared ambient equals Nature's physical source
 algebra.
+
+The central corpus does supply one independent *candidate* ambient before
+body formation: the PUSC simple envelope `Cl_10(C)=M_32(C)`. If that entire
+envelope is physical and the typed P3 embedding is source-owned, the exact
+rank test returns
+
+```text
+rank_GNS(A_P3) / dim_C(A_PUSC) = 256 / 1024 = 1/4,
+```
+
+so P3 is not globally exhaustive. If the Clifford envelope is only an
+auxiliary metric completion, this comparison is not the physical P1 test.
+The P3-local packet is identical in both interpretations and therefore cannot
+select between them. Nature-level ambient ownership remains the irreducible
+input.

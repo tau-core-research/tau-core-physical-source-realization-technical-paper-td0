@@ -33,7 +33,7 @@
     "p3_heat_trace": 17.921103648665824,
     "extended_heat_trace": 17.935367882574823,
     "source_fidelity_extension_cost": 0.0007956295782780512,
-    "good_gram_defect": 1.6890067195245104e-34,
+    "good_gram_defect": 0.0,
     "hidden_target_gram_defect": 1.0,
     "collapsed_source_gram_defect": 1.0,
     "body_minimum": 0.0

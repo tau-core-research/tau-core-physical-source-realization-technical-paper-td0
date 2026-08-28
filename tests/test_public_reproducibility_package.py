@@ -19,6 +19,8 @@ def test_publication_files_exist():
         "data/derived/p3_clp3_instantiation_audit.json",
         "data/derived/p3_clp3_p1_ambient_certificate.json",
         "data/derived/p3_clp3_p1_ambient_certificate_audit.json",
+        "data/derived/p3_clp3_p1_source_envelope_separator.json",
+        "data/derived/p3_clp3_p1_source_envelope_separator_audit.json",
         "data/derived/p3_clp3_single_source_law.json",
         "data/derived/p3_clp3_single_source_law_audit.json",
         "arxiv_submission_source.zip",
@@ -34,7 +36,7 @@ def test_claim_ledger_is_bounded():
     assert ledger["nature_level_validation"] is False
     assert ledger["unrestricted_parent_selection_derived"] is False
     assert ledger["empirical_data_used"] is False
-    assert len(ledger["results"]) == 17
+    assert len(ledger["results"]) == 20
 
 
 def test_p3_clp3_source_freeze_is_endpoint_blind_and_bounded():
@@ -93,6 +95,31 @@ def test_p1_independent_ambient_certificate_is_conditional_and_bounded():
     ] is False
     assert audit["physical_P1_certificate_eligible"] is False
     assert audit["P1_physical_exhaustivity_proved"] is False
+
+
+def test_p1_source_envelope_separator_retypes_global_exhaustivity():
+    packet = json.loads(
+        (ROOT / "data/derived/p3_clp3_p1_source_envelope_separator.json").read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_source_envelope_separator_audit.json"
+        ).read_text()
+    )
+    payload = packet["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 21
+    assert audit["verdict"] == (
+        "P3_COMPONENT_COMPLETE_GLOBAL_P1_FAILS_IF_PREBODY_ENVELOPE_IS_ONTIC"
+    )
+    assert audit["diagnostics"]["p3_component_algebra_dimension"] == 256
+    assert audit["diagnostics"]["prebody_pusc_algebra_dimension"] == 1024
+    assert audit["diagnostics"]["prebody_rank_ratio"] == 0.25
+    assert payload["downstream_control_only"][
+        "eligible_as_upstream_p1_ambient"
+    ] is False
+    assert audit["nature_level_ambient_choice"] == "OPEN"
+    assert audit["physical_P1_exhaustivity_proved"] is False
 
 
 def test_derivation_audit_passes():

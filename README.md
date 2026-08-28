@@ -7,7 +7,8 @@ body--readout and terminal-readout packages.
 [`tau-core-research/tau-core-physical-source-realization-technical-paper-td0`](https://github.com/tau-core-research/tau-core-physical-source-realization-technical-paper-td0)
 
 **Status:** conditional mathematical closure and reproducibility package;
-physical source-language exhaustivity and Nature occupation remain open.
+P3 component completeness is internally closed, while global physical
+source-language exhaustivity and Nature occupation remain open.
 
 ## Main claim
 
@@ -45,6 +46,23 @@ equivalent to full rank of the seed-generated regular-GNS span. Missing local
 relations, hidden central components and a nonfaithful-state false positive
 are all detected by explicit controls.
 
+A fourth, 21-check separator imports the independently declared pre-body
+`PUSC-P1` simple source envelope rather than reusing the P3 candidate as its
+own ambient. The dimensional distinction is decisive:
+
+```text
+P3/CLP3 component algebra:  Cl_7(C) tensor (C direct-sum C), dim_C = 256
+pre-body PUSC envelope:      Cl_10(C) = M_32(C),             dim_C = 1024
+```
+
+Hence, if the PUSC Clifford envelope is ontic and the typed embedding is
+physically owned, P3 is component-complete but fails global P1 with faithful
+GNS rank ratio `256/1024 = 1/4`. If the envelope is only an auxiliary
+norm/trace completion, the same local P3 packet does not determine the
+physical ambient algebra. This exact fork sharpens P1 but does not decide
+which branch Nature occupies. The post-body `Cl_16(C)` continuation is kept
+as a downstream control and is explicitly forbidden as an upstream P1 input.
+
 The P3/CLP3 file exports only a `BaseSeedPacketCandidate`. Its ownership
 certificate explicitly forbids promotion to a physical `BaseSeedPacket` until
 the missing Nature-selection premises are independently supplied.
@@ -56,8 +74,10 @@ choices inside the candidate, while physical source-language ownership and
 Nature occupation remain open.
 
 The P3/CLP3 regular-GNS control has rank 256 on its declared
-256-dimensional ambient, but this is not promoted to a physical P1
-certificate: the ambient was not derived independently of the seed candidate.
+256-dimensional component ambient, but this is not promoted to a global
+physical P1 certificate. Against the independent pre-body PUSC envelope the
+rank is `256/1024`, conditional on the envelope-ontic interpretation and a
+physical typed embedding.
 
 The exact ownership and dependency split is recorded in
 [`DEPENDENCY_LEDGER.md`](DEPENDENCY_LEDGER.md). The provenance and data scope
