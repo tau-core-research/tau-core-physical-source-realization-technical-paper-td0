@@ -14,7 +14,8 @@ or promoted by the standalone TD-0 package.
 | `CompleteSeedPresentation` and TD-0 `BaseSeedPacket` interface | This repository | Definition and typed interface | Makes the source-to-body handoff explicit and machine-auditable |
 | P3/CLP3 finite seed-presentation candidate | This repository | Source-frozen candidate; finite checks pass; physical export unauthorized | Provides a concrete counterexample-resistant instantiation |
 | One nonnegative source action compressing P4--P7 | This repository | Conditional theorem given P1 and the stated realization/positivity/component assumptions | Replaces four independent selector premises inside the declared completion |
-| P1 source-language exhaustivity | No current theorem owner | Open physical premise | The self-certification no-go proves that the action cannot establish P1 from its own residual language |
+| Finite faithful-GNS ambient-rank criterion for P1 | This repository | Conditional theorem given an independently frozen finite physical source algebra, faithful state and physical-null quotient | Converts P1 into an exact rank test relative to that independent ambient |
+| P1 source-language exhaustivity for Nature | No current theorem owner | Open physical premise | The self-certification no-go proves that the action cannot establish P1 from its own residual language; the present P3 ambient control is not independently owned |
 | Nature occupation of the complete source packet | No current theorem owner | Open | Requires independent source evidence or a source-frozen discriminator |
 | Body stationarity, channel/readout descent and terminal laws | TD-I, TD-II and TD-III technical companions | Downstream and separately scoped | Consume the TD-0 type; they are not repeated here |
 
@@ -33,3 +34,16 @@ supplied complete P1 language
 
 Neither this implication nor its executable audits establish that the
 physical Parent of our universe supplies P1 or occupies the selected packet.
+
+If an independently sourced finite ambient algebra is supplied, the additional
+criterion is
+
+```text
+closure(pi_omega(A_s) Omega_omega) = H_omega
+<-> rank(Vec_omega(A_s)) = dim(A_phys)
+<-> A_s = A_phys.
+```
+
+The equivalence is exact under faithfulness. It is not an independent argument
+that the current P3/CLP3 declared ambient equals Nature's physical source
+algebra.

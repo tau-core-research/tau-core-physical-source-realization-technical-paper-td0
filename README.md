@@ -38,6 +38,13 @@ controls. A second frozen artifact gives one nonnegative source-fidelity,
 two-sided-Gram and Schur-neutral body-square action and audits its conditional
 compression of P4--P7 in 23 checks.
 
+A third artifact implements an 18-check independent-ambient P1 certificate.
+For a finite physical source algebra fixed independently of the seed
+candidate, with a faithful state and a frozen physical-null quotient, P1 is
+equivalent to full rank of the seed-generated regular-GNS span. Missing local
+relations, hidden central components and a nonfaithful-state false positive
+are all detected by explicit controls.
+
 The P3/CLP3 file exports only a `BaseSeedPacketCandidate`. Its ownership
 certificate explicitly forbids promotion to a physical `BaseSeedPacket` until
 the missing Nature-selection premises are independently supplied.
@@ -47,6 +54,10 @@ supplied complete residual language but cannot prove that its own language is
 physically exhaustive. Thus P4--P7 cease to be four independent mathematical
 choices inside the candidate, while physical source-language ownership and
 Nature occupation remain open.
+
+The P3/CLP3 regular-GNS control has rank 256 on its declared
+256-dimensional ambient, but this is not promoted to a physical P1
+certificate: the ambient was not derived independently of the seed candidate.
 
 The exact ownership and dependency split is recorded in
 [`DEPENDENCY_LEDGER.md`](DEPENDENCY_LEDGER.md). The provenance and data scope

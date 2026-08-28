@@ -1,0 +1,41 @@
+{
+  "schema": "tau_core_p1_independent_ambient_certificate_v1",
+  "source_freeze_payload": {
+    "candidate_id": "P3-CLP3-P1-IAEC-v1",
+    "upstream_seed_candidate_id": "P3-CLP3-CSP-v1",
+    "upstream_seed_fingerprint_sha256": "fec6f6490202649e249d2cc791d6f919f3a071e80c3de02f6b4dd83622aa3b72",
+    "terminal_data_used": false,
+    "endpoint_fitted_parameters": [],
+    "theorem": {
+      "name": "finite faithful-GNS ambient exhaustivity",
+      "ambient_object": "a finite-dimensional unital star algebra A_phys after an independently frozen physical-null quotient",
+      "state": "a faithful state omega_phys on A_phys",
+      "seed_subalgebra": "A_s=C*(R_s) included in A_phys",
+      "criterion": "closure(pi_omega(A_s) Omega_omega)=H_omega iff A_s=A_phys",
+      "finite_rank_form": "rank(Vec_omega(A_s))=dim(A_phys)"
+    },
+    "required_independence": {
+      "ambient_fixed_before_seed_candidate_comparison": true,
+      "ambient_fixed_before_terminal_endpoint_inspection": true,
+      "physical_null_quotient_fixed_source_first": true,
+      "faithful_state_required": true,
+      "all_occupied_central_components_included": true
+    },
+    "finite_control_realization": {
+      "source_dimension": 256,
+      "declared_ambient_dimension": 256,
+      "basis": "canonical regular-GNS coordinate basis",
+      "ambient_derived_independently_of_seed_candidate": false,
+      "reason_not_physical_certificate": "the control ambient reuses the declared P3/CLP3 quotient dimension and therefore illustrates the theorem without independently establishing the physical ambient algebra"
+    },
+    "claim_boundary": {
+      "conditional_P1_certificate_theorem": true,
+      "current_P3_control_physically_eligible": false,
+      "P1_physical_exhaustivity_proved": false,
+      "nature_ambient_source_algebra_owned": false,
+      "nature_occupation_proved": false,
+      "physical_base_seed_packet_export_authorized": false
+    }
+  },
+  "source_fingerprint_sha256": "ddec693c8e414b1f50193c8226f65170e047e6a6de1dcae5173b57aab28c7f16"
+}

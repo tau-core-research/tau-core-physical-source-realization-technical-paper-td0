@@ -72,6 +72,21 @@
       "id": "PSR14",
       "status": "proved_no_go",
       "claim": "An independent component zero-jet can reverse global selection without changing the local Hodge packet, so unrestricted Nature ownership does not follow from the single-action witness."
+    },
+    {
+      "id": "PSR15",
+      "status": "proved_conditional",
+      "claim": "For a finite independently frozen physical source algebra with faithful state, the seed language is exhaustive exactly when its regular-GNS span has full ambient rank."
+    },
+    {
+      "id": "PSR16",
+      "status": "proved_no_go",
+      "claim": "A missing same-component relation, a hidden central component, or a nonfaithful ambient state defeats an otherwise local source-completeness test."
+    },
+    {
+      "id": "PSR17",
+      "status": "proved_internal_finite",
+      "claim": "The P3/CLP3 regular-GNS control has rank 256 on its declared 256-dimensional ambient, but is not a physical P1 certificate because that ambient was not independently derived from the seed candidate."
     }
   ]
 }

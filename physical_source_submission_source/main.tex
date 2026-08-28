@@ -41,7 +41,7 @@
 Complete Seed Presentations, Spectral Selection, and the Nature-Occupation Boundary\\[3pt]
 \large An unnumbered technical derivation companion}
 \author{Jozsef Olcsak\\Independent researcher}
-\date{Version 0.1 --- 28 August 2026}
+\date{Version 0.2 --- 28 August 2026}
 
 \begin{document}
 \maketitle
@@ -66,8 +66,13 @@ seed--body theorem.  We further construct one nonnegative source-fidelity,
 two-sided-Gram and Schur-neutral body-square action.  Once a complete source
 language is supplied, this one law jointly realizes premises P4--P7; it cannot
 self-certify P1, because an action cannot prove the exhaustivity of the
-language in which its own residuals are defined.  Hidden spectator,
-role-rotation, isospectral, component-zero-jet and off-shell
+language in which its own residuals are defined.  We then prove the exact
+finite replacement: relative to an independently frozen physical source
+algebra with faithful state, P1 is equivalent to full rank of the
+seed-generated regular-GNS span.  The present P3/CLP3 control has rank
+$256/256$, but its ambient was not obtained independently and therefore does
+not certify physical P1.  Hidden spectator, role-rotation, isospectral,
+component-zero-jet, nonfaithful-state and off-shell
 deformation controls show the exact boundary: the narrow Tau reduct neither
 owns the variational priority nor proves that Nature occupies the selected
 class.  The result is a conditional physical-source realization calculus, not
@@ -441,6 +446,71 @@ target support or collapsed source support; and a nonpositive $K_B$ removes
 the unique regular handoff.  These countermodels are generated alongside the
 positive witness and are not fitted to a terminal endpoint.
 
+\section{An independent-ambient certificate for P1}
+
+The no-go forbids self-certification but does not make P1 mathematically
+untestable.  What is required is a comparison object not defined by the seed
+candidate itself.  Let $\Aphys$ be a finite-dimensional unital star algebra
+after an independently frozen physical-null quotient, let $\omega$ be a
+faithful state on $\Aphys$, and let
+$(\pi_\omega,\mathcal H_\omega,\Omega_\omega)$ be its regular GNS representation.
+For the candidate relation set $\mathcal R_s$, define the included seed
+subalgebra
+\begin{equation}
+ \Aseed=C^*(\mathcal R_s)\subseteq\Aphys,
+ \qquad
+ \mathcal K_s=\pi_\omega(\Aseed)\Omega_\omega\subseteq\mathcal H_\omega.
+ \label{eq:ambientgns}
+\end{equation}
+
+\begin{theorem}[Finite faithful-GNS exhaustivity]
+Under the preceding assumptions,
+\begin{equation}
+ \boxed{
+ \mathcal K_s=\mathcal H_\omega
+ \quad\Longleftrightarrow\quad
+ \Aseed=\Aphys.}
+ \label{eq:p1gns}
+\end{equation}
+Equivalently, for any basis of the seed-generated algebra embedded by the
+faithful GNS map,
+\begin{equation}
+ \operatorname{rank}\operatorname{Vec}_\omega(\Aseed)
+ =\dim\Aphys
+ \quad\Longleftrightarrow\quad P1
+ \text{ holds relative to the supplied ambient algebra.}
+ \label{eq:p1rank}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Faithfulness makes the map
+$\iota_\omega:a\mapsto\pi_\omega(a)\Omega_\omega$ injective, since
+$\lVert\iota_\omega(a)\rVert^2=\omega(a^\dagger a)=0$ implies $a=0$.
+Finite-dimensional images are closed, so
+$\mathcal K_s=\iota_\omega(\Aseed)$ and
+$\mathcal H_\omega=\iota_\omega(\Aphys)$.  Equality of the GNS subspaces therefore
+holds exactly when the included algebras have equal dimension, hence are
+equal.  Writing the embedded seed basis as columns gives
+\eqref{eq:p1rank}.  The reverse implication is immediate.
+\end{proof}
+
+Three hypotheses are essential.  Omitting one relation lowers the rank inside
+the same ambient component.  Adding an occupied direct-sum component leaves
+the complete local seed Gram matrix unchanged while increasing
+$\dim\Aphys$.  Finally, a state with zero weight on that hidden direction
+quotients it away and can make an incomplete seed appear dense; faithfulness
+excludes this false positive.  Thus neither a local two-jet nor an arbitrary
+nonfaithful readout seminorm is a P1 certificate.
+
+The executable P3/CLP3 control realizes a $256$-column regular-GNS basis on a
+declared $256$-dimensional ambient, and its 18 checks verify
+\eqref{eq:p1rank}, basis invariance and all three countercontrols.  It is not a
+physical P1 certificate because the ambient dimension was read from the same
+P3/CLP3 presentation rather than frozen by an independent parent-source
+manifest.  The theorem therefore converts the remaining logical gap into a
+precise input obligation; it does not hide the gap in a rank calculation.
+
 \section{Exact compatibility before complexity}
 
 \begin{definition}[Source defect and exact fibre]
@@ -742,6 +812,8 @@ generative, not a trajectory in an absolute external time.
 The TD-0 paper is upstream of any experiment, but it makes future tests more
 decisive.  A paper claiming a source-frozen Tau prediction must now provide:
 \begin{enumerate}
+ \item an independently frozen ambient physical source algebra, faithful
+ state and physical-null quotient if P1 exhaustivity is claimed;
  \item the exact source residual family used to define $\Sat$;
  \item the selected completion class and its equality/rigidity policy;
  \item the source grading, null policy, $\mathcal A_*$ and realization map;
@@ -768,7 +840,7 @@ would weaken or reject the selected completion.
  faithful spectral state.
  \item[Proved conditionally.] The logarithmic additive form, two-sided
  realization, unique source-equivalence class and `BaseSeedPacket' export,
- under the assumptions stated in Sections 4--8.
+ under the assumptions stated in Sections 4--9.
  \item[Compressed conditionally.] Given P1 and physical ownership of
  \eqref{eq:onesourcelaw}, P4--P7 follow from one nonnegative source law and are
  not independent selector assumptions.
@@ -777,6 +849,11 @@ would weaken or reject the selected completion.
  \item[Self-certification no-go.] The single source action cannot prove
  that the residual language used in its own definition is complete; P1 remains
  an independent source-language/exhaustivity statement.
+ \item[Independent-ambient P1 theorem.] For a supplied finite physical source
+ algebra with faithful state, full regular-GNS rank is necessary and sufficient
+ for seed-language exhaustivity relative to that ambient.  The P3/CLP3
+ $256/256$ control is mathematically complete but physically ineligible
+ because its ambient is not independently owned.
  \item[Open.] Nature occupation requires independent source evidence or a
  source-frozen discriminator.  A Tau-specific terminal signal belongs
  downstream of TD-III.
@@ -798,7 +875,8 @@ source selection.
 The decisive remaining physical statement is now narrower:
 \begin{equation}
  \boxed{\begin{gathered}
- \text{Does Nature own the complete P1 source language}\\
+ \text{Does Nature supply an independent ambient source algebra}\\
+ \text{on which the seed language has faithful full GNS rank,}\\
  \text{and }\mathcal L_{\rm 1src}\text{ on its physical component?}
  \end{gathered}}
  \label{eq:nature}

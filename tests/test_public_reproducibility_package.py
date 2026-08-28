@@ -17,6 +17,8 @@ def test_publication_files_exist():
         "data/derived/derivation_audit.json",
         "data/derived/p3_clp3_complete_seed_presentation.json",
         "data/derived/p3_clp3_instantiation_audit.json",
+        "data/derived/p3_clp3_p1_ambient_certificate.json",
+        "data/derived/p3_clp3_p1_ambient_certificate_audit.json",
         "data/derived/p3_clp3_single_source_law.json",
         "data/derived/p3_clp3_single_source_law_audit.json",
         "arxiv_submission_source.zip",
@@ -32,7 +34,7 @@ def test_claim_ledger_is_bounded():
     assert ledger["nature_level_validation"] is False
     assert ledger["unrestricted_parent_selection_derived"] is False
     assert ledger["empirical_data_used"] is False
-    assert len(ledger["results"]) == 14
+    assert len(ledger["results"]) == 17
 
 
 def test_p3_clp3_source_freeze_is_endpoint_blind_and_bounded():
@@ -72,6 +74,25 @@ def test_single_source_law_compresses_p4_p7_but_not_p1():
     assert boundary["single_action_compresses_P4_through_P7_conditionally"] is True
     assert boundary["P1_self_certified_by_the_action"] is False
     assert audit["nature_level_occupation"] is False
+
+
+def test_p1_independent_ambient_certificate_is_conditional_and_bounded():
+    certificate = json.loads(
+        (ROOT / "data/derived/p3_clp3_p1_ambient_certificate.json").read_text()
+    )
+    audit = json.loads(
+        (ROOT / "data/derived/p3_clp3_p1_ambient_certificate_audit.json").read_text()
+    )
+    payload = certificate["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 18
+    assert audit["verdict"] == "CONDITIONAL_P1_AMBIENT_RANK_THEOREM_PASS"
+    assert audit["checks"]["same_component_missing_relation_is_detected"]
+    assert audit["checks"]["hidden_component_fails_global_ambient_rank"]
+    assert payload["finite_control_realization"][
+        "ambient_derived_independently_of_seed_candidate"
+    ] is False
+    assert audit["physical_P1_certificate_eligible"] is False
+    assert audit["P1_physical_exhaustivity_proved"] is False
 
 
 def test_derivation_audit_passes():

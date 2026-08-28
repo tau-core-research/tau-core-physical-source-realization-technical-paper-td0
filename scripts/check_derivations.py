@@ -84,6 +84,12 @@ def main():
     p3_audit = json.loads(
         (DERIVED / "p3_clp3_instantiation_audit.json").read_text()
     )
+    p1_ambient_certificate = json.loads(
+        (DERIVED / "p3_clp3_p1_ambient_certificate.json").read_text()
+    )
+    p1_ambient_audit = json.loads(
+        (DERIVED / "p3_clp3_p1_ambient_certificate_audit.json").read_text()
+    )
     single_source_law = json.loads(
         (DERIVED / "p3_clp3_single_source_law.json").read_text()
     )
@@ -96,6 +102,30 @@ def main():
     checks["p3_clp3_instantiation_audit_passes"] = p3_audit["passed"] == p3_audit["total"]
     checks["p3_clp3_seed_is_endpoint_blind"] = p3_packet["source_freeze_payload"]["terminal_data_used"] is False
     checks["p3_clp3_nature_export_is_not_authorized"] = p3_audit["physical_base_seed_packet_export_authorized"] is False
+    checks["p1_ambient_certificate_audit_passes"] = (
+        p1_ambient_audit["passed"] == p1_ambient_audit["total"]
+    )
+    checks["p1_ambient_rank_theorem_is_conditionally_realized"] = (
+        p1_ambient_audit["verdict"]
+        == "CONDITIONAL_P1_AMBIENT_RANK_THEOREM_PASS"
+    )
+    checks["p1_hidden_relation_and_component_controls_pass"] = (
+        p1_ambient_audit["checks"][
+            "same_component_missing_relation_is_detected"
+        ]
+        and p1_ambient_audit["checks"][
+            "hidden_component_fails_global_ambient_rank"
+        ]
+        and p1_ambient_audit["checks"][
+            "faithfulness_gate_rejects_that_false_positive"
+        ]
+    )
+    checks["p1_control_is_endpoint_blind_but_not_physical_certificate"] = (
+        p1_ambient_certificate["source_freeze_payload"]["terminal_data_used"]
+        is False
+        and p1_ambient_audit["physical_P1_certificate_eligible"] is False
+        and p1_ambient_audit["P1_physical_exhaustivity_proved"] is False
+    )
     checks["single_source_law_audit_passes"] = single_source_audit["passed"] == single_source_audit["total"]
     checks["single_source_law_compresses_p4_through_p7"] = single_source_audit["verdict"] == "P4_P7_SINGLE_ACTION_COMPRESSION_PASS"
     checks["single_source_law_does_not_self_certify_p1"] = single_source_audit["P1_physical_source_language_ownership_proved"] is False
@@ -135,6 +165,9 @@ def main():
             {"id": "PSR12", "status": "proved_conditional", "claim": "One nonnegative source-fidelity, two-sided-Gram and Schur-neutral body-square action jointly realizes P4--P7 after a complete source language is supplied."},
             {"id": "PSR13", "status": "proved_no_go", "claim": "A source action cannot certify completeness of the residual language used to define its own admissible fibre; P1 remains source data or an independently proved exhaustivity theorem."},
             {"id": "PSR14", "status": "proved_no_go", "claim": "An independent component zero-jet can reverse global selection without changing the local Hodge packet, so unrestricted Nature ownership does not follow from the single-action witness."},
+            {"id": "PSR15", "status": "proved_conditional", "claim": "For a finite independently frozen physical source algebra with faithful state, the seed language is exhaustive exactly when its regular-GNS span has full ambient rank."},
+            {"id": "PSR16", "status": "proved_no_go", "claim": "A missing same-component relation, a hidden central component, or a nonfaithful ambient state defeats an otherwise local source-completeness test."},
+            {"id": "PSR17", "status": "proved_internal_finite", "claim": "The P3/CLP3 regular-GNS control has rank 256 on its declared 256-dimensional ambient, but is not a physical P1 certificate because that ambient was not independently derived from the seed candidate."},
         ],
     }
     (DERIVED / "theorem_ledger.json").write_text(json.dumps(ledger, indent=2) + "\n")

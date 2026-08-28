@@ -25,6 +25,9 @@ that Nature occupies the selected completion.
 | P3/CLP3 Nature-authorized packet export | Not established | physical ownership of the seed law, selector priority, unrestricted rigidity and body handoff | the generated object is deliberately typed `BaseSeedPacketCandidate` |
 | Single-action compression of P4--P7 | Proven conditionally | complete source fibre, faithful Hodge states, positive once-counted source fidelity, two-sided Gram admissibility and positive source-independent body Hessian | physical ownership of the joint law is not proved |
 | P1 self-certification by that action | Disproved | the action is evaluated relative to its declared residual language | an undeclared relation coordinate or independent component zero-jet is invisible to the same declared language |
+| Finite faithful-GNS ambient exhaustivity | Proven conditionally | independently frozen finite physical source algebra, frozen physical null quotient and faithful state | certifies equality to the supplied ambient, not that Nature owns that ambient |
+| P3/CLP3 ambient-rank control | Proven on the declared finite ambient | regular-GNS rank `256/256` | physically ineligible because the ambient dimension was taken from the candidate presentation |
+| Hidden ambient and nonfaithful-state controls | Proven | one omitted local direction, one direct-sum component and one zero-weight state direction | shows local Gram closure or a nonfaithful quotient is insufficient for P1 |
 | Schur-neutral body handoff | Proven | positive invertible source-independent `K_B` and typed load `j_B(s)` | supplies a regular TD-I input without back-selecting the source completion |
 
 ## Circularity audit
@@ -51,3 +54,10 @@ language, a single source-fidelity/Gram/body-square action can supply P4--P7
 together. P1 is irreducible source data for that law: no functional can prove
 the exhaustivity of the metalanguage in which the functional itself is
 defined.
+
+P1 is nevertheless conditionally certifiable relative to an independently
+fixed finite ambient physical source algebra: faithfulness makes the regular
+GNS embedding injective, and full seed-generated GNS rank is then equivalent
+to equality with that ambient algebra. The current P3/CLP3 control passes the
+finite rank equality but not the independence gate, so physical P1 ownership
+remains open.

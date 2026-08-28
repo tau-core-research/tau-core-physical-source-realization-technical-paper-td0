@@ -1,0 +1,38 @@
+{
+  "schema": "tau_core_p1_independent_ambient_certificate_audit_v1",
+  "candidate_id": "P3-CLP3-P1-IAEC-v1",
+  "source_fingerprint_sha256": "ddec693c8e414b1f50193c8226f65170e047e6a6de1dcae5173b57aab28c7f16",
+  "checks": {
+    "certificate_fingerprint_matches_payload": true,
+    "upstream_seed_fingerprint_is_bound": true,
+    "endpoint_blind_freeze": true,
+    "finite_source_basis_has_declared_rank": true,
+    "faithful_state_has_no_null_direction": true,
+    "faithful_gns_gram_is_positive_definite": true,
+    "declared_control_span_equals_declared_ambient": true,
+    "basis_relabeling_preserves_exhaustivity_rank": true,
+    "same_component_missing_relation_is_detected": true,
+    "hidden_component_preserves_local_source_gram": true,
+    "hidden_component_fails_global_ambient_rank": true,
+    "nonfaithful_state_can_hide_one_ambient_direction": true,
+    "faithfulness_gate_rejects_that_false_positive": true,
+    "certificate_requires_source_first_ambient_and_null_policy": true,
+    "certificate_requires_all_occupied_components": true,
+    "current_control_declares_missing_ambient_independence": true,
+    "conditional_theorem_not_promoted_to_physical_P1": true,
+    "nature_and_packet_export_remain_closed": true
+  },
+  "passed": 18,
+  "total": 18,
+  "diagnostics": {
+    "declared_source_rank": 256,
+    "declared_ambient_dimension": 256,
+    "same_component_missing_relation_rank": 255,
+    "hidden_component_source_rank": 256,
+    "hidden_component_ambient_dimension": 257
+  },
+  "verdict": "CONDITIONAL_P1_AMBIENT_RANK_THEOREM_PASS",
+  "physical_P1_certificate_eligible": false,
+  "P1_physical_exhaustivity_proved": false,
+  "nature_level_occupation": false
+}
