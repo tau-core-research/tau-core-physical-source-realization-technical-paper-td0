@@ -25,6 +25,8 @@ def test_publication_files_exist():
         "data/derived/p3_clp3_p1_envelope_connector_selector_audit.json",
         "data/derived/p3_clp3_p1_record_clifford_embedding.json",
         "data/derived/p3_clp3_p1_record_clifford_embedding_audit.json",
+        "data/derived/p3_clp3_p1_record_clifford_landing.json",
+        "data/derived/p3_clp3_p1_record_clifford_landing_audit.json",
         "data/derived/p3_clp3_single_source_law.json",
         "data/derived/p3_clp3_single_source_law_audit.json",
         "arxiv_submission_source.zip",
@@ -40,7 +42,7 @@ def test_claim_ledger_is_bounded():
     assert ledger["nature_level_validation"] is False
     assert ledger["unrestricted_parent_selection_derived"] is False
     assert ledger["empirical_data_used"] is False
-    assert len(ledger["results"]) == 28
+    assert len(ledger["results"]) == 31
 
 
 def test_p3_clp3_source_freeze_is_endpoint_blind_and_bounded():
@@ -182,6 +184,33 @@ def test_p1_record_clifford_embedding_reduces_primitives_but_not_ownership():
         "connector_variables_are_independent_primitives"
     ] is False
     assert audit["physical_record_clifford_embedding_ownership"] == "OPEN"
+    assert audit["nature_level_occupation"] is False
+
+
+def test_p1_record_clifford_landing_is_one_gauge_orbit_but_not_source_owned():
+    packet = json.loads(
+        (ROOT / "data/derived/p3_clp3_p1_record_clifford_landing.json").read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_record_clifford_landing_audit.json"
+        ).read_text()
+    )
+    payload = packet["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 17
+    assert audit["checks"][
+        "even_relative_commutant_has_no_hidden_clifford_words"
+    ]
+    assert audit["checks"]["valid_embedding_set_is_one_spin3_orbit"]
+    assert audit["checks"]["even_landing_automatically_preserves_W"]
+    assert audit["checks"][
+        "current_joint_action_contains_no_cross_landing_equation"
+    ]
+    assert payload["automatic_consequences"][
+        "separate_vector_preservation_premise_required"
+    ] is False
+    assert audit["physical_source_ownership"] == "OPEN"
     assert audit["nature_level_occupation"] is False
 
 

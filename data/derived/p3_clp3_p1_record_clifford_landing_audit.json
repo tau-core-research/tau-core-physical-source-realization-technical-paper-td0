@@ -1,0 +1,121 @@
+{
+  "checks": {
+    "fingerprint_matches_payload": true,
+    "upstream_embedding_packet_is_fingerprint_locked": true,
+    "endpoint_blind_freeze": true,
+    "even_commutant_basis_is_four_dimensional": true,
+    "even_relative_commutant_has_no_hidden_clifford_words": true,
+    "bivectors_are_even_and_commute_with_roles": true,
+    "bivectors_are_orthonormal_traceless_involutions": true,
+    "every_sampled_unit_bivector_is_a_valid_record_involution": true,
+    "trace_preservation_gives_equal_minimal_projectors": true,
+    "even_landing_automatically_preserves_W": true,
+    "every_sampled_embedding_has_two_plus_one_split": true,
+    "every_sampled_adjoint_action_is_a_proper_half_turn": true,
+    "valid_embedding_set_is_one_spin3_orbit": true,
+    "label_exchange_introduces_no_discrete_physical_choice": true,
+    "vector_preservation_premise_is_redundant": true,
+    "current_joint_action_contains_no_cross_landing_equation": true,
+    "current_source_nonentailment_and_nature_boundary_are_preserved": true
+  },
+  "passed": 17,
+  "total": 17,
+  "verdict": "EVEN_RELATIVE_COMMUTANT_LANDING_HAS_ONE_SPIN3_GAUGE_ORBIT_CURRENT_COMMON_ACTION_DOES_NOT_FORCE_THE_LANDING",
+  "diagnostics": {
+    "sampled_embedding_count": 4,
+    "sampled_embeddings": [
+      {
+        "unit_bivector_coordinates": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "complement_preservation_residual": 0.0,
+        "adjoint_eigenvalues": [
+          -1.0,
+          -1.0,
+          1.0
+        ],
+        "adjoint_determinant": 1.0,
+        "ambient_projector_ranks": [
+          16,
+          16
+        ]
+      },
+      {
+        "unit_bivector_coordinates": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "complement_preservation_residual": 0.0,
+        "adjoint_eigenvalues": [
+          -1.0,
+          -1.0,
+          1.0
+        ],
+        "adjoint_determinant": 1.0,
+        "ambient_projector_ranks": [
+          16,
+          16
+        ]
+      },
+      {
+        "unit_bivector_coordinates": [
+          0.2672612419124244,
+          0.5345224838248488,
+          0.8017837257372732
+        ],
+        "complement_preservation_residual": 1.4223548695868998e-15,
+        "adjoint_eigenvalues": [
+          -1.0000000000000002,
+          -1.0000000000000002,
+          1.0000000000000004
+        ],
+        "adjoint_determinant": 1.0000000000000009,
+        "ambient_projector_ranks": [
+          16,
+          16
+        ]
+      },
+      {
+        "unit_bivector_coordinates": [
+          -0.4364357804719848,
+          0.2182178902359924,
+          0.8728715609439696
+        ],
+        "complement_preservation_residual": 6.284244630594341e-16,
+        "adjoint_eigenvalues": [
+          -1.0000000000000002,
+          -1.0,
+          1.0000000000000002
+        ],
+        "adjoint_determinant": 1.0000000000000004,
+        "ambient_projector_ranks": [
+          16,
+          16
+        ]
+      }
+    ],
+    "traceless_even_commutant_dimension": 3,
+    "full_even_commutant_dimension": 4,
+    "even_commuting_clifford_words": [
+      [],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        9
+      ]
+    ]
+  },
+  "exact_remaining_source_datum": "physical occupation of the even-relative-commutant landing class",
+  "physical_source_ownership": "OPEN",
+  "nature_level_occupation": false
+}

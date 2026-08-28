@@ -42,7 +42,7 @@
 Complete Seed Presentations, Spectral Selection, and the Nature-Occupation Boundary\\[3pt]
 \large An unnumbered technical derivation companion}
 \author{Jozsef Olcsak\\Independent researcher}
-\date{Version 0.5 --- 28 August 2026}
+\date{Version 0.6 --- 28 August 2026}
 
 \begin{document}
 \maketitle
@@ -88,9 +88,15 @@ three-dimensional Clifford complement into dimensions $2+1$.  The two
 connectors are only a gauge-fixed orthonormal frame of this split and need not
 be independently owned primitives.  Odd-twist and chirality-misaligned
 countermodels preserve the same local P3/record reduct while violating the
-required grading or complement preservation.  Thus the current source still
-does not entail the embedding; the physical blocker is reduced from two
-connector incidences to one graded record--Clifford incidence.
+required grading or complement preservation.  We sharpen the positive side:
+inside the even relative commutant, trace preservation makes complement
+preservation automatic and all record embeddings form one
+$\operatorname{Spin}(3)$ conjugacy orbit.  Thus no embedding angle, connector
+direction or additional vector-preservation law remains.  The existing
+Schur-neutral PUSC--record action nevertheless has no record-to-Clifford map
+variable and no cross-landing residual.  It therefore cannot force the one
+surviving datum: physical occupation of the even-relative-commutant landing
+class.
 Hidden spectator, role-rotation, isospectral,
 component-zero-jet, nonfaithful-state and off-shell
 deformation controls show the exact boundary: the narrow Tau reduct neither
@@ -840,18 +846,88 @@ additional cross relation, do not logically force
 Eq.~\eqref{eq:recordembedding}.
 \end{nogo}
 
+The premise of the preceding reduction can be made strictly smaller.  Define
+the even relative commutant
+\begin{equation}
+ \mathcal C_{\rm ev}
+ =\operatorname{Comm}(\operatorname{Cl}(E))
+  \cap \operatorname{Cl}_{10}(\mathbb C)^{\rm even}
+ \simeq \operatorname{Cl}(W)^{\rm even}
+ \simeq M_2(\mathbb C).
+ \label{eq:evencommutant}
+\end{equation}
+
+\begin{theorem}[Unique landing orbit]
+Every unital trace-preserving star monomorphism
+\begin{equation}
+ \iota:A_{\rm port}\hookrightarrow\mathcal C_{\rm ev}
+ \label{eq:minimallanding}
+\end{equation}
+automatically satisfies the vector-complement preservation condition in
+Eq.~\eqref{eq:recordembedding}.  The set of all such monomorphisms is one
+$\operatorname{Spin}(W)\simeq SU(2)$ conjugacy orbit.  Exchange of the two
+record labels belongs to the same orbit.  Consequently the only invariant
+source datum is that the physical record algebra lands in
+$\mathcal C_{\rm ev}$; a representative embedding is gauge.
+\end{theorem}
+
+\begin{proof}
+Put $P_\pm=\iota(p_\pm)$.  Unitality and star preservation make them
+orthogonal projections with $P_++P_-=\id$.  Trace preservation gives both
+normalized traces equal to $1/2$, hence both projections have rank one in
+$M_2(\mathbb C)$.  Therefore $R=P_+-P_-$ is a self-adjoint traceless
+involution.  The traceless Hermitian part of
+$\operatorname{Cl}(W)^{\rm even}$ is the real span of
+\begin{equation}
+ i\gamma_9\gamma_{10},\qquad
+ i\gamma_{10}\gamma_8,\qquad
+ i\gamma_8\gamma_9.
+\end{equation}
+Thus $R$ is a unit bivector.  Conjugation by a unit bivector preserves $W$
+and acts there as a proper half-turn, with spectrum $(-1,-1,+1)$.  Finally,
+$\operatorname{Spin}(3)=SU(2)$ acts transitively by conjugation on the unit
+bivector sphere.  Its action also maps $R$ to $-R$, so swapping $p_+$ and
+$p_-$ introduces no second orbit.  This proves every claim.
+\end{proof}
+
+This theorem removes both the separate complement-preservation premise and
+any continuous choice of embedding.  It does not create the cross-incidence.
+Indeed, the already constructed common action has the form
+\begin{equation}
+ \Gamma_{\rm PUSC+rec}(z,y)
+ =\Gamma_{\rm PUSC}(z)
+ +\frac{\mathcal A_*}{2}
+  \lVert y-\mu^\dagger\chi(z)\rVert^2.
+ \label{eq:puscrecaction}
+\end{equation}
+It contains neither an $\iota$ variable nor a residual testing that the
+record involution belongs to $\mathcal C_{\rm ev}$.  Its Euler equations can
+jointly occupy the PUSC and record sectors, but are identical for an
+independent tensor-record realization and for different global extensions of
+that record.  Hence
+\begin{equation}
+ \boxed{
+ \Gamma_{\rm PUSC+rec}
+ \not\Longrightarrow
+ A_{\rm port}\hookrightarrow\mathcal C_{\rm ev}.}
+ \label{eq:landingnogo}
+\end{equation}
+This is a domain/cross-relation no-go, not a failure of the joint action on
+the variables it actually owns.
+
 This changes the open physical question but does not close it:
 \begin{equation}
  \boxed{
  \text{separate ownership of }u,v
  \quad\longrightarrow\quad
- \text{ownership and occupation of one graded }\iota_{\rm rec}.}
+ \text{occupation of the even-relative-commutant landing class}.}
  \label{eq:blockerreduction}
 \end{equation}
-The reduction is substantive: all frame angles and signs are gauge.  The
-surviving datum is a single typed relation between an already present record
-algebra and an already present PUSC complement.  Current Tau source laws do
-not yet select this relation, and Nature occupation remains open.
+The reduction is substantive: all frame angles, signs and embedding
+representatives are gauge.  The surviving datum is only a single typed
+landing relation between an already present record algebra and an already
+present PUSC complement.  Current Tau source laws do not yet select this
+relation, and Nature occupation remains open.
 
 \section{Exact compatibility before complexity}
 
@@ -1213,6 +1289,12 @@ would weaken or reject the selected completion.
  $u,v$ source ownership is therefore unnecessary.  Explicit odd and
  chirality-misaligned controls prove that the current local P3/PUSC/record
  reduct does not entail this cross-embedding.
+ \item[Landing-orbit reduction.] Once the record algebra lands in the even
+ relative commutant, trace preservation alone gives rank-one record
+ projectors, automatic preservation of the complement and one
+ $\operatorname{Spin}(3)$ gauge orbit.  The existing joint PUSC--record
+ action does not force this landing because its variational domain contains
+ no record-to-Clifford map or corresponding cross residual.
  \item[Open.] Nature occupation requires independent source evidence or a
  source-frozen discriminator.  A Tau-specific terminal signal belongs
  downstream of TD-III.
@@ -1235,7 +1317,7 @@ The decisive remaining physical statement is now narrower:
 \begin{equation}
  \boxed{\begin{gathered}
  \text{Is the pre-body source envelope ontic or metric-auxiliary,}\\
- \text{does the physical source own and occupy one graded record--Clifford embedding,}\\
+ \text{does the physical source occupy the even-relative-commutant record landing class,}\\
  \text{and does the resulting occupied seed have faithful full GNS rank}\\
  \text{in the independently owned physical algebra,}\\
  \text{and }\mathcal L_{\rm 1src}\text{ on its physical component?}

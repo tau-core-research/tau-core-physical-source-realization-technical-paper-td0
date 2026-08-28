@@ -108,6 +108,12 @@ def main():
     p1_record_embedding_audit = json.loads(
         (DERIVED / "p3_clp3_p1_record_clifford_embedding_audit.json").read_text()
     )
+    p1_record_landing = json.loads(
+        (DERIVED / "p3_clp3_p1_record_clifford_landing.json").read_text()
+    )
+    p1_record_landing_audit = json.loads(
+        (DERIVED / "p3_clp3_p1_record_clifford_landing_audit.json").read_text()
+    )
     single_source_law = json.loads(
         (DERIVED / "p3_clp3_single_source_law.json").read_text()
     )
@@ -229,6 +235,30 @@ def main():
         and p1_record_embedding_audit["physical_P1_exhaustivity_proved"]
         is False
     )
+    checks["p1_record_clifford_landing_audit_passes"] = (
+        p1_record_landing_audit["passed"]
+        == p1_record_landing_audit["total"]
+    )
+    checks["p1_even_landing_has_one_spin3_gauge_orbit"] = (
+        p1_record_landing_audit["checks"][
+            "valid_embedding_set_is_one_spin3_orbit"
+        ]
+        and p1_record_landing_audit["checks"][
+            "even_landing_automatically_preserves_W"
+        ]
+        and p1_record_landing["source_freeze_payload"][
+            "automatic_consequences"
+        ]["separate_vector_preservation_premise_required"]
+        is False
+    )
+    checks["p1_exact_remaining_datum_is_cross_landing_not_map_choice"] = (
+        p1_record_landing_audit["exact_remaining_source_datum"]
+        == "physical occupation of the even-relative-commutant landing class"
+        and p1_record_landing_audit["checks"][
+            "current_joint_action_contains_no_cross_landing_equation"
+        ]
+        and p1_record_landing_audit["physical_source_ownership"] == "OPEN"
+    )
     checks["single_source_law_audit_passes"] = single_source_audit["passed"] == single_source_audit["total"]
     checks["single_source_law_compresses_p4_through_p7"] = single_source_audit["verdict"] == "P4_P7_SINGLE_ACTION_COMPRESSION_PASS"
     checks["single_source_law_does_not_self_certify_p1"] = single_source_audit["P1_physical_source_language_ownership_proved"] is False
@@ -282,6 +312,9 @@ def main():
             {"id": "PSR26", "status": "proved_conditional", "claim": "The prior u/v connector pair is a gauge-fixed orthonormal frame of that single graded record--Clifford embedding; any tested O(2)-rotated frame closes the same Cl_10 algebra, so u and v need not be separately owned source primitives."},
             {"id": "PSR27", "status": "proved_no_go", "claim": "The current P3/PUSC plus binary-record reduct does not entail the graded embedding: odd-twist and chirality-misaligned involutions preserve the local four-block P3/record data while violating global evenness or vector-complement preservation."},
             {"id": "PSR28", "status": "open", "claim": "Physical source selection and Nature occupation of the graded record--Clifford embedding remain unproved; therefore physical P1 exhaustivity and BaseSeedPacket export remain unauthorized."},
+            {"id": "PSR29", "status": "proved_conditional", "claim": "A unital trace-preserving star embedding of the equal-weight binary record algebra into the even relative commutant of the P3 Cl_7 algebra automatically preserves the three-dimensional vector complement, has adjoint split 2+1, and belongs to one Spin(3)-conjugacy orbit; no continuous embedding parameter or separate complement-preservation premise remains."},
+            {"id": "PSR30", "status": "proved_no_go", "claim": "The existing Schur-neutral PUSC-plus-record action jointly realizes the two sectors but contains neither a record-to-Clifford map variable nor an even-relative-commutant cross residual, so it cannot force the landing class."},
+            {"id": "PSR31", "status": "open", "claim": "The exact surviving physical datum is Nature occupation of the even-relative-commutant landing class, not selection of a particular embedding representative; physical P1 exhaustivity and BaseSeedPacket export remain unauthorized."},
         ],
     }
     (DERIVED / "theorem_ledger.json").write_text(json.dumps(ledger, indent=2) + "\n")

@@ -1,0 +1,65 @@
+{
+  "schema": "tau_core_p1_record_clifford_landing_v1",
+  "source_freeze_payload": {
+    "candidate_id": "P3-CLP3-P1-RECORD-CLIFFORD-LANDING-v1",
+    "upstream_embedding_fingerprint_sha256": "679b1d5d0a7d83aee54a07b8112bed47406f18993767db1d718da923f2344d62",
+    "terminal_data_used": false,
+    "endpoint_fitted_parameters": [],
+    "inherited_objects": {
+      "role_algebra": "Cl(E), dim_R(E)=7",
+      "ontic_envelope": "Cl_10(C)=M_32(C)",
+      "complement": "W=E^perp, dim_R(W)=3",
+      "record_algebra": "A_port=C p_+ direct-sum C p_-",
+      "record_trace": "tau_port(p_+)=tau_port(p_-)=1/2",
+      "record_involution": "r=p_+-p_-"
+    },
+    "minimal_cross_law": {
+      "name": "even-relative-commutant landing",
+      "statement": "the physical record representation is a unital trace-preserving star monomorphism from A_port into Comm(Cl(E)) intersect Cl_10(C)^even",
+      "equivalent_codomain": "Cl(W)^even isomorphic to M_2(C)",
+      "source_selected_by_current_pusc_record_action": false,
+      "nature_occupied": false
+    },
+    "automatic_consequences": {
+      "minimal_record_projector_ranks": [
+        1,
+        1
+      ],
+      "record_difference_is": "a self-adjoint traceless involution",
+      "vector_complement_preservation": "automatic",
+      "adjoint_split": {
+        "minus": 2,
+        "plus": 1
+      },
+      "all_embeddings_form": "one Spin(3)-conjugacy orbit",
+      "record_label_exchange": "contained in the same gauge orbit",
+      "continuous_embedding_parameter": false,
+      "separate_vector_preservation_premise_required": false,
+      "separate_connector_direction_selection_required": false
+    },
+    "current_source_audit": {
+      "joint_action": "Gamma_PUSC(z)+A_*/2 ||y-mu^dagger chi(z)||^2",
+      "owns_pusc_and_record_together": true,
+      "owns_tensor_leg_record_domain_conditionally": true,
+      "contains_record_to_clifford_map_variable": false,
+      "contains_even_relative_commutant_cross_residual": false,
+      "embedding_direction_has_euler_equation": false,
+      "verdict": "CURRENT_COMMON_ACTION_DOES_NOT_FORCE_THE_LANDING"
+    },
+    "adversarial_controls": {
+      "independent_tensor_record": "Cl_7(C) tensor A_port realizes the four local blocks but does not identify A_port with the even complement",
+      "odd_twist": "an odd record involution preserves the same local P3/record block data while violating the landing law",
+      "interpretation": "local common occupation is weaker than typed cross-incidence"
+    },
+    "claim_boundary": {
+      "even_landing_implies_unique_gauge_orbit": true,
+      "complement_preservation_is_redundant_after_even_landing": true,
+      "current_source_derives_even_landing": false,
+      "physical_source_ownership_proved": false,
+      "nature_occupation_proved": false,
+      "physical_p1_exhaustivity_proved": false,
+      "physical_base_seed_packet_export_authorized": false
+    }
+  },
+  "source_fingerprint_sha256": "7d065816e3ddb24dc87e4be54fe90adc9bf68895a2023fa22e552c7889207177"
+}

@@ -19,6 +19,8 @@ or promoted by the standalone TD-0 package.
 | P3/PUSC envelope separator | This repository | Conditional theorem under an ontic PUSC envelope and a physical typed embedding | Retains P3 component completeness but gives global faithful-GNS rank `256/1024`; proves local P3 data cannot choose ontic versus metric-auxiliary envelope interpretation |
 | Two-connector P3-to-PUSC completion | This repository | Exact finite theorem in the declared `Cl_10` grading class; connector-domain ownership remains open | Shows that `u=gamma_8` and `v=gamma_10` give the rank ladder `256,512,512,1024` and supplies one nonnegative relation-defect action with explicit controls |
 | Record--Clifford connector reduction | This repository | Conditional theorem given an ontic `Cl_10` envelope, the P3 seven-plane and one even trace-preserving binary-record embedding preserving the vector complement | Derives the connector pair as a gauge frame of one `2+1` adjoint split; same-reduct controls show the embedding is not selected by current local source laws |
+| Even-relative-commutant landing orbit | This repository | Conditional theorem given only a unital trace-preserving star monomorphism of the binary record algebra into the even relative commutant | Proves complement preservation, the `2+1` split and uniqueness up to `Spin(3)` gauge; removes any representative-map parameter |
+| Cross-landing selection by the existing PUSC--record action | This repository | No-go by variational-domain and same-reduct audit | The action jointly realizes PUSC and record but has no embedding variable or cross-landing residual, so physical landing ownership remains open |
 | Simplicity obstruction to a P3 null quotient | Standard finite-dimensional C-star algebra | `M_32(C)` is simple | Forbids retaining an ontic `M_32(C)` while quotienting its missing directions to the four-block P3 algebra by a nontrivial star ideal |
 | P1 source-language exhaustivity for Nature | No current theorem owner | Open physical premise | The self-certification no-go proves that the action cannot establish P1 from its own residual language; the present P3 ambient control is not independently owned |
 | Nature occupation of the complete source packet | No current theorem owner | Open | Requires independent source evidence or a source-frozen discriminator |
@@ -76,3 +78,10 @@ PUSC and record actions do not contain the cross relation selecting this
 embedding. The remaining gap is therefore ownership and occupation of one
 graded record--Clifford incidence, not two new connector primitives and not
 another matrix-algebra dimension calculation.
+
+The latest reduction shows that even the word "embedding" carries too much
+apparent freedom. Once the physical record is required to land in the even
+relative commutant, all admissible maps are one `Spin(3)` orbit and vector
+preservation is automatic. The irreducible gap is only whether the source
+owns and Nature occupies that typed landing class. The current common action
+does not: common occupation of two sectors is not a cross-incidence theorem.

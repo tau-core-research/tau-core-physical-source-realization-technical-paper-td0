@@ -39,13 +39,16 @@
     "p1_connector_pair_reduces_to_one_graded_embedding": true,
     "p1_record_embedding_has_adversarial_nonentailment_controls": true,
     "p1_record_embedding_selection_is_open_and_nature_bounded": true,
+    "p1_record_clifford_landing_audit_passes": true,
+    "p1_even_landing_has_one_spin3_gauge_orbit": true,
+    "p1_exact_remaining_datum_is_cross_landing_not_map_choice": true,
     "single_source_law_audit_passes": true,
     "single_source_law_compresses_p4_through_p7": true,
     "single_source_law_does_not_self_certify_p1": true,
     "single_source_law_is_endpoint_blind_and_nature_bounded": true
   },
-  "passed": 43,
-  "total": 43,
+  "passed": 46,
+  "total": 46,
   "heat_trace_base": 1.276556637680899,
   "heat_trace_extension": 1.3530400587937879,
   "nature_level_closure": false

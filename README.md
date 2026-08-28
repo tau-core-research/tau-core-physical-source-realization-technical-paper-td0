@@ -93,6 +93,18 @@ source does not yet derive the embedding. The physical blocker is narrower:
 one graded record--Clifford incidence and its occupation, not two independent
 connector variables.
 
+A seventh, 17-check landing audit sharpens this once more. The even relative
+commutant of the P3 `Cl_7(C)` algebra is `Cl_3(C)^even ~= M_2(C)`. A unital,
+trace-preserving star embedding of the equal-weight binary record algebra
+into this codomain automatically gives rank-one record projectors, preserves
+the three-dimensional vector complement and lies in one `Spin(3)` conjugacy
+orbit. Thus there is no physical embedding angle and the earlier explicit
+complement-preservation premise is redundant. The present Schur-neutral
+PUSC--record action still does not force this result: it has no
+record-to-Clifford map variable and no even-relative-commutant cross residual.
+The exact remaining datum is physical occupation of the landing class, not
+selection of one representative map.
+
 The P3/CLP3 file exports only a `BaseSeedPacketCandidate`. Its ownership
 certificate explicitly forbids promotion to a physical `BaseSeedPacket` until
 the missing Nature-selection premises are independently supplied.

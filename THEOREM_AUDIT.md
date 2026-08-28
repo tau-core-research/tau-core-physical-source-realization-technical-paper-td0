@@ -40,6 +40,9 @@ that Nature occupies the selected completion.
 | Record--Clifford reduction | Proven conditionally | ontic `Cl_10`, canonical P3 seven-plane and one even trace-preserving binary-record embedding whose adjoint action preserves the three-dimensional vector complement | gives the exact `2+1` split and makes the old connector pair a gauge frame rather than two independent primitives |
 | Graded embedding from the current local reduct | Disproved | compare extensions with identical local P3/record four-block data | odd-twist and chirality-misaligned controls fail global parity or complement preservation |
 | Physical ownership of the graded embedding | Not established | one enriched cross relation tying the binary record algebra to the even PUSC complement, plus Nature occupation | this replaces, but does not solve, separate `u,v` ownership |
+| Unique even landing orbit | Proven conditionally | unital trace-preserving star monomorphism of the equal-weight binary record algebra into the even relative commutant | complement preservation and the `2+1` split are automatic; all representatives are one `Spin(3)` gauge orbit |
+| Landing law from the present joint PUSC--record action | Disproved | audit the action's variational domain and residual inventory | it contains neither an embedding variable nor an even-relative-commutant cross residual |
+| Physical occupation of the landing class | Not established | one source-owned cross-landing relation and Nature occupation | no embedding angle or separate connector direction remains to be selected |
 | Schur-neutral body handoff | Proven | positive invertible source-independent `K_B` and typed load `j_B(s)` | supplies a regular TD-I input without back-selecting the source completion |
 
 ## Circularity audit
@@ -100,3 +103,14 @@ choice of frame in this split. Thus separate connector primitives are not
 needed. However, explicit same-reduct controls prove that P3, PUSC and record
 data without a cross-grading relation do not entail the embedding. Physical
 selection and occupation of that one relation remain open.
+
+The landing-orbit theorem reduces the statement still further. Inside the
+even relative commutant, a trace-preserving binary-record embedding is
+automatically a pair of complementary rank-one projections. Its difference
+is a unit bivector, so complement preservation and the `2+1` adjoint split
+follow without extra assumptions, and `Spin(3)` makes all representatives
+gauge equivalent. The current joint PUSC--record action nonetheless cannot
+derive the landing: its variables are only the PUSC coordinates and the
+Frobenius record response. No record-to-Clifford map or cross-landing residual
+appears in its Euler equations. The remaining physical question is therefore
+occupation of one landing class, not a choice among embeddings.
