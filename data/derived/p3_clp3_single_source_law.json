@@ -1,0 +1,64 @@
+{
+  "schema": "tau_core_p3_clp3_single_source_action_v1",
+  "source_freeze_payload": {
+    "candidate_id": "P3-CLP3-SSAC-v1",
+    "freeze_date": "2026-08-28",
+    "status": "SOURCE_FROZEN_SINGLE_ACTION_CONDITIONAL_CANDIDATE",
+    "upstream_seed_candidate_id": "P3-CLP3-CSP-v1",
+    "upstream_seed_fingerprint_sha256": "fec6f6490202649e249d2cc791d6f919f3a071e80c3de02f6b4dd83622aa3b72",
+    "terminal_data_used": false,
+    "endpoint_fitted_parameters": [],
+    "source_law": {
+      "name": "source-fidelity Gram body-square action",
+      "formula": "L_1src=I_Sat(X)+A_*D(rhohat_s||rho_X)+(A_*/2)Gamma_GE(J)+Q_B(b;s)",
+      "gram_defect": "Gamma_GE(J)=||J^dagger J-I_src||_HS^2+||J J^dagger-I_phys||_HS^2",
+      "body_square": "Q_B=1/2<b-b0,K_B(b-b0)>-<j_B(s),b-b0>+1/2<j_B(s),K_B^-1 j_B(s)>",
+      "body_square_equivalent": "Q_B=1/2||K_B^(1/2)(b-b0-K_B^-1 j_B(s))||^2",
+      "generative_order": [
+        "freeze the complete source grammar and exact compatibility fibre",
+        "select the source-equivalence completion by source fidelity",
+        "realize it through the two-sided Gram-zero map",
+        "solve the Schur-neutral body square"
+      ],
+      "units": {
+        "A_*": "action",
+        "relative_entropy": "dimensionless",
+        "Gamma_GE": "dimensionless in source-normalized Hodge frames",
+        "Q_B": "action"
+      }
+    },
+    "assumptions": {
+      "S1": "a physically supplied complete seed grammar and complete residual family define Sat",
+      "S2": "faithful Hodge states exist on a fixed common domain and equality is rigid modulo Hodge-unitary source equivalence",
+      "S3": "the parent counts source-fidelity mismatch and the two-sided Gram defect once and positively",
+      "S4": "K_B is source-independent, positive and invertible; j_B(s) is the typed seed first variation",
+      "S5": "the admitted comparison lies in one seed-fixed connected Hodge-generated component, or relative component characters are supplied"
+    },
+    "derived_premise_status": {
+      "P1_complete_seed_physically_owned": "NOT_DERIVED; S1 supplies the source language",
+      "P2_exact_compatible_fibre": "INHERITED_AND_ENFORCED_BY_I_Sat",
+      "P3_positive_trace_class_hodge_action": "INHERITED_FROM_P3_CLP3_FINITE_PACKET",
+      "P4_physical_spectral_priority": "DERIVED_CONDITIONALLY_FROM_POSITIVE_SOURCE_FIDELITY_TERM",
+      "P5_attainment_and_equality_rigidity": "DERIVED_CONDITIONALLY_UNDER_S2_AND_S5",
+      "P6_two_sided_typed_realization": "DERIVED_CONDITIONALLY_FROM_Gamma_GE_MINIMUM_ZERO",
+      "P7_td1_regular_handoff": "DERIVED_CONDITIONALLY_FROM_Q_B_WITH_K_B_POSITIVE"
+    },
+    "countermodels": {
+      "incomplete_language": "an undeclared relation direction can leave every declared source residual zero",
+      "wrong_fidelity_sign": "negative relative-entropy sign selects a proper source-compatible extension",
+      "one_sided_gram": "isometric inclusion or coisometry hides target or source support",
+      "component_zero_jet": "an independent component constant can reverse the global minimum without changing the Hodge packet",
+      "nonpositive_body_hessian": "loss of positive invertibility destroys the unique regular body handoff"
+    },
+    "claim_boundary": {
+      "single_action_compresses_P4_through_P7_conditionally": true,
+      "P1_self_certified_by_the_action": false,
+      "old_bare_tau_derives_the_action": false,
+      "nature_owns_the_action": false,
+      "nature_occupation": false,
+      "physical_base_seed_packet_export_authorized": false,
+      "empirical_validation": false
+    }
+  },
+  "source_fingerprint_sha256": "d97148624b6e51903540490b0cbf0aa248d042f31b85f8be55483a15075dca1d"
+}

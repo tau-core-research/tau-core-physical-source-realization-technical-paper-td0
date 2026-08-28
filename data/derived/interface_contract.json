@@ -1,0 +1,27 @@
+{
+  "module": "TD-0",
+  "version": "1.0.0",
+  "consumes": "CompleteSeedPresentation",
+  "produces": "BaseSeedPacket",
+  "payload": [
+    "B_tau_phys",
+    "s_U",
+    "A_B",
+    "J_seed",
+    "N_phys",
+    "source_grading",
+    "A_*",
+    "ownership_certificate"
+  ],
+  "stage_order": [
+    "complete_seed_presentation",
+    "source_compatibility_zero",
+    "hodge_action_operator",
+    "constrained_spectral_selection",
+    "faithful_cyclic_occupation",
+    "two_sided_realization",
+    "base_seed_packet_export"
+  ],
+  "terminal_fit_allowed": false,
+  "nature_occupation_proved": false
+}

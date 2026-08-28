@@ -1,0 +1,77 @@
+{
+  "nature_level_validation": false,
+  "unrestricted_parent_selection_derived": false,
+  "empirical_data_used": false,
+  "results": [
+    {
+      "id": "PSR1",
+      "status": "definition",
+      "claim": "The exact zero set of the complete source residual defines the source-compatible fibre."
+    },
+    {
+      "id": "PSR2",
+      "status": "proved_conditional",
+      "claim": "A proper positive finite common-compression extension has strictly larger heat trace."
+    },
+    {
+      "id": "PSR3",
+      "status": "proved_conditional",
+      "claim": "Continuous tensor-additive spectral complexity is logarithmic up to normalization."
+    },
+    {
+      "id": "PSR4",
+      "status": "proved",
+      "claim": "The normalized exponential of a trace-class positive source operator is faithful; its standard GNS root is cyclic."
+    },
+    {
+      "id": "PSR5",
+      "status": "proved_conditional",
+      "claim": "Two-sided Gram identities plus typed intertwining give a lossless source-to-base realization."
+    },
+    {
+      "id": "PSR6",
+      "status": "proved_conditional",
+      "claim": "Attainment and equality rigidity select one source-equivalence class on the exact compatibility fibre."
+    },
+    {
+      "id": "PSR7",
+      "status": "proved_no_go",
+      "claim": "The narrow seed reduct cannot exclude a hidden seed-annihilator block without an independently owned selection law."
+    },
+    {
+      "id": "PSR8",
+      "status": "proved_no_go",
+      "claim": "Spectral minimality does not select terminal-role labels or a unique off-shell action representative."
+    },
+    {
+      "id": "PSR9",
+      "status": "proved_conditional",
+      "claim": "The selected realized class exports the frozen BaseSeedPacket without terminal fitting."
+    },
+    {
+      "id": "PSR10",
+      "status": "proved_internal_finite",
+      "claim": "The frozen P3/CLP3 candidate realizes a complete seven-generator Clifford and two-record presentation with a faithful cyclic 256-dimensional source representation, typed support flag and two ordered ports."
+    },
+    {
+      "id": "PSR11",
+      "status": "proved_no_go",
+      "claim": "The explicit P3/CLP3 instantiation does not prove physical ownership, unrestricted ambient exhaustivity, equality rigidity, or Nature-authorized BaseSeedPacket export."
+    },
+    {
+      "id": "PSR12",
+      "status": "proved_conditional",
+      "claim": "One nonnegative source-fidelity, two-sided-Gram and Schur-neutral body-square action jointly realizes P4--P7 after a complete source language is supplied."
+    },
+    {
+      "id": "PSR13",
+      "status": "proved_no_go",
+      "claim": "A source action cannot certify completeness of the residual language used to define its own admissible fibre; P1 remains source data or an independently proved exhaustivity theorem."
+    },
+    {
+      "id": "PSR14",
+      "status": "proved_no_go",
+      "claim": "An independent component zero-jet can reverse global selection without changing the local Hodge packet, so unrestricted Nature ownership does not follow from the single-action witness."
+    }
+  ]
+}

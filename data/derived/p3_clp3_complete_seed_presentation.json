@@ -1,0 +1,235 @@
+{
+  "schema": "tau_core_p3_clp3_complete_seed_presentation_v1",
+  "source_freeze_payload": {
+    "candidate_id": "P3-CLP3-CSP-v1",
+    "freeze_date": "2026-08-28",
+    "status": "SOURCE_FROZEN_CONDITIONAL_COMPLETION_CANDIDATE",
+    "terminal_data_used": false,
+    "endpoint_fitted_parameters": [],
+    "canonical_owners": [
+      "docs/tau_core_p3_occupied_algebra_reconstruction_001.md",
+      "docs/tau_core_base_seed_full_response_three_front_001.md",
+      "docs/tau_core_cross_scale_readout_composition_principle_001.md"
+    ],
+    "complete_seed_presentation": {
+      "type": "CompleteSeedPresentation",
+      "tuple": [
+        "R_s",
+        "A_s",
+        "pi_s",
+        "H_s",
+        "Omega_s",
+        "g_s",
+        "delta_s",
+        "A_*"
+      ],
+      "role_order": [
+        "B",
+        "O",
+        "R",
+        "U",
+        "Q",
+        "M",
+        "G"
+      ],
+      "degree_one_carrier": {
+        "symbol": "E_P3",
+        "field": "C",
+        "dimension": 7,
+        "metric": "K_*=I_7 in the frozen source-orthonormal frame",
+        "typed_rays": {
+          "B": 0,
+          "O": 1,
+          "R": 2,
+          "U": 3,
+          "Q": 4,
+          "M": 5,
+          "G": 6
+        }
+      },
+      "primitive_generators": {
+        "role_generators": [
+          "g_B",
+          "g_O",
+          "g_R",
+          "g_U",
+          "g_Q",
+          "g_M",
+          "g_G"
+        ],
+        "record_idempotents": [
+          "p_0",
+          "p_1"
+        ]
+      },
+      "relations": [
+        "g_a^*=g_a",
+        "g_a g_b+g_b g_a=2 delta_ab 1",
+        "p_r^*=p_r",
+        "p_r p_s=delta_rs p_r",
+        "p_0+p_1=1",
+        "[p_r,g_a]=0"
+      ],
+      "quotient_algebra": {
+        "presentation": "Cl(E_P3,K_*) tensor (C direct-sum C)",
+        "isomorphism_class": "M_8(C) direct-sum M_8(C) direct-sum M_8(C) direct-sum M_8(C)",
+        "complex_dimension": 256,
+        "source_exhaustivity_scope": "declared P3 component only"
+      },
+      "representation": {
+        "H_s": "Lambda^bullet(C^7) tensor C^2_record",
+        "dimension": 256,
+        "pi_s(g_a)": "(exterior_creation_a+exterior_contraction_a) tensor I_2",
+        "pi_s(p_r)": "I_128 tensor |r><r|",
+        "Omega_s": "|empty> tensor (|0>+|1>)/sqrt(2)",
+        "root_property": "faithful cyclic trace-GNS root on the declared quotient"
+      },
+      "grading_and_source_symmetry": {
+        "clifford_grade": "gamma(g_a)=-g_a; gamma(p_r)=p_r",
+        "record_exchange": "sigma(g_a)=g_a; sigma(p_0)=p_1",
+        "trace": "tau_sym=(1/4) sum_(epsilon,r) tr_8",
+        "central_weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "hodge_action_datum": {
+        "delta_s": "canonical exterior creation/contraction calculus",
+        "K_s": "N_ext tensor I_2",
+        "eigenvalues": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "multiplicity_rule": "2 binomial(7,degree)",
+        "action_unit": 1.0,
+        "action_unit_status": "dimensionless source normalization; A_*=hbar only under the separate faithful phase theorem"
+      },
+      "typed_support_flag": {
+        "relative_role_order": [
+          "B",
+          "O",
+          "R",
+          "Q",
+          "M",
+          "G"
+        ],
+        "projector_supports": {
+          "P_BMG": [
+            "B",
+            "M",
+            "G"
+          ],
+          "P_OQ": [
+            "O",
+            "Q"
+          ],
+          "P_RMG": [
+            "R",
+            "M",
+            "G"
+          ]
+        },
+        "joint_blocks": {
+          "100": 1,
+          "010": 2,
+          "001": 1,
+          "101": 2
+        },
+        "ordered_ports": {
+          "OQ": {
+            "source_leg": "O",
+            "conjugate_response_leg": "Q"
+          },
+          "MG": {
+            "source_leg": "M",
+            "conjugate_response_leg": "G"
+          }
+        },
+        "independent_unit_line": "L_U"
+      }
+    },
+    "component_local_completion": {
+      "representative": "Gamma_CLP3=sum_(C in pi_0(s_U)) Gamma_C",
+      "p3_component_law": "L_P3^min",
+      "clauses": {
+        "JLC1": "primitive support exhaustivity",
+        "JLC2": "component preservation",
+        "JLC3": "once-counted nonnegative component action with no hidden global predicate",
+        "JLC4": "source-rigid common-unit realization",
+        "JLC5": "the connected P3 component carries L_P3^min with attainable zero"
+      },
+      "identifiable_class": "[Gamma_CLP3]_QG: same physical minimum, true-normal Hessian, typed support/port/root/phase packet",
+      "off_shell_representative_unique": false
+    },
+    "qg_fanout": {
+      "source_module": "two-mode pointed CAR module H_src=C^4",
+      "role_plane": "R_QG=span(v_Q,v_G)",
+      "joint_support": "R_QG tensor H_src",
+      "role_fibres": {
+        "Q": "H_src",
+        "G": "H_src"
+      },
+      "transport": "T_(G<-Q)=W_G W_Q^+",
+      "relative_metric_law": "T^dagger h_G T=h_Q",
+      "phase_identification": "A_*=hbar only if the faithful phase-character premise is physically owned"
+    },
+    "conditional_base_seed_packet_candidate": {
+      "type": "BaseSeedPacketCandidate",
+      "B_tau_phys": "finite P3/CLP3 candidate carrier; not Nature-certified",
+      "s_U": "typed E_P3 relation seed plus two-leg record root",
+      "A_B": "unit positive quadratic downstream witness only",
+      "J_seed": "identity on the seven source-orthonormal role directions",
+      "N_phys": "zero on the declared finite witness",
+      "source_grading": "typed P3 rays plus Clifford grade and record exchange",
+      "A_*": 1.0,
+      "physical_export_authorized": false
+    },
+    "p1_p7_ledger": {
+      "P1_complete_seed_physically_owned": {
+        "candidate_instantiated": true,
+        "nature_ownership_proved": false
+      },
+      "P2_exact_compatible_fibre": {
+        "finite_declared_support_witness": true,
+        "unrestricted_ambient_exhaustivity_proved": false
+      },
+      "P3_positive_trace_class_hodge_action": {
+        "finite_witness": true
+      },
+      "P4_physical_spectral_priority": {
+        "candidate_law_declared": true,
+        "nature_ownership_proved": false
+      },
+      "P5_attainment_and_equality_rigidity": {
+        "completion_class_attained": true,
+        "unrestricted_rigidity_proved": false
+      },
+      "P6_two_sided_typed_realization": {
+        "identity_witness_on_declared_support": true,
+        "physical_base_ownership_proved": false
+      },
+      "P7_td1_regular_handoff": {
+        "unit_quadratic_interface_witness": true,
+        "physical_body_law_selected": false
+      }
+    },
+    "claim_boundary": {
+      "internal_finite_seed_presentation_complete": true,
+      "conditional_clp3_law_to_p3_occupation": true,
+      "conditional_qg_fanout": true,
+      "nature_seed_selection": false,
+      "nature_occupation": false,
+      "ambient_parent_exhaustivity": false,
+      "empirical_validation": false
+    }
+  },
+  "source_fingerprint_sha256": "fec6f6490202649e249d2cc791d6f919f3a071e80c3de02f6b4dd83622aa3b72"
+}

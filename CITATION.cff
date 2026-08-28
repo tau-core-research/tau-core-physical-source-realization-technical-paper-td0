@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this technical derivation package, cite the companion manuscript."
+title: "Tau Core Physical Source Realization: Complete Seed Presentations, Spectral Selection, and the Nature-Occupation Boundary"
+type: article
+authors:
+  - family-names: Olcsak
+    given-names: Jozsef
+version: 0.1.0
+date-released: 2026-08-28
+license: MIT
+repository-code: "https://github.com/tau-core-research/tau-core-physical-source-realization-technical-paper-td0"

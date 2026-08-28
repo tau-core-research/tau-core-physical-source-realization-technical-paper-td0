@@ -1,0 +1,11 @@
+.pytest_cache/
+.mplconfig/
+tmp/
+__pycache__/
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.toc
