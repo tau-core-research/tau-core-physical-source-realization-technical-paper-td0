@@ -23,6 +23,7 @@ or promoted by the standalone TD-0 package.
 | Cross-landing selection by the existing PUSC--record action | This repository | No-go by variational-domain and same-reduct audit | The action jointly realizes PUSC and record but has no embedding variable or cross-landing residual, so physical landing ownership remains open |
 | Same-reduct internal/external landing separation | This repository | Exact non-entailment theorem for the currently displayed PUSC and Frobenius-record signatures | Proves that common occupation and the shared primitive coordinate do not imply internal record landing |
 | Internal graded locality (`IGL-P1`) completion | This repository | Conditional zero-set theorem given an inherited record involution image in the ontic `Cl_10` envelope | Supplies one endpoint-blind mixed residual; both role-locality and evenness are necessary, while domain ownership and Nature occupation remain open |
+| Same-envelope joint graded realization (`JGR-P1`) | This repository | Conditional equivalence theorem in the frozen canonical PUSC realization | Retypes the IGL zero locus as a faithful trace-preserving graded representation of `Cl(E) graded_tensor A_port` inside the same ontic `Cl_10`; external, odd and role-mixing controls preserve the ownership boundary |
 | Simplicity obstruction to a P3 null quotient | Standard finite-dimensional C-star algebra | `M_32(C)` is simple | Forbids retaining an ontic `M_32(C)` while quotienting its missing directions to the four-block P3 algebra by a nontrivial star ideal |
 | P1 source-language exhaustivity for Nature | No current theorem owner | Open physical premise | The self-certification no-go proves that the action cannot establish P1 from its own residual language; the present P3 ambient control is not independently owned |
 | Nature occupation of the complete source packet | No current theorem owner | Open | Requires independent source evidence or a source-frozen discriminator |
@@ -101,3 +102,13 @@ fit and it removes no further representation parameter. It also does not
 derive the in-envelope `R` domain from the current action. The irreducible
 upstream question is whether the enriched source owns that domain and mixed
 law before any terminal readout is consulted.
+
+The latest theorem shows that this mixed law need not be interpreted as an
+independent interaction. Once the existing role and record presentations are
+required to possess one faithful graded realization in the same ontic
+envelope, the IGL conditions follow, and every IGL zero reconstructs that
+joint realization. The finite image rank is `256`, exactly the dimension of
+the abstract joint algebra. A faithful realization on an external tensor
+factor proves that abstract joint ownership alone is insufficient. The exact
+remaining datum is physical ownership and occupation of *same-envelope*
+joint graded realization.

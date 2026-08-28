@@ -47,6 +47,10 @@ that Nature occupies the selected completion.
 | Internal graded locality zero-set theorem | Proven conditionally | an inherited record involution image inside the same ontic `Cl_10` envelope | the nonnegative mixed residual vanishes exactly on the even relative commutant record manifold, hence on one `Spin(3)` orbit |
 | Minimality of the mixed residual | Proven in the declared record-involution class | role-locality and full Clifford grading | odd twist defeats locality-only; even role mixer defeats grading-only; off-shell relative stiffness is not claimed unique |
 | Physical ownership of the IGL domain and law | Not established | enriched source must own an in-envelope record image and the mixed relation before minimization | the conditional action cannot create its own variable or prove Nature occupation |
+| JGR--IGL equivalence | Proven conditionally in the frozen PUSC realization | fixed faithful `Cl_7` role representation, equal-weight even record algebra and same `Cl_10` envelope | a same-envelope faithful graded joint representation exists iff the record lands in the even relative commutant iff IGL vanishes; image rank is `256` |
+| Abstract joint algebra implies internal landing | Disproved | compare internal and external faithful realizations | the external tensor-factor model has joint rank `256` but no record image in the original ontic envelope |
+| Grading and tensor locality in JGR | Independently necessary | odd internal and even role-mixing controls | ordinary faithfulness or evenness alone does not imply the typed joint realization |
+| Physical ownership of JGR-P1 | Not established | enriched source must require same-envelope joint graded realization before minimization | the equivalence retypes the blocker but does not prove Nature occupation |
 | Schur-neutral body handoff | Proven | positive invertible source-independent `K_B` and typed load `j_B(s)` | supplies a regular TD-I input without back-selecting the source completion |
 
 ## Circularity audit
@@ -129,3 +133,12 @@ direct sum of its seven role commutators and its grading commutator has the
 landing class as its exact zero set. This closes the mathematical form of the
 missing relation. It does not close physical ownership of the variable or
 Nature occupation of that relation.
+
+The JGR--IGL theorem now retypes the positive completion. In the frozen PUSC
+realization, an IGL zero is equivalent to a faithful graded representation of
+the already present abstract role--record product in the same ontic envelope.
+This removes the interpretation of IGL as an arbitrary new coupling. It does
+not remove the physical premise: an external faithful representation shows
+that abstract joint-algebra ownership is weaker than same-envelope
+internality, while the odd and role-mixing controls show that grading and
+tensor locality cannot be dropped.

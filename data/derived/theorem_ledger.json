@@ -172,6 +172,21 @@
       "id": "PSR34",
       "status": "proved_minimal_conditional",
       "claim": "Role commutation and evenness are independently necessary: the odd-twist and even role-mixing record controls satisfy one condition while violating the other. The completion does not derive ownership of its in-envelope record domain or Nature occupation."
+    },
+    {
+      "id": "PSR35",
+      "status": "proved_conditional",
+      "claim": "A faithful trace-preserving graded star representation of Cl(E) graded-tensor A_port in the same Cl_10 ontic envelope, extending the fixed role embedding, is equivalent to a trace-preserving binary-record landing in the even relative commutant."
+    },
+    {
+      "id": "PSR36",
+      "status": "proved_no_go",
+      "claim": "Abstract joint-algebra ownership alone does not force internal landing: a faithful external tensor-factor realization preserves the abstract graded product but is not a same-envelope representation; an odd internal control additionally proves that grading cannot be omitted."
+    },
+    {
+      "id": "PSR37",
+      "status": "open",
+      "claim": "IGL-P1 can be reinterpreted as the finite relation defect of same-envelope joint graded realization rather than a new fitted gain, but the current source still does not derive or physically occupy that realization."
     }
   ]
 }

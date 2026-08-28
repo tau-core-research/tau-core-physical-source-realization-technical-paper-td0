@@ -123,6 +123,18 @@ def main():
             / "p3_clp3_p1_record_clifford_source_completion_audit.json"
         ).read_text()
     )
+    p1_joint_graded_representation = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_joint_graded_representation.json"
+        ).read_text()
+    )
+    p1_joint_graded_representation_audit = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_joint_graded_representation_audit.json"
+        ).read_text()
+    )
     single_source_law = json.loads(
         (DERIVED / "p3_clp3_single_source_law.json").read_text()
     )
@@ -292,6 +304,42 @@ def main():
         and p1_record_source_completion_audit["nature_level_occupation"]
         is False
     )
+    checks["p1_joint_graded_representation_audit_passes"] = (
+        p1_joint_graded_representation_audit["passed"]
+        == p1_joint_graded_representation_audit["total"]
+    )
+    checks["p1_igl_is_equivalent_to_same_envelope_joint_realization"] = (
+        p1_joint_graded_representation_audit["checks"][
+            "internal_joint_representation_has_full_256_rank"
+        ]
+        and p1_joint_graded_representation_audit["checks"][
+            "every_sampled_igl_zero_defines_a_faithful_joint_representation"
+        ]
+        and p1_joint_graded_representation["source_freeze_payload"][
+            "claim_boundary"
+        ]["igl_is_equivalent_to_jgr_p1_conditionally"]
+    )
+    checks["p1_same_envelope_and_grading_are_independent_requirements"] = (
+        p1_joint_graded_representation_audit["checks"][
+            "same_envelope_condition_is_logically_essential"
+        ]
+        and p1_joint_graded_representation_audit["checks"][
+            "odd_control_is_faithful_and_role_local_but_not_graded"
+        ]
+        and p1_joint_graded_representation_audit["checks"][
+            "even_role_mixer_is_graded_but_not_tensor_local"
+        ]
+    )
+    checks["p1_joint_realization_ownership_remains_open"] = (
+        p1_joint_graded_representation_audit["physical_source_ownership"]
+        == "OPEN"
+        and p1_joint_graded_representation_audit["nature_level_occupation"]
+        is False
+        and p1_joint_graded_representation["source_freeze_payload"][
+            "source_status"
+        ]["same_envelope_joint_graded_representation_owned"]
+        is False
+    )
     checks["single_source_law_audit_passes"] = single_source_audit["passed"] == single_source_audit["total"]
     checks["single_source_law_compresses_p4_through_p7"] = single_source_audit["verdict"] == "P4_P7_SINGLE_ACTION_COMPRESSION_PASS"
     checks["single_source_law_does_not_self_certify_p1"] = single_source_audit["P1_physical_source_language_ownership_proved"] is False
@@ -351,6 +399,9 @@ def main():
             {"id": "PSR32", "status": "proved_no_go", "claim": "The current PUSC and Frobenius-record presentation has no mixed record--Clifford word: an internal even-commutant realization and an external tensor-record realization have identical current reducts but different landing truth values."},
             {"id": "PSR33", "status": "constructed_conditional", "claim": "Given an inherited record involution image inside the same Cl_10 envelope, one nonnegative internal-graded-locality residual has zero set exactly the even-relative-commutant landing manifold and hence one Spin(3) gauge orbit."},
             {"id": "PSR34", "status": "proved_minimal_conditional", "claim": "Role commutation and evenness are independently necessary: the odd-twist and even role-mixing record controls satisfy one condition while violating the other. The completion does not derive ownership of its in-envelope record domain or Nature occupation."},
+            {"id": "PSR35", "status": "proved_conditional", "claim": "A faithful trace-preserving graded star representation of Cl(E) graded-tensor A_port in the same Cl_10 ontic envelope, extending the fixed role embedding, is equivalent to a trace-preserving binary-record landing in the even relative commutant."},
+            {"id": "PSR36", "status": "proved_no_go", "claim": "Abstract joint-algebra ownership alone does not force internal landing: a faithful external tensor-factor realization preserves the abstract graded product but is not a same-envelope representation; an odd internal control additionally proves that grading cannot be omitted."},
+            {"id": "PSR37", "status": "open", "claim": "IGL-P1 can be reinterpreted as the finite relation defect of same-envelope joint graded realization rather than a new fitted gain, but the current source still does not derive or physically occupy that realization."},
         ],
     }
     (DERIVED / "theorem_ledger.json").write_text(json.dumps(ledger, indent=2) + "\n")

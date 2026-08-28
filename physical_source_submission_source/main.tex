@@ -42,7 +42,7 @@
 Complete Seed Presentations, Spectral Selection, and the Nature-Occupation Boundary\\[3pt]
 \large An unnumbered technical derivation companion}
 \author{Jozsef Olcsak\\Independent researcher}
-\date{Version 0.7 --- 28 August 2026}
+\date{Version 0.8 --- 28 August 2026}
 
 \begin{document}
 \maketitle
@@ -105,7 +105,14 @@ internal-graded-locality residual has exactly the desired landing manifold as
 its zero set.  Odd-twist and even role-mixing controls prove that both its
 role-locality and grading components are necessary.  This constructs a finite
 completion but does not derive ownership of its record-image domain or show
-that Nature occupies it.
+that Nature occupies it.  We finally prove that this residual is not an
+independent fitted interaction: on the frozen PUSC realization its zero set is
+equivalent to the existence of one faithful trace-preserving graded joint
+representation of the already present role and record algebras inside the
+same ontic $\operatorname{Cl}_{10}$ envelope.  External-factor, odd and
+role-mixing controls show that same-envelope internality, grading and tensor
+locality are each essential.  Current source laws still do not derive that
+joint realization.
 Hidden spectator, role-rotation, isospectral,
 component-zero-jet, nonfaithful-state and off-shell
 deformation controls show the exact boundary: the narrow Tau reduct neither
@@ -1043,6 +1050,100 @@ record image and the mixed internal-graded-locality relation.  The numerical
 audit verifies the zero set and both independence controls, but does not
 promote this conditional completion to a physical source theorem.
 
+\subsection{Joint graded realization: the algebraic origin of IGL}
+
+The residual in Eq.~\eqref{eq:iglresidual} can now be retyped more sharply.
+Let $A_{\rm port}=\mathbb C p_+\oplus\mathbb C p_-$ carry the trivial even
+grading, and retain the fixed faithful role representation
+$\gamma:\operatorname{Cl}(E)\to\operatorname{Cl}_{10}(\mathbb C)$.  Define
+the same-envelope joint graded realization condition
+\begin{equation}
+ \boxed{
+ \Pi_J:\operatorname{Cl}(E)\widehat\otimes A_{\rm port}
+ \lhook\joinrel\longrightarrow \operatorname{Cl}_{10}(\mathbb C)}
+ \label{eq:jgrmap}
+\end{equation}
+to mean a unital graded $*$-monomorphism which extends $\gamma$ and preserves
+the equal record weights.  The hat denotes the graded tensor product; because
+$A_{\rm port}$ is purely even, its elements commute with the role factor.
+
+\begin{theorem}[JGR--IGL equivalence in the frozen PUSC realization]
+The following statements are equivalent:
+\begin{enumerate}
+ \item a map $\Pi_J$ satisfying Eq.~\eqref{eq:jgrmap} exists inside the same
+ ontic $\operatorname{Cl}_{10}(\mathbb C)$ envelope;
+ \item there is a unital trace-preserving $*$-monomorphism
+ $\iota:A_{\rm port}\hookrightarrow
+ \operatorname{Comm}(\operatorname{Cl}(E))\cap
+ \operatorname{Cl}_{10}(\mathbb C)^{\rm even}$;
+ \item for $r=p_+-p_-$, the image $R=\iota(r)$ belongs to
+ $\mathcal R_{\rm rec}$ and $\mathcal A_{\rm IGL}(R)=0$.
+\end{enumerate}
+For every such realization the joint image has complex dimension $256$ and
+is therefore faithful on the frozen abstract algebra
+$\operatorname{Cl}_7(\mathbb C)\widehat\otimes A_{\rm port}$.
+\label{thm:jgrigl}
+\end{theorem}
+
+\begin{proof}
+Assume first that $\Pi_J$ exists and put
+$\iota(b)=\Pi_J(\id\widehat\otimes b)$.  Tensor-factor locality makes
+$\iota(b)$ commute with $\gamma(\operatorname{Cl}(E))$, and preservation of
+the grading makes it even.  Unitality, injectivity and the record-trace
+condition give the stated monomorphism.  Its record involution is
+self-adjoint, squares to $\id$ and has normalized trace zero, so it lies in
+$\mathcal R_{\rm rec}$; Eq.~\eqref{eq:iglzero} gives the IGL zero condition.
+More directly, it makes
+every summand of Eq.~\eqref{eq:iglresidual} vanish.
+
+Conversely, let $\iota$ have the stated landing and define on elementary
+tensors
+\begin{equation}
+ \Pi_J(a\widehat\otimes b)=\gamma(a)\,\iota(b).
+ \label{eq:jgrproduct}
+\end{equation}
+Commutation with the role algebra makes Eq.~\eqref{eq:jgrproduct} a unital
+$*$-homomorphism, and evenness of $\iota(A_{\rm port})$ makes it graded.  It
+extends $\gamma$ and preserves the record trace by construction.  To check
+faithfulness without assuming it, choose the representative
+$R_0=i\gamma_8\gamma_9$.  The $128$ ordered role words and the same words
+multiplied by $R_0$ are linearly independent, so the image rank is $256$,
+equal to the dimension of the abstract joint algebra.  Every other admissible
+landing is $\operatorname{Spin}(W)$-conjugate to $R_0$; conjugation preserves
+rank.  Hence every product map in this orbit is injective.  Finally,
+Eq.~\eqref{eq:iglzero} gives the equivalence with item 3.
+\end{proof}
+
+\begin{corollary}[IGL is a representation defect]
+After the record-algebra constraints and the frozen PUSC role representation
+are inherited, $\rho_{\rm IGL}$ is a finite relation defect for
+same-envelope joint graded realization.  It introduces no new dimensionless
+fit coefficient and no independent terminal law.  Its zero set enforces
+Eq.~\eqref{eq:jgrmap}; positive off-shell weights remain non-unique.
+\end{corollary}
+
+Three controls delimit the statement.  First,
+$\operatorname{Cl}_{10}(\mathbb C)\otimes A_{\rm port}$ carries a faithful
+external joint representation of the same abstract algebra, but its record
+factor does not land inside the original ontic envelope.  Thus an abstract
+joint algebra or a common source name does not imply same-envelope
+internality.  Second, $R_{\rm odd}=\chi_7R_0$ gives a faithful ordinary
+internal tensor representation and commutes with every role, but is odd; a
+non-graded joint representation is insufficient.  Third,
+$R_{\rm mix}=i\gamma_1\gamma_8$ is even but violates role commutation, so
+grading alone is insufficient.  The finite audit obtains joint ranks $256$
+for the admissible internal realization, the odd control and the external
+model, while separating them by the typed conditions.
+
+The theorem reduces the physical question but does not answer it.  The
+current corpus conditionally owns the abstract
+$\operatorname{Cl}(E)\widehat\otimes A_{\rm port}$ presentation and the
+PUSC $\operatorname{Cl}_{10}$ candidate envelope separately.  It does not
+yet contain a source theorem requiring their faithful joint realization in
+that same envelope.  Therefore JGR--P1 is presently a precise enriched-source
+candidate, not a proved property of Nature and not authorization to export a
+physical \texttt{BaseSeedPacket}.
+
 \section{Exact compatibility before complexity}
 
 \begin{definition}[Source defect and exact fibre]
@@ -1416,6 +1517,13 @@ would weaken or reject the selected completion.
  manifold as its zero set.  Odd-twist and even role-mixing controls prove that
  its grading and role-locality components are independently necessary.  The
  current source still does not own that record-image domain or the mixed law.
+ \item[Joint-representation reduction.] On the frozen PUSC realization,
+ IGL vanishes exactly when the existing role and record algebras admit one
+ faithful trace-preserving graded representation inside the same ontic
+ $\operatorname{Cl}_{10}$ envelope.  The joint image has rank $256$.
+ External-factor, odd and role-mixing controls prove that internality,
+ grading and tensor locality are distinct requirements.  This retypes IGL as
+ a representation defect but does not derive JGR--P1 from the source.
  \item[Open.] Nature occupation requires independent source evidence or a
  source-frozen discriminator.  A Tau-specific terminal signal belongs
  downstream of TD-III.
@@ -1438,7 +1546,7 @@ The decisive remaining physical statement is now narrower:
 \begin{equation}
  \boxed{\begin{gathered}
  \text{Is the pre-body source envelope ontic or metric-auxiliary,}\\
- \text{does it own an in-envelope record image and internal graded locality,}\\
+ \text{does it own a same-envelope joint graded role--record realization,}\\
  \text{and therefore occupy the unique even-relative-commutant landing orbit,}\\
  \text{and does the resulting occupied seed have faithful full GNS rank}\\
  \text{in the independently owned physical algebra,}\\

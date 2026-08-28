@@ -122,6 +122,18 @@ are necessary. This is a minimal conditional completion, not a derivation
 that the physical source owns the in-envelope record domain or that Nature
 occupies its zero set.
 
+A ninth, 19-check joint-representation audit identifies the algebraic content
+of that residual. On the frozen PUSC realization, IGL vanishes exactly when
+the existing abstract `Cl(E) graded_tensor A_port` algebra has one faithful,
+trace-preserving graded representation inside the same ontic `Cl_10(C)`
+envelope, extending the fixed role representation. The internal joint image
+has rank 256. An external tensor-factor realization has the same rank but
+fails same-envelope internality; an odd internal realization has the same
+rank and role locality but fails grading; an even role mixer fails tensor
+locality. Thus IGL is a finite representation defect, not a fitted new gain.
+The source origin and Nature occupation of the same-envelope joint realization
+remain open.
+
 The P3/CLP3 file exports only a `BaseSeedPacketCandidate`. Its ownership
 certificate explicitly forbids promotion to a physical `BaseSeedPacket` until
 the missing Nature-selection premises are independently supplied.

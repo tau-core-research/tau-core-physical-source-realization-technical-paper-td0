@@ -1,0 +1,91 @@
+{
+  "checks": {
+    "fingerprint_matches_payload": true,
+    "upstream_igl_packet_is_fingerprint_locked": true,
+    "endpoint_blind_freeze": true,
+    "good_record_obeys_inherited_record_algebra": true,
+    "good_record_is_even_and_role_local": true,
+    "good_record_projectors_have_equal_trace": true,
+    "internal_joint_representation_has_full_256_rank": true,
+    "every_sampled_igl_zero_defines_a_faithful_joint_representation": true,
+    "joint_representation_recovers_the_landing": true,
+    "landing_multiplication_map_is_well_defined": true,
+    "odd_control_is_a_valid_record_involution": true,
+    "odd_control_is_faithful_and_role_local_but_not_graded": true,
+    "even_role_mixer_is_a_valid_record_involution": true,
+    "even_role_mixer_is_graded_but_not_tensor_local": true,
+    "external_tensor_model_is_faithful": true,
+    "external_tensor_model_is_not_same_envelope_internality": true,
+    "same_envelope_condition_is_logically_essential": true,
+    "igl_is_the_joint_representation_defect_not_a_new_gain": true,
+    "current_source_does_not_derive_jgr_or_nature_occupation": true
+  },
+  "passed": 19,
+  "total": 19,
+  "verdict": "IGL_EQUIVALENT_TO_SAME_ENVELOPE_JOINT_GRADED_REPRESENTATION_PHYSICAL_OWNERSHIP_OPEN",
+  "diagnostics": {
+    "internal_joint_image_rank": 256,
+    "odd_ungraded_joint_image_rank": 256,
+    "external_joint_image_rank": 256,
+    "good_igl_defect": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "odd_igl_defect": [
+      0.0,
+      4.0,
+      4.0
+    ],
+    "even_role_mixer_igl_defect": [
+      4.0,
+      0.0,
+      4.0
+    ],
+    "sampled_landing_orbit": [
+      {
+        "coordinates": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "igl_defect": 0.0,
+        "joint_image_rank": 256,
+        "record_constraints": true
+      },
+      {
+        "coordinates": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "igl_defect": 0.0,
+        "joint_image_rank": 256,
+        "record_constraints": true
+      },
+      {
+        "coordinates": [
+          0.2672612419124244,
+          0.5345224838248488,
+          0.8017837257372732
+        ],
+        "igl_defect": 0.0,
+        "joint_image_rank": 256,
+        "record_constraints": true
+      },
+      {
+        "coordinates": [
+          -0.4364357804719848,
+          0.2182178902359924,
+          0.8728715609439696
+        ],
+        "igl_defect": 0.0,
+        "joint_image_rank": 256,
+        "record_constraints": true
+      }
+    ]
+  },
+  "exact_remaining_source_datum": "physical ownership and occupation of one same-envelope graded joint representation of Cl(E) tensor A_port",
+  "physical_source_ownership": "OPEN",
+  "nature_level_occupation": false
+}
