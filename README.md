@@ -146,6 +146,19 @@ the compression can reverse it. Hence the same-envelope class follows
 conditionally from the already declared selector, but common physical
 ownership and Nature occupation of those premises remain open.
 
+An eleventh, 19-check spectral-priority-origin audit removes three
+formula-level choices under an explicit structural packet. A positive linear
+unitarily invariant family compatible with orthogonal direct sums and
+calibrated on one primitive state is uniquely the ordinary unnormalized
+matrix trace. Continuous tensor-additive spectral complexity has form
+`c log Z`; closure under faithful spectator duplication together with
+attained equality-rigid minimization forces `c > 0`, and primitive response
+calibration fixes `c = 1`. Finally, an isometric source-Hodge intertwiner
+derives the same-compression identity. Normalized trace, zero/negative sign,
+nonintertwining and nonlinear-functional controls delimit the theorem. The
+result proves structural uniqueness on the declared class, not that the
+physical source owns that class or that Nature occupies its minimizer.
+
 The P3/CLP3 file exports only a `BaseSeedPacketCandidate`. Its ownership
 certificate explicitly forbids promotion to a physical `BaseSeedPacket` until
 the missing Nature-selection premises are independently supplied.

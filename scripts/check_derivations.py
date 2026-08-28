@@ -147,6 +147,18 @@ def main():
             / "p3_clp3_p1_joint_carrier_minimality_audit.json"
         ).read_text()
     )
+    p1_spectral_priority_origin = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_spectral_priority_origin.json"
+        ).read_text()
+    )
+    p1_spectral_priority_origin_audit = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_spectral_priority_origin_audit.json"
+        ).read_text()
+    )
     single_source_law = json.loads(
         (DERIVED / "p3_clp3_single_source_law.json").read_text()
     )
@@ -389,6 +401,52 @@ def main():
         ]["nature_selection_proved"]
         is False
     )
+    checks["p1_spectral_priority_origin_audit_passes"] = (
+        p1_spectral_priority_origin_audit["passed"]
+        == p1_spectral_priority_origin_audit["total"]
+        == 19
+    )
+    checks["p1_compatible_trace_is_ordinary_unnormalized_trace"] = (
+        p1_spectral_priority_origin_audit["checks"][
+            "ordinary_trace_is_direct_sum_additive"
+        ]
+        and p1_spectral_priority_origin_audit["checks"][
+            "ordinary_trace_is_unitarily_invariant"
+        ]
+        and p1_spectral_priority_origin_audit["checks"][
+            "normalized_trace_fails_direct_sum_additivity"
+        ]
+        and p1_spectral_priority_origin_audit["checks"][
+            "nonlinear_unitary_functional_lies_outside_trace_theorem"
+        ]
+    )
+    checks["p1_spectator_stability_fixes_positive_log_sign"] = (
+        p1_spectral_priority_origin_audit["checks"][
+            "positive_sign_uniquely_prefers_one_copy"
+        ]
+        and p1_spectral_priority_origin_audit["checks"][
+            "zero_sign_destroys_equality_rigidity"
+        ]
+        and p1_spectral_priority_origin_audit["checks"][
+            "negative_sign_rewards_unbounded_duplication"
+        ]
+    )
+    checks["p1_hodge_intertwining_derives_same_compression_but_ownership_is_open"] = (
+        p1_spectral_priority_origin_audit["checks"][
+            "hodge_intertwining_implies_same_compression"
+        ]
+        and p1_spectral_priority_origin_audit["checks"][
+            "algebraic_extension_without_intertwining_changes_compression"
+        ]
+        and p1_spectral_priority_origin_audit[
+            "physical_source_ownership"
+        ]
+        == "OPEN"
+        and p1_spectral_priority_origin["source_freeze_payload"][
+            "claim_boundary"
+        ]["nature_selection_proved"]
+        is False
+    )
     checks["single_source_law_audit_passes"] = single_source_audit["passed"] == single_source_audit["total"]
     checks["single_source_law_compresses_p4_through_p7"] = single_source_audit["verdict"] == "P4_P7_SINGLE_ACTION_COMPRESSION_PASS"
     checks["single_source_law_does_not_self_certify_p1"] = single_source_audit["P1_physical_source_language_ownership_proved"] is False
@@ -454,6 +512,10 @@ def main():
             {"id": "PSR38", "status": "proved", "claim": "The finite joint algebra Cl_7(C) graded-tensor A_port is M_8(C)^{oplus 4}; every faithful finite representation has carrier dimension 8 sum_i m_i with all m_i>=1, so the unique minimal multiplicity vector is (1,1,1,1) and the minimal carrier dimension is 32."},
             {"id": "PSR39", "status": "proved_conditional", "claim": "The internal JGR realization attains the 32-dimensional faithful minimum. Under the frozen positive source compression and unnormalized heat-trace priority, every faithful proper carrier extension has strictly larger heat trace, so the selected class is same-envelope and hence satisfies IGL."},
             {"id": "PSR40", "status": "proved_no_go_open", "claim": "Carrier minimality does not follow from normalized trace, changed-compression comparison, nonfaithful smaller carriers or ungraded realization. Physical common ownership and Nature occupation of the joint grammar and unnormalized same-compression heat-trace priority remain open."},
+            {"id": "PSR41", "status": "proved_conditional", "claim": "A positive linear unitarily invariant functional on every finite carrier that is compatible with orthogonal direct sums and calibrated by T_C(1)=1 is uniquely the ordinary unnormalized matrix trace; normalized trace fails the direct-sum law."},
+            {"id": "PSR42", "status": "proved_conditional", "claim": "For continuous spectral-only tensor-additive complexity, finite faithful spectator closure plus attained equality-rigid minimization excludes c<=0 in C(Z)=c log Z; primitive derivative calibration fixes c=1."},
+            {"id": "PSR43", "status": "proved_conditional_no_go", "claim": "An isometric Hodge intertwiner K_X J=J K_0 implies the common-compression identity J^*K_XJ=K_0. Algebra representation alone does not imply intertwining, and changed compression can reverse heat-trace selection."},
+            {"id": "PSR44", "status": "open", "claim": "The physical source has not yet been shown to co-own the joint grammar, source-Hodge intertwining, spectral sufficiency, tensor additivity and spectator-stable well-posed minimization; Nature occupation and BaseSeedPacket export remain unauthorized."},
         ],
     }
     (DERIVED / "theorem_ledger.json").write_text(json.dumps(ledger, indent=2) + "\n")

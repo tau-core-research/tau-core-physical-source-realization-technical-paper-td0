@@ -54,7 +54,10 @@ that Nature occupies the selected completion.
 | Minimal faithful joint carrier | Proven | `Cl_7(C) graded_tensor A_port = M_8(C)^{oplus 4}` and finite faithful star representation | carrier dimension is `8 sum m_i >= 32`, with unique minimum multiplicities `(1,1,1,1)` |
 | JCM heat-trace selection of same-envelope realization | Proven conditionally | faithful graded candidates, internal 32-dimensional witness, positive common compression and unnormalized heat-trace priority | every proper carrier extension has strictly larger complexity; the selected 32-dimensional class lies in `M_32(C)=Cl_10(C)` and satisfies JGR/IGL |
 | Normalized-trace or changed-compression selection | Disproved | explicit duplicate and shifted-spectrum controls | normalized trace erases multiplicity cost; without common compression an extension can win |
-| Physical ownership of JCM premises | Not established | enriched source must co-own the joint grammar, positive common-compression comparison and unnormalized priority | no Nature occupation or physical packet export follows yet |
+| Compatible-trace rigidity (`UTR-P1`) | Proven conditionally | positive linear unitary-invariant carrier functionals, orthogonal direct-sum compatibility and primitive calibration | uniquely gives ordinary unnormalized matrix trace; normalized trace fails the sum law |
+| Spectator-stable spectral priority (`SPS-P1`) | Proven conditionally | continuous spectral sufficiency, tensor additivity, finite faithful spectator closure, attained equality-rigid minimization and primitive response calibration | gives `C(Z)=log Z`; zero sign creates ties and negative sign rewards unbounded duplication |
+| Hodge-compression intertwining (`HCI-P1`) | Proven | isometric `J` and `K_X J=J K_0` | gives `J^* K_X J=K_0`; algebra representation alone is insufficient |
+| Physical ownership of JCM/priority-origin premises | Not established | enriched source must co-own the joint grammar, source-Hodge intertwining, spectral sufficiency, tensor additivity and spectator-stable well-posedness | no Nature occupation or physical packet export follows yet |
 | Schur-neutral body handoff | Proven | positive invertible source-independent `K_B` and typed load `j_B(s)` | supplies a regular TD-I input without back-selecting the source completion |
 
 ## Circularity audit
@@ -155,3 +158,13 @@ existing unnormalized heat trace. This closes same-envelope selection inside
 that combined source packet. It does not prove that the physical source
 co-owns the joint grammar and selector; normalized-trace and changed-
 compression controls show that neither premise may be suppressed.
+
+The UTR/SPS/HCI results sharpen that last boundary. Ordinary trace, positive
+logarithmic sign and common compression no longer need to be inserted as
+three unrelated formulas: they follow from direct-sum compatibility,
+spectator-stable well-posed minimization and source-Hodge intertwining. The
+new no-go is equally important. Joint algebra ownership does not entail the
+Hodge intertwiner, and the present source has not been shown to own spectral
+sufficiency or the well-posed candidate class. Structural uniqueness is
+therefore proved conditionally; physical co-ownership and occupation remain
+open.

@@ -202,6 +202,26 @@
       "id": "PSR40",
       "status": "proved_no_go_open",
       "claim": "Carrier minimality does not follow from normalized trace, changed-compression comparison, nonfaithful smaller carriers or ungraded realization. Physical common ownership and Nature occupation of the joint grammar and unnormalized same-compression heat-trace priority remain open."
+    },
+    {
+      "id": "PSR41",
+      "status": "proved_conditional",
+      "claim": "A positive linear unitarily invariant functional on every finite carrier that is compatible with orthogonal direct sums and calibrated by T_C(1)=1 is uniquely the ordinary unnormalized matrix trace; normalized trace fails the direct-sum law."
+    },
+    {
+      "id": "PSR42",
+      "status": "proved_conditional",
+      "claim": "For continuous spectral-only tensor-additive complexity, finite faithful spectator closure plus attained equality-rigid minimization excludes c<=0 in C(Z)=c log Z; primitive derivative calibration fixes c=1."
+    },
+    {
+      "id": "PSR43",
+      "status": "proved_conditional_no_go",
+      "claim": "An isometric Hodge intertwiner K_X J=J K_0 implies the common-compression identity J^*K_XJ=K_0. Algebra representation alone does not imply intertwining, and changed compression can reverse heat-trace selection."
+    },
+    {
+      "id": "PSR44",
+      "status": "open",
+      "claim": "The physical source has not yet been shown to co-own the joint grammar, source-Hodge intertwining, spectral sufficiency, tensor additivity and spectator-stable well-posed minimization; Nature occupation and BaseSeedPacket export remain unauthorized."
     }
   ]
 }

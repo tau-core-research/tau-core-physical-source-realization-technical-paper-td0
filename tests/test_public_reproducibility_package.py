@@ -33,6 +33,8 @@ def test_publication_files_exist():
         "data/derived/p3_clp3_p1_joint_graded_representation_audit.json",
         "data/derived/p3_clp3_p1_joint_carrier_minimality.json",
         "data/derived/p3_clp3_p1_joint_carrier_minimality_audit.json",
+        "data/derived/p3_clp3_p1_spectral_priority_origin.json",
+        "data/derived/p3_clp3_p1_spectral_priority_origin_audit.json",
         "data/derived/p3_clp3_single_source_law.json",
         "data/derived/p3_clp3_single_source_law_audit.json",
         "arxiv_submission_source.zip",
@@ -48,7 +50,7 @@ def test_claim_ledger_is_bounded():
     assert ledger["nature_level_validation"] is False
     assert ledger["unrestricted_parent_selection_derived"] is False
     assert ledger["empirical_data_used"] is False
-    assert len(ledger["results"]) == 40
+    assert len(ledger["results"]) == 44
 
 
 def test_p3_clp3_source_freeze_is_endpoint_blind_and_bounded():
@@ -317,6 +319,43 @@ def test_p1_joint_carrier_minimality_selects_internality_conditionally():
     ] is True
     assert audit["physical_source_ownership"] == "OPEN"
     assert audit["nature_level_occupation"] is False
+
+
+def test_p1_spectral_priority_has_structural_origin_but_open_ownership():
+    packet = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_spectral_priority_origin.json"
+        ).read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_spectral_priority_origin_audit.json"
+        ).read_text()
+    )
+    payload = packet["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 19
+    assert audit["checks"][
+        "normalized_trace_fails_direct_sum_additivity"
+    ]
+    assert audit["checks"][
+        "nonlinear_unitary_functional_lies_outside_trace_theorem"
+    ]
+    assert audit["checks"][
+        "positive_sign_uniquely_prefers_one_copy"
+    ]
+    assert audit["checks"][
+        "hodge_intertwining_implies_same_compression"
+    ]
+    assert audit["checks"][
+        "changed_compression_can_reverse_heat_trace_selection"
+    ]
+    assert payload["conditional_consequence"][
+        "separate_choice_of_unnormalized_trace_needed"
+    ] is False
+    assert payload["claim_boundary"]["nature_selection_proved"] is False
+    assert audit["physical_source_ownership"] == "OPEN"
 
 
 def test_derivation_audit_passes():

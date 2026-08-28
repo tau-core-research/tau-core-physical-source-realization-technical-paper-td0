@@ -42,7 +42,7 @@
 Complete Seed Presentations, Spectral Selection, and the Nature-Occupation Boundary\\[3pt]
 \large An unnumbered technical derivation companion}
 \author{Jozsef Olcsak\\Independent researcher}
-\date{Version 0.9 --- 28 August 2026}
+\date{Version 0.10 --- 28 August 2026}
 
 \begin{document}
 \maketitle
@@ -119,8 +119,16 @@ block.  The internal JGR realization attains this minimum, whereas the
 external tensor-record model is a proper $64$-dimensional extension.  Under
 the frozen same-compression premise, the unnormalised heat trace therefore
 selects the internal class strictly.  Normalised-trace and changed-compression
-controls show exactly why this remains conditional on common physical
-ownership of the joint grammar and spectral priority.
+controls expose the apparent formula choices.  We remove those choices under
+explicit structural premises: positivity, linearity, unitary invariance,
+orthogonal-sum compatibility and primitive calibration uniquely give the
+ordinary unnormalised trace; tensor additivity gives $c\log Z$, while
+spectator-stable attained equality-rigid minimisation forces $c>0$ and
+primitive response calibration fixes $c=1$; and source-Hodge intertwining
+derives the same-compression identity.  Algebraic representation alone does
+not imply that intertwining.  Thus the selector's form is structurally unique
+on the declared class, while common physical ownership of that class and
+Nature occupation remain open.
 Hidden spectator, role-rotation, isospectral,
 component-zero-jet, nonfaithful-state and off-shell
 deformation controls show the exact boundary: the narrow Tau reduct neither
@@ -1245,13 +1253,113 @@ smaller heat trace.  A $24$-dimensional three-block carrier is smaller but
 nonfaithful.  Finally, carrier minimality alone does not impose grading or
 tensor locality; those enter through the already frozen joint grammar.
 
-This theorem is a real reduction of the source blocker, but not Nature-level
-closure.  It shows that no additional landing gain or separate internality
-potential is needed \emph{if} the physical source co-owns the joint grammar,
-the same-compression Hodge comparison and the unnormalised heat-trace
-priority.  The present corpus proves these ingredients in conditional packets
-but does not yet prove their common physical ownership or that Nature occupies
-their minimizer.
+\subsection{Structural origin of the spectral priority}
+
+The preceding theorem was stated with three apparently independent choices:
+ordinary rather than normalized trace, positive rather than negative
+logarithmic sign, and common source compression.  They can be derived from a
+smaller structural packet, but that packet must not be confused with a proof
+of its physical ownership.
+
+\begin{theorem}[UTR--P1 compatible-trace rigidity]
+For every finite-dimensional Hilbert space $H$, let
+$T_H:B(H)\to\mathbb C$ be a positive linear functional.  Assume unitary
+invariance,
+\begin{equation}
+ T_H(UAU^*)=T_H(A),
+ \label{eq:utrunitary}
+\end{equation}
+orthogonal direct-sum compatibility,
+\begin{equation}
+ T_{H\oplus L}(A\oplus B)=T_H(A)+T_L(B),
+ \label{eq:utrdirectsum}
+\end{equation}
+and primitive calibration $T_{\mathbb C}(1)=1$.  Then
+\begin{equation}
+ T_H(A)=\operatorname{Tr}_H A
+ \label{eq:utrtrace}
+\end{equation}
+for every $H$ and $A\in B(H)$.
+\label{thm:utrtrace}
+\end{theorem}
+
+\begin{proof}
+For fixed $n=\dim H$, unitary invariance assigns the same value $a_n$ to
+every rank-one projection.  Diagonalizing a self-adjoint $A$ and using
+linearity gives $T_H(A)=a_n\operatorname{Tr}A$; complex linearity extends this
+to all $A$.  Apply Eq.~\eqref{eq:utrdirectsum} to a rank-one projection on
+$\mathbb C\oplus\mathbb C^{n-1}$.  Its value is
+$T_{\mathbb C}(1)+T_{\mathbb C^{n-1}}(0)=1$, so $a_n=1$ for every $n$.
+Hence Eq.~\eqref{eq:utrtrace} follows.  In contrast,
+$\operatorname{Tr}_H(A)/\dim H$ violates Eq.~\eqref{eq:utrdirectsum} for
+unequal summand dimensions.
+\end{proof}
+
+\begin{theorem}[SPS--P1 spectator-stable spectral priority]
+Let a source complexity depend continuously only on
+$Z=\operatorname{Tr}e^{-K/\mathcal A_*}>0$, and be additive under independent
+tensor composition.  Then
+\begin{equation}
+ C(Z)=c\log Z
+ \label{eq:spslog}
+\end{equation}
+for a real constant $c$.  Suppose additionally that the admissible class is
+closed under every finite faithful spectator duplication, so that
+$Z\mapsto kZ$ for $k\in\mathbb N$, and that minimization is attained and
+equality-rigid against every proper duplicate.  Then $c>0$.  If the primitive
+response unit is calibrated by
+$dC/d(\log Z)=1$, then $c=1$.
+\label{thm:spssign}
+\end{theorem}
+
+\begin{proof}
+Tensor products of independent positive generators use the Kronecker sum,
+so their heat traces multiply.  Writing $f(x)=C(e^x)$ converts additivity to
+the continuous Cauchy equation $f(x+y)=f(x)+f(y)$, hence $f(x)=cx$ and
+Eq.~\eqref{eq:spslog}.  For a $k$-fold faithful duplicate,
+$C(kZ)-C(Z)=c\log k$.  If $c<0$, these values decrease without bound as
+$k\to\infty$, contradicting attained minimization.  If $c=0$, every proper
+duplicate ties, contradicting equality rigidity.  Thus $c>0$, and the stated
+primitive calibration fixes $c=1$.
+\end{proof}
+
+\begin{lemma}[HCI--P1 Hodge-compression intertwining]
+Let $J:H_0\to H_X$ be an isometry and let the positive source-Hodge
+operators obey
+\begin{equation}
+ K_XJ=JK_0.
+ \label{eq:hciintertwining}
+\end{equation}
+Then the common-compression premise is not independent:
+\begin{equation}
+ J^*K_XJ=K_0.
+ \label{eq:hcicompression}
+\end{equation}
+\label{lem:hcicompression}
+\end{lemma}
+
+\begin{proof}
+Left-multiply Eq.~\eqref{eq:hciintertwining} by $J^*$ and use
+$J^*J=\id_{H_0}$.
+\end{proof}
+
+The converse needed for physical closure does not follow from algebraic
+representation alone.  A faithful enlarged representation can assign a
+shifted $K_X$ on the embedded source block, violating
+Eq.~\eqref{eq:hciintertwining}; its heat trace can then be smaller than the
+base heat trace.  Likewise, a nonlinear unitarily invariant functional need
+not satisfy the linear trace theorem.  The executable controls realize these
+failures explicitly.
+
+Combining Theorems~\ref{thm:utrtrace} and \ref{thm:spssign} with
+Lemma~\ref{lem:hcicompression} removes the three formula-level choices in
+Theorem~\ref{thm:jcmselection} \emph{conditional on} physical ownership of
+the structural packet.  The remaining issue is therefore not which trace,
+sign or compression formula to choose.  It is whether the enriched source
+co-owns the joint grammar, source-Hodge intertwining, spectral sufficiency,
+tensor additivity and spectator-stable well-posed minimization, and whether
+Nature occupies the resulting minimum.  None of those ownership or
+occupation statements is proved here.
 
 \section{Exact compatibility before complexity}
 
@@ -1642,6 +1750,13 @@ would weaken or reject the selected completion.
  complex, so the selected class is same-envelope.  Normalised-trace and
  changed-compression controls prove these premises essential; their common
  physical ownership and Nature occupation remain open.
+ \item[Spectral-priority origin.] Positive linear unitary invariance,
+ orthogonal-sum compatibility and primitive calibration uniquely select the
+ ordinary unnormalised trace.  Tensor additivity plus spectator-stable
+ attained equality-rigid minimisation selects the positive logarithmic sign,
+ and Hodge intertwining derives common compression.  The formula is therefore
+ unique on this declared structural class; physical ownership of the class is
+ not established.
  \item[Open.] Nature occupation requires independent source evidence or a
  source-frozen discriminator.  A Tau-specific terminal signal belongs
  downstream of TD-III.
@@ -1665,7 +1780,8 @@ The decisive remaining physical statement is now narrower:
  \boxed{\begin{gathered}
  \text{Is the pre-body source envelope ontic or metric-auxiliary,}\\
  \text{does it co-own the joint role--record grammar and the}\\
- \text{unnormalised same-compression heat-trace priority,}\\
+ \text{source-Hodge intertwining, spectral sufficiency, tensor additivity,}\\
+ \text{and spectator-stable well-posed heat-trace priority,}\\
  \text{and therefore occupy the unique even-relative-commutant landing orbit,}\\
  \text{and does the resulting occupied seed have faithful full GNS rank}\\
  \text{in the independently owned physical algebra,}\\

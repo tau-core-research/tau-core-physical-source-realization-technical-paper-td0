@@ -25,6 +25,7 @@ or promoted by the standalone TD-0 package.
 | Internal graded locality (`IGL-P1`) completion | This repository | Conditional zero-set theorem given an inherited record involution image in the ontic `Cl_10` envelope | Supplies one endpoint-blind mixed residual; both role-locality and evenness are necessary, while domain ownership and Nature occupation remain open |
 | Same-envelope joint graded realization (`JGR-P1`) | This repository | Conditional equivalence theorem in the frozen canonical PUSC realization | Retypes the IGL zero locus as a faithful trace-preserving graded representation of `Cl(E) graded_tensor A_port` inside the same ontic `Cl_10`; external, odd and role-mixing controls preserve the ownership boundary |
 | Joint-carrier minimality (`JCM-P1`) | This repository | Conditional theorem given physical ownership of the joint grammar, faithful graded candidates, common frozen positive compression and unnormalized heat-trace priority | Proves the minimal faithful carrier is 32, attained internally; proper external extensions cost more, while normalized-trace and changed-compression controls expose the exact assumptions |
+| Spectral-priority structural origin (`UTR/SPS/HCI-P1`) | This repository | Conditional theorem packet given positive linear direct-sum-compatible trace evaluation, continuous tensor-additive spectral sufficiency, spectator-stable attained equality-rigid minimization, primitive calibration and source-Hodge intertwining | Derives ordinary unnormalized trace, positive unit logarithmic sign and common compression; does not prove physical ownership of those structural premises |
 | Simplicity obstruction to a P3 null quotient | Standard finite-dimensional C-star algebra | `M_32(C)` is simple | Forbids retaining an ontic `M_32(C)` while quotienting its missing directions to the four-block P3 algebra by a nontrivial star ideal |
 | P1 source-language exhaustivity for Nature | No current theorem owner | Open physical premise | The self-certification no-go proves that the action cannot establish P1 from its own residual language; the present P3 ambient control is not independently owned |
 | Nature occupation of the complete source packet | No current theorem owner | Open | Requires independent source evidence or a source-frozen discriminator |
@@ -122,3 +123,12 @@ strictly more complex. Thus same-envelope internality needs no additional
 fitted potential. What remains unproved is common physical ownership of the
 joint grammar and this spectral priority, plus Nature occupation of the
 minimizer.
+
+The latest structural-origin theorem removes the appearance that the trace,
+logarithmic sign and compression identity are three independent fitted
+choices. Direct-sum compatibility selects ordinary trace; spectator-stable
+well-posed minimization selects the positive sign; and source-Hodge
+intertwining supplies common compression. The exact remaining premise is now
+common physical ownership of the joint grammar and these structural laws.
+The theorem does not infer that ownership from the internal minimum or from
+any downstream readout.

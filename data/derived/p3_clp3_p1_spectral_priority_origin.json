@@ -1,0 +1,67 @@
+{
+  "schema": "tau_core_p1_spectral_priority_origin_v1",
+  "source_freeze_payload": {
+    "candidate_id": "P3-CLP3-P1-SPECTRAL-PRIORITY-ORIGIN-v1",
+    "upstream_jcm_fingerprint_sha256": "6a96d6db7a480e600fd735221f824a0a70aa4a83561ad61521134cfa653f6849",
+    "terminal_data_used": false,
+    "endpoint_fitted_parameters": [],
+    "trace_origin_theorem": {
+      "name": "UTR-P1 compatible trace rigidity",
+      "premises": [
+        "positive linear functional T_H on every finite carrier",
+        "unitary invariance",
+        "orthogonal direct-sum compatibility",
+        "primitive calibration T_C(1)=1"
+      ],
+      "conclusion": "T_H=ordinary unnormalized matrix trace",
+      "normalized_trace_is_excluded": true
+    },
+    "complexity_origin_theorem": {
+      "name": "SPS-P1 spectator-stable spectral priority",
+      "premises": [
+        "complexity depends continuously only on Z=T(exp(-K/A_*))",
+        "independent tensor composition is additive",
+        "the candidate class is closed under finite faithful spectator duplication",
+        "minimization is attained and equality-rigid against proper duplicates",
+        "primitive derivative normalization fixes the unit coefficient"
+      ],
+      "intermediate_form": "C(Z)=c log Z",
+      "sign_result": "c>0",
+      "normalized_result": "c=1",
+      "conclusion": "C_HT=log Tr exp(-K/A_*)"
+    },
+    "compression_origin_lemma": {
+      "name": "HCI-P1 Hodge-compression intertwining",
+      "premises": [
+        "J:H_0->H_X is isometric",
+        "K_X J=J K_0"
+      ],
+      "conclusion": "J^* K_X J=K_0",
+      "algebra_representation_alone_is_insufficient": true
+    },
+    "adversarial_controls": {
+      "normalized_trace": "violates direct-sum compatibility",
+      "zero_log_coefficient": "all faithful spectator duplicates tie",
+      "negative_log_coefficient": "spectator duplication drives the objective to minus infinity",
+      "no_hodge_intertwining": "the source compression can change and reverse JCM selection",
+      "nonlinear_unitarily_invariant_functional": "does not satisfy positive linear trace premises"
+    },
+    "conditional_consequence": {
+      "separate_choice_of_unnormalized_trace_needed": false,
+      "separate_choice_of_positive_log_sign_needed": false,
+      "separate_same_compression_axiom_needed_after_hodge_intertwining": false,
+      "jcm_selection_follows_if_the_structural_packet_is_physically_owned": true
+    },
+    "claim_boundary": {
+      "structural_uniqueness_proved": true,
+      "current_source_co_owns_joint_grammar_and_structural_packet": false,
+      "hodge_intertwining_physically_owned_for_all_candidates": false,
+      "spectral_sufficiency_and_well_posedness_physically_owned": false,
+      "nature_selection_proved": false,
+      "physical_p1_exhaustivity_proved": false,
+      "physical_base_seed_packet_export_authorized": false
+    },
+    "exact_remaining_source_datum": "physical common ownership and occupation of the joint grammar, source-Hodge intertwining, spectral sufficiency, tensor additivity and spectator-stable well-posed minimization"
+  },
+  "source_fingerprint_sha256": "d8bc72231da1514f0cd2e4c13c4cf222e5782fdf5026cbd8e9bf770aab179848"
+}
