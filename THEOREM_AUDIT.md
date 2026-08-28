@@ -43,6 +43,10 @@ that Nature occupies the selected completion.
 | Unique even landing orbit | Proven conditionally | unital trace-preserving star monomorphism of the equal-weight binary record algebra into the even relative commutant | complement preservation and the `2+1` split are automatic; all representatives are one `Spin(3)` gauge orbit |
 | Landing law from the present joint PUSC--record action | Disproved | audit the action's variational domain and residual inventory | it contains neither an embedding variable nor an even-relative-commutant cross residual |
 | Physical occupation of the landing class | Not established | one source-owned cross-landing relation and Nature occupation | no embedding angle or separate connector direction remains to be selected |
+| Landing from the current combined source presentation | Disproved by same-reduct models | compare an internal even-commutant record realization with an external tensor-record realization | all current PUSC, Frobenius, occupied-coordinate and Schur-neutral-action data agree while landing truth differs |
+| Internal graded locality zero-set theorem | Proven conditionally | an inherited record involution image inside the same ontic `Cl_10` envelope | the nonnegative mixed residual vanishes exactly on the even relative commutant record manifold, hence on one `Spin(3)` orbit |
+| Minimality of the mixed residual | Proven in the declared record-involution class | role-locality and full Clifford grading | odd twist defeats locality-only; even role mixer defeats grading-only; off-shell relative stiffness is not claimed unique |
+| Physical ownership of the IGL domain and law | Not established | enriched source must own an in-envelope record image and the mixed relation before minimization | the conditional action cannot create its own variable or prove Nature occupation |
 | Schur-neutral body handoff | Proven | positive invertible source-independent `K_B` and typed load `j_B(s)` | supplies a regular TD-I input without back-selecting the source completion |
 
 ## Circularity audit
@@ -114,3 +118,14 @@ derive the landing: its variables are only the PUSC coordinates and the
 Frobenius record response. No record-to-Clifford map or cross-landing residual
 appears in its Euler equations. The remaining physical question is therefore
 occupation of one landing class, not a choice among embeddings.
+
+The same-reduct theorem now makes that failure strict rather than merely an
+inventory observation. The internal and external record completions agree on
+every currently displayed source relation, including the common occupied
+coordinate and the Schur-neutral unfolding action, while only the internal
+completion lands in the PUSC envelope. A minimal positive extension is also
+available: once an in-envelope record involution is independently owned, the
+direct sum of its seven role commutators and its grading commutator has the
+landing class as its exact zero set. This closes the mathematical form of the
+missing relation. It does not close physical ownership of the variable or
+Nature occupation of that relation.

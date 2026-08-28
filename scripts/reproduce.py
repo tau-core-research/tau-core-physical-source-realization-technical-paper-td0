@@ -30,6 +30,8 @@ def main():
     run(sys.executable, "scripts/audit_p1_record_clifford_embedding.py")
     run(sys.executable, "scripts/freeze_p1_record_clifford_landing.py")
     run(sys.executable, "scripts/audit_p1_record_clifford_landing.py")
+    run(sys.executable, "scripts/freeze_p1_record_clifford_source_completion.py")
+    run(sys.executable, "scripts/audit_p1_record_clifford_source_completion.py")
     run(sys.executable, "scripts/freeze_single_source_law.py")
     run(sys.executable, "scripts/audit_single_source_law.py")
     run(sys.executable, "scripts/check_derivations.py")

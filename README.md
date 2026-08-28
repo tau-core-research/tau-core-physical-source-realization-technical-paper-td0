@@ -105,6 +105,23 @@ record-to-Clifford map variable and no even-relative-commutant cross residual.
 The exact remaining datum is physical occupation of the landing class, not
 selection of one representative map.
 
+An eighth, 18-check source-completion audit proves that this remaining gap is
+not already hidden in the common action. An internal record landing and an
+external tensor-record realization have identical current PUSC and
+Frobenius-record reducts, so the landing is not entailed. Conditional on an
+in-envelope record image, the single endpoint-blind residual
+
+```text
+rho_IGL(R) = direct_sum([R,gamma_1],...,[R,gamma_7],[R,Gamma_10])
+```
+
+has zero set exactly equal to the even-relative-commutant landing manifold.
+An odd-twist control passes role locality but fails evenness; an even
+role-mixing control passes evenness but fails role locality. Thus both pieces
+are necessary. This is a minimal conditional completion, not a derivation
+that the physical source owns the in-envelope record domain or that Nature
+occupies its zero set.
+
 The P3/CLP3 file exports only a `BaseSeedPacketCandidate`. Its ownership
 certificate explicitly forbids promotion to a physical `BaseSeedPacket` until
 the missing Nature-selection premises are independently supplied.

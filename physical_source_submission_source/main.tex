@@ -42,7 +42,7 @@
 Complete Seed Presentations, Spectral Selection, and the Nature-Occupation Boundary\\[3pt]
 \large An unnumbered technical derivation companion}
 \author{Jozsef Olcsak\\Independent researcher}
-\date{Version 0.6 --- 28 August 2026}
+\date{Version 0.7 --- 28 August 2026}
 
 \begin{document}
 \maketitle
@@ -96,7 +96,16 @@ direction or additional vector-preservation law remains.  The existing
 Schur-neutral PUSC--record action nevertheless has no record-to-Clifford map
 variable and no cross-landing residual.  It therefore cannot force the one
 surviving datum: physical occupation of the even-relative-commutant landing
-class.
+class.  We strengthen this to a same-reduct theorem: an internal landing and
+an external tensor-record realization obey every currently displayed PUSC and
+Frobenius-record relation while differing on the landing claim.  Finally we
+construct the minimal positive repair.  Conditional on an inherited record
+image inside the same $\operatorname{Cl}_{10}$ envelope, one endpoint-blind
+internal-graded-locality residual has exactly the desired landing manifold as
+its zero set.  Odd-twist and even role-mixing controls prove that both its
+role-locality and grading components are necessary.  This constructs a finite
+completion but does not derive ownership of its record-image domain or show
+that Nature occupies it.
 Hidden spectator, role-rotation, isospectral,
 component-zero-jet, nonfaithful-state and off-shell
 deformation controls show the exact boundary: the narrow Tau reduct neither
@@ -929,6 +938,111 @@ landing relation between an already present record algebra and an already
 present PUSC complement.  Current Tau source laws do not yet select this
 relation, and Nature occupation remains open.
 
+\subsection{Same-reduct no-go and minimal internal-graded-locality completion}
+
+The preceding domain audit can be upgraded from an inventory observation to
+a model-theoretic non-entailment statement.  Let $\mathfrak S_{\rm PUSC}$
+denote the current PUSC presentation and $\mathfrak S_{\rm rec}$ the traced
+dagger--Frobenius record presentation.  They share the occupied primitive
+coordinate $x=\chi(z)$ in Eq.~\eqref{eq:puscrecaction}, but their displayed
+relation words contain no operation which multiplies a record-port element by
+a $\operatorname{Cl}_{10}$ element.
+
+\begin{nogo}[Same-reduct separation]
+There are two completions with identical
+$\mathfrak S_{\rm PUSC}\cup\mathfrak S_{\rm rec}$ reducts and identical value
+of Eq.~\eqref{eq:puscrecaction}.  In the internal completion,
+$A_{\rm port}$ is represented in $\mathcal C_{\rm ev}$.  In the external
+completion it acts on an independent tensor factor beside
+$\operatorname{Cl}_{10}(\mathbb C)$.  The landing statement is true only in
+the first completion.  Hence the current common action does not entail the
+landing, even though it jointly occupies its two separate reducts.
+\end{nogo}
+
+\begin{proof}
+Keep the same PUSC source coordinate $z$, primitive record coordinate
+$x=\chi(z)$, Frobenius multiplication $\mu$, coproduct $\mu^\dagger$ and
+record response $y=\mu^\dagger x$ in both models.  These data determine every
+term of Eq.~\eqref{eq:puscrecaction}.  In one extension choose any
+trace-preserving embedding
+$A_{\rm port}\hookrightarrow\mathcal C_{\rm ev}$.  In the other represent
+$A_{\rm port}$ on an external factor, leaving its multiplication, trace,
+coproduct and occupied response unchanged.  No current relation word sees
+the difference because none contains both a record image and a Clifford
+generator.  The two reducts are therefore isomorphic while their landing
+truth values differ.  Logical entailment is impossible.
+\end{proof}
+
+The positive completion can nevertheless be written without an embedding
+angle or fitted terminal coefficient.  Let
+\begin{equation}
+ \mathcal R_{\rm rec}
+ =\{R\in\operatorname{Cl}_{10}(\mathbb C):
+ R^\dagger=R,\ R^2=\id,\ \operatorname{tr}_{32}R=0\}
+ \label{eq:recordmanifold}
+\end{equation}
+be the in-envelope image of the record involution.  The three constraints in
+Eq.~\eqref{eq:recordmanifold} are inherited from the equal-weight Frobenius
+record algebra; they are not new landing conditions.  Define the one
+vector-valued mixed residual
+\begin{equation}
+ \rho_{\rm IGL}(R)
+ =\bigoplus_{a=1}^{7}[R,\gamma_a]
+  \ \oplus\ [R,\Gamma_{10}]
+ \label{eq:iglresidual}
+\end{equation}
+and its common-unit action
+\begin{equation}
+ \boxed{
+ \mathcal A_{\rm IGL}(R)
+ =\frac{\mathcal A_*}{2}
+   \|\rho_{\rm IGL}(R)\|_{\oplus,2}^{2}.}
+ \label{eq:iglaction}
+\end{equation}
+Here every Hilbert--Schmidt norm uses the normalized PUSC trace.  Equation
+\eqref{eq:iglaction} is a zero-locus selector; unequal positive off-shell
+weights would have the same zero set, so no uniqueness of unobserved
+stiffness is claimed.
+
+\begin{theorem}[Internal graded locality]
+On $\mathcal R_{\rm rec}$,
+\begin{equation}
+ \mathcal A_{\rm IGL}(R)=0
+ \quad\Longleftrightarrow\quad
+ R\in\operatorname{Comm}(\operatorname{Cl}(E))
+       \cap\operatorname{Cl}_{10}(\mathbb C)^{\rm even}.
+ \label{eq:iglzero}
+\end{equation}
+Consequently its zero set modulo $\operatorname{Spin}(W)$ is one orbit and
+every zero generates the same $2+1$ connector split.
+\end{theorem}
+
+\begin{proof}
+The action is a sum of nonnegative squared norms.  It vanishes exactly when
+$R$ commutes with all seven generators of $\operatorname{Cl}(E)$ and with
+the full grading involution $\Gamma_{10}$.  The first condition is membership
+in the relative commutant; the second is evenness.  Intersecting with
+Eq.~\eqref{eq:recordmanifold} gives precisely the trace-preserving binary
+record embeddings of the unique-landing theorem, which form one
+$\operatorname{Spin}(3)$ orbit.
+\end{proof}
+
+Both components of Eq.~\eqref{eq:iglresidual} are necessary.  The restricted
+odd chirality $\chi_7=i\gamma_1\cdots\gamma_7$ commutes with every P3 role, so
+$R_{\rm odd}=\chi_7 R_{\rm ev}$ obeys role locality but fails evenness.  On the
+other hand $R_{\rm mix}=i\gamma_1\gamma_8$ is an even self-adjoint traceless
+involution but fails to commute with the P3 role algebra.  Thus neither
+role-locality nor evenness alone selects the landing class.
+
+This result closes the form of the smallest source correction but not its
+physical origin.  The current action has no variable in
+$\mathcal R_{\rm rec}$ and therefore cannot produce
+Eq.~\eqref{eq:iglaction} as an Euler equation.  The exact remaining
+Nature-level question is now whether the enriched source owns an in-envelope
+record image and the mixed internal-graded-locality relation.  The numerical
+audit verifies the zero set and both independence controls, but does not
+promote this conditional completion to a physical source theorem.
+
 \section{Exact compatibility before complexity}
 
 \begin{definition}[Source defect and exact fibre]
@@ -1295,6 +1409,13 @@ would weaken or reject the selected completion.
  $\operatorname{Spin}(3)$ gauge orbit.  The existing joint PUSC--record
  action does not force this landing because its variational domain contains
  no record-to-Clifford map or corresponding cross residual.
+ \item[Internal-graded-locality completion.] Internal and external
+ record realizations have the same current PUSC--Frobenius reduct, proving
+ non-entailment.  If an in-envelope record image is supplied, the single
+ nonnegative residual \eqref{eq:iglresidual} has exactly the desired landing
+ manifold as its zero set.  Odd-twist and even role-mixing controls prove that
+ its grading and role-locality components are independently necessary.  The
+ current source still does not own that record-image domain or the mixed law.
  \item[Open.] Nature occupation requires independent source evidence or a
  source-frozen discriminator.  A Tau-specific terminal signal belongs
  downstream of TD-III.
@@ -1317,7 +1438,8 @@ The decisive remaining physical statement is now narrower:
 \begin{equation}
  \boxed{\begin{gathered}
  \text{Is the pre-body source envelope ontic or metric-auxiliary,}\\
- \text{does the physical source occupy the even-relative-commutant record landing class,}\\
+ \text{does it own an in-envelope record image and internal graded locality,}\\
+ \text{and therefore occupy the unique even-relative-commutant landing orbit,}\\
  \text{and does the resulting occupied seed have faithful full GNS rank}\\
  \text{in the independently owned physical algebra,}\\
  \text{and }\mathcal L_{\rm 1src}\text{ on its physical component?}

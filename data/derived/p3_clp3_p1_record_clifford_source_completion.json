@@ -1,0 +1,63 @@
+{
+  "schema": "tau_core_p1_record_clifford_source_completion_v1",
+  "source_freeze_payload": {
+    "candidate_id": "P3-CLP3-P1-RECORD-CLIFFORD-SOURCE-COMPLETION-v1",
+    "upstream_landing_fingerprint_sha256": "7d065816e3ddb24dc87e4be54fe90adc9bf68895a2023fa22e552c7889207177",
+    "terminal_data_used": false,
+    "endpoint_fitted_parameters": [],
+    "current_source_signature_audit": {
+      "pusc_owns": [
+        "Cl_10(C)=M_32(C)",
+        "Cl(E) for dim_R(E)=7",
+        "normalized cyclic trace"
+      ],
+      "frobenius_record_owns": [
+        "A_port=C p_+ direct-sum C p_-",
+        "r=p_+-p_- with r*=r, r^2=1, tau(r)=0",
+        "two-leg response y=mu^dagger x"
+      ],
+      "shared_coordinate": "the occupied primitive source alternative x=chi(z)",
+      "mixed_record_clifford_word_present": false,
+      "record_image_in_Cl_10_is_a_variational_variable": false
+    },
+    "same_reduct_models": {
+      "internal": "represent A_port inside Comm(Cl(E)) intersect Cl_10(C)^even",
+      "external": "represent A_port on an independent tensor factor beside Cl_10(C)",
+      "common_reduct": "identical PUSC1--5 relations, Frobenius multiplication, trace, coproduct, occupied x and Schur-neutral unfolding action",
+      "different_landing_truth_value": true,
+      "verdict": "CURRENT_SOURCE_PRESENTATION_DOES_NOT_ENTAIL_INTERNAL_LANDING"
+    },
+    "conditional_positive_completion": {
+      "name": "IGL-P1 internal graded locality",
+      "required_domain": "an inherited record involution image R inside the same ontic Cl_10(C) envelope",
+      "record_constraints_inherited_not_repeated": [
+        "R*=R",
+        "R^2=1",
+        "tau_32(R)=0"
+      ],
+      "mixed_residual": "rho_IGL(R)=direct_sum([R,gamma_1],...,[R,gamma_7],[R,Gamma_10])",
+      "source_action": "A_IGL(R)=A_*/2 ||rho_IGL(R)||_direct_sum^2",
+      "zero_set": "record involutions in Comm(Cl(E)) intersect Cl_10(C)^even",
+      "zero_set_modulo_gauge": "one Spin(3) conjugacy orbit",
+      "new_dimensionless_fit_parameter": false,
+      "off_shell_weight_uniqueness_claimed": false
+    },
+    "minimality_controls": {
+      "role_commutation_without_evenness": "admits an odd-twist record involution",
+      "evenness_without_role_commutation": "admits an even role-mixing record involution",
+      "one_vector_residual_contains_both_obligations": true,
+      "current_action_can_generate_missing_R_domain": false
+    },
+    "claim_boundary": {
+      "same_reduct_nonentailment_proved": true,
+      "conditional_cross_defect_zero_set_derived": true,
+      "conditional_completion_forces_unique_landing_orbit": true,
+      "current_source_owns_in_envelope_record_domain": false,
+      "current_source_derives_IGL_P1": false,
+      "nature_occupation_proved": false,
+      "physical_p1_exhaustivity_proved": false,
+      "physical_base_seed_packet_export_authorized": false
+    }
+  },
+  "source_fingerprint_sha256": "eeb659d6ae023ee9e3c011b3da29289293d6ed21216ca73f74e1a1007016c692"
+}

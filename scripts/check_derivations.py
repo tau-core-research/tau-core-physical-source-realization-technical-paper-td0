@@ -114,6 +114,15 @@ def main():
     p1_record_landing_audit = json.loads(
         (DERIVED / "p3_clp3_p1_record_clifford_landing_audit.json").read_text()
     )
+    p1_record_source_completion = json.loads(
+        (DERIVED / "p3_clp3_p1_record_clifford_source_completion.json").read_text()
+    )
+    p1_record_source_completion_audit = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_record_clifford_source_completion_audit.json"
+        ).read_text()
+    )
     single_source_law = json.loads(
         (DERIVED / "p3_clp3_single_source_law.json").read_text()
     )
@@ -259,6 +268,30 @@ def main():
         ]
         and p1_record_landing_audit["physical_source_ownership"] == "OPEN"
     )
+    checks["p1_record_source_completion_audit_passes"] = (
+        p1_record_source_completion_audit["passed"]
+        == p1_record_source_completion_audit["total"]
+    )
+    checks["p1_same_reduct_models_prove_current_source_nonentailment"] = (
+        p1_record_source_completion_audit["checks"][
+            "internal_and_external_models_share_the_current_reduct"
+        ]
+        and p1_record_source_completion["source_freeze_payload"][
+            "same_reduct_models"
+        ]["different_landing_truth_value"]
+    )
+    checks["p1_internal_graded_locality_is_minimal_and_claim_bounded"] = (
+        p1_record_source_completion_audit["checks"][
+            "both_cross_components_are_logically_necessary"
+        ]
+        and p1_record_source_completion_audit["checks"][
+            "zero_set_modulo_gauge_is_one_orbit"
+        ]
+        and p1_record_source_completion_audit["physical_source_ownership"]
+        == "OPEN"
+        and p1_record_source_completion_audit["nature_level_occupation"]
+        is False
+    )
     checks["single_source_law_audit_passes"] = single_source_audit["passed"] == single_source_audit["total"]
     checks["single_source_law_compresses_p4_through_p7"] = single_source_audit["verdict"] == "P4_P7_SINGLE_ACTION_COMPRESSION_PASS"
     checks["single_source_law_does_not_self_certify_p1"] = single_source_audit["P1_physical_source_language_ownership_proved"] is False
@@ -315,6 +348,9 @@ def main():
             {"id": "PSR29", "status": "proved_conditional", "claim": "A unital trace-preserving star embedding of the equal-weight binary record algebra into the even relative commutant of the P3 Cl_7 algebra automatically preserves the three-dimensional vector complement, has adjoint split 2+1, and belongs to one Spin(3)-conjugacy orbit; no continuous embedding parameter or separate complement-preservation premise remains."},
             {"id": "PSR30", "status": "proved_no_go", "claim": "The existing Schur-neutral PUSC-plus-record action jointly realizes the two sectors but contains neither a record-to-Clifford map variable nor an even-relative-commutant cross residual, so it cannot force the landing class."},
             {"id": "PSR31", "status": "open", "claim": "The exact surviving physical datum is Nature occupation of the even-relative-commutant landing class, not selection of a particular embedding representative; physical P1 exhaustivity and BaseSeedPacket export remain unauthorized."},
+            {"id": "PSR32", "status": "proved_no_go", "claim": "The current PUSC and Frobenius-record presentation has no mixed record--Clifford word: an internal even-commutant realization and an external tensor-record realization have identical current reducts but different landing truth values."},
+            {"id": "PSR33", "status": "constructed_conditional", "claim": "Given an inherited record involution image inside the same Cl_10 envelope, one nonnegative internal-graded-locality residual has zero set exactly the even-relative-commutant landing manifold and hence one Spin(3) gauge orbit."},
+            {"id": "PSR34", "status": "proved_minimal_conditional", "claim": "Role commutation and evenness are independently necessary: the odd-twist and even role-mixing record controls satisfy one condition while violating the other. The completion does not derive ownership of its in-envelope record domain or Nature occupation."},
         ],
     }
     (DERIVED / "theorem_ledger.json").write_text(json.dumps(ledger, indent=2) + "\n")

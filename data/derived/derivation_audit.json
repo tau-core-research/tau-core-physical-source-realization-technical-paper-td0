@@ -42,13 +42,16 @@
     "p1_record_clifford_landing_audit_passes": true,
     "p1_even_landing_has_one_spin3_gauge_orbit": true,
     "p1_exact_remaining_datum_is_cross_landing_not_map_choice": true,
+    "p1_record_source_completion_audit_passes": true,
+    "p1_same_reduct_models_prove_current_source_nonentailment": true,
+    "p1_internal_graded_locality_is_minimal_and_claim_bounded": true,
     "single_source_law_audit_passes": true,
     "single_source_law_compresses_p4_through_p7": true,
     "single_source_law_does_not_self_certify_p1": true,
     "single_source_law_is_endpoint_blind_and_nature_bounded": true
   },
-  "passed": 46,
-  "total": 46,
+  "passed": 49,
+  "total": 49,
   "heat_trace_base": 1.276556637680899,
   "heat_trace_extension": 1.3530400587937879,
   "nature_level_closure": false

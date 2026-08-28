@@ -27,6 +27,8 @@ def test_publication_files_exist():
         "data/derived/p3_clp3_p1_record_clifford_embedding_audit.json",
         "data/derived/p3_clp3_p1_record_clifford_landing.json",
         "data/derived/p3_clp3_p1_record_clifford_landing_audit.json",
+        "data/derived/p3_clp3_p1_record_clifford_source_completion.json",
+        "data/derived/p3_clp3_p1_record_clifford_source_completion_audit.json",
         "data/derived/p3_clp3_single_source_law.json",
         "data/derived/p3_clp3_single_source_law_audit.json",
         "arxiv_submission_source.zip",
@@ -42,7 +44,7 @@ def test_claim_ledger_is_bounded():
     assert ledger["nature_level_validation"] is False
     assert ledger["unrestricted_parent_selection_derived"] is False
     assert ledger["empirical_data_used"] is False
-    assert len(ledger["results"]) == 31
+    assert len(ledger["results"]) == 34
 
 
 def test_p3_clp3_source_freeze_is_endpoint_blind_and_bounded():
@@ -210,6 +212,38 @@ def test_p1_record_clifford_landing_is_one_gauge_orbit_but_not_source_owned():
     assert payload["automatic_consequences"][
         "separate_vector_preservation_premise_required"
     ] is False
+    assert audit["physical_source_ownership"] == "OPEN"
+    assert audit["nature_level_occupation"] is False
+
+
+def test_p1_record_clifford_source_completion_is_minimal_and_bounded():
+    packet = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_record_clifford_source_completion.json"
+        ).read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_record_clifford_source_completion_audit.json"
+        ).read_text()
+    )
+    payload = packet["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 18
+    assert audit["verdict"] == (
+        "CURRENT_SOURCE_NONENTAILMENT_PROVED_"
+        "MINIMAL_INTERNAL_GRADED_LOCALITY_COMPLETION_CONSTRUCTED"
+    )
+    assert audit["checks"][
+        "internal_and_external_models_share_the_current_reduct"
+    ]
+    assert audit["checks"]["both_cross_components_are_logically_necessary"]
+    assert audit["checks"]["sampled_spin3_orbit_has_zero_joint_defect"]
+    assert payload["conditional_positive_completion"][
+        "new_dimensionless_fit_parameter"
+    ] is False
+    assert payload["claim_boundary"]["current_source_derives_IGL_P1"] is False
     assert audit["physical_source_ownership"] == "OPEN"
     assert audit["nature_level_occupation"] is False
 

@@ -21,6 +21,8 @@ or promoted by the standalone TD-0 package.
 | Record--Clifford connector reduction | This repository | Conditional theorem given an ontic `Cl_10` envelope, the P3 seven-plane and one even trace-preserving binary-record embedding preserving the vector complement | Derives the connector pair as a gauge frame of one `2+1` adjoint split; same-reduct controls show the embedding is not selected by current local source laws |
 | Even-relative-commutant landing orbit | This repository | Conditional theorem given only a unital trace-preserving star monomorphism of the binary record algebra into the even relative commutant | Proves complement preservation, the `2+1` split and uniqueness up to `Spin(3)` gauge; removes any representative-map parameter |
 | Cross-landing selection by the existing PUSC--record action | This repository | No-go by variational-domain and same-reduct audit | The action jointly realizes PUSC and record but has no embedding variable or cross-landing residual, so physical landing ownership remains open |
+| Same-reduct internal/external landing separation | This repository | Exact non-entailment theorem for the currently displayed PUSC and Frobenius-record signatures | Proves that common occupation and the shared primitive coordinate do not imply internal record landing |
+| Internal graded locality (`IGL-P1`) completion | This repository | Conditional zero-set theorem given an inherited record involution image in the ontic `Cl_10` envelope | Supplies one endpoint-blind mixed residual; both role-locality and evenness are necessary, while domain ownership and Nature occupation remain open |
 | Simplicity obstruction to a P3 null quotient | Standard finite-dimensional C-star algebra | `M_32(C)` is simple | Forbids retaining an ontic `M_32(C)` while quotienting its missing directions to the four-block P3 algebra by a nontrivial star ideal |
 | P1 source-language exhaustivity for Nature | No current theorem owner | Open physical premise | The self-certification no-go proves that the action cannot establish P1 from its own residual language; the present P3 ambient control is not independently owned |
 | Nature occupation of the complete source packet | No current theorem owner | Open | Requires independent source evidence or a source-frozen discriminator |
@@ -85,3 +87,17 @@ relative commutant, all admissible maps are one `Spin(3)` orbit and vector
 preservation is automatic. The irreducible gap is only whether the source
 owns and Nature occupies that typed landing class. The current common action
 does not: common occupation of two sectors is not a cross-incidence theorem.
+
+The minimal positive completion is now explicit. Given a physical record
+involution already represented inside the same `Cl_10` envelope, the one
+direct-sum residual
+
+```text
+([R,gamma_1],...,[R,gamma_7],[R,Gamma_10])
+```
+
+vanishes exactly on the unique landing orbit. This is not a new empirical
+fit and it removes no further representation parameter. It also does not
+derive the in-envelope `R` domain from the current action. The irreducible
+upstream question is whether the enriched source owns that domain and mixed
+law before any terminal readout is consulted.

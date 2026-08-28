@@ -1,0 +1,51 @@
+{
+  "checks": {
+    "fingerprint_matches_payload": true,
+    "upstream_landing_packet_is_fingerprint_locked": true,
+    "endpoint_blind_freeze": true,
+    "current_source_has_no_mixed_record_clifford_word": true,
+    "internal_and_external_models_share_the_current_reduct": true,
+    "all_controls_are_valid_record_involutions": true,
+    "good_record_has_zero_joint_defect": true,
+    "odd_twist_passes_role_locality": true,
+    "odd_twist_fails_evenness": true,
+    "even_role_mixer_passes_evenness": true,
+    "even_role_mixer_fails_role_locality": true,
+    "both_cross_components_are_logically_necessary": true,
+    "sampled_spin3_orbit_has_zero_joint_defect": true,
+    "zero_set_is_the_even_relative_commutant_record_manifold": true,
+    "zero_set_modulo_gauge_is_one_orbit": true,
+    "completion_introduces_no_endpoint_fit_parameter": true,
+    "completion_does_not_create_its_own_domain": true,
+    "nature_boundary_is_preserved": true
+  },
+  "passed": 18,
+  "total": 18,
+  "verdict": "CURRENT_SOURCE_NONENTAILMENT_PROVED_MINIMAL_INTERNAL_GRADED_LOCALITY_COMPLETION_CONSTRUCTED",
+  "diagnostics": {
+    "good_record_defect": {
+      "role": 0.0,
+      "grading": 0.0,
+      "joint": 0.0
+    },
+    "odd_twist_defect": {
+      "role": 0.0,
+      "grading": 4.0,
+      "joint": 4.0
+    },
+    "even_role_mixer_defect": {
+      "role": 4.0,
+      "grading": 0.0,
+      "joint": 4.0
+    },
+    "sampled_spin3_orbit_joint_defects": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "exact_remaining_source_datum": "physical ownership of the in-envelope record image and IGL-P1",
+  "physical_source_ownership": "OPEN",
+  "nature_level_occupation": false
+}

@@ -157,6 +157,21 @@
       "id": "PSR31",
       "status": "open",
       "claim": "The exact surviving physical datum is Nature occupation of the even-relative-commutant landing class, not selection of a particular embedding representative; physical P1 exhaustivity and BaseSeedPacket export remain unauthorized."
+    },
+    {
+      "id": "PSR32",
+      "status": "proved_no_go",
+      "claim": "The current PUSC and Frobenius-record presentation has no mixed record--Clifford word: an internal even-commutant realization and an external tensor-record realization have identical current reducts but different landing truth values."
+    },
+    {
+      "id": "PSR33",
+      "status": "constructed_conditional",
+      "claim": "Given an inherited record involution image inside the same Cl_10 envelope, one nonnegative internal-graded-locality residual has zero set exactly the even-relative-commutant landing manifold and hence one Spin(3) gauge orbit."
+    },
+    {
+      "id": "PSR34",
+      "status": "proved_minimal_conditional",
+      "claim": "Role commutation and evenness are independently necessary: the odd-twist and even role-mixing record controls satisfy one condition while violating the other. The completion does not derive ownership of its in-envelope record domain or Nature occupation."
     }
   ]
 }
