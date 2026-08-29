@@ -10,6 +10,12 @@ body--readout and terminal-readout packages.
 P3 component completeness is internally closed, while global physical
 source-language exhaustivity and Nature occupation remain open.
 
+ACT-PCLOSE1 in Foundation Paper IV now closes the downstream local
+source-to-terminal quotient conditionally, but it imports this paper's P1
+source-language premise.  The action cannot certify ambient source
+exhaustivity or Nature occupation; the stable terminal-blind extension is the
+exact retained countermodel.
+
 ## Main claim
 
 For a declared complete seed presentation, a source-compatible Hodge-action
@@ -19,6 +25,14 @@ constrained heat-trace minimum principle, one can export a typed
 are then rejected by a strict min--max/heat-trace inequality, and the selected
 positive spectral state is faithful and cyclic.
 
+A finite readout Gram matrix has a narrower status. Normalized GNS overlaps
+of already source-owned probes are automatically Hermitian, positive
+semidefinite and unit diagonal, but the converse recovers only an abstract
+ray configuration. It does not identify the physical algebra, state, probe
+semantics, seed or occupation. Thus a Graph/Hilbert packet can audit a frozen
+readout representation; it cannot replace the P1 source-language theorem or
+the stronger pointed-GNS occupation premises.
+
 ## Does not claim
 
 - that old-bare Tau forces the constrained heat-trace minimum principle;
@@ -27,6 +41,8 @@ positive spectral state is faithful and cyclic.
   quantum structure, gravity or numerical constants;
 - that one exact off-shell parent action is observable or uniquely selected;
 - that internal closure is empirical validation.
+- that Gram positivity, rank, loop phase or graph spectrum certifies the
+  physical source language or Nature occupation.
 
 ## Included data
 
@@ -135,7 +151,8 @@ The source origin and Nature occupation of the same-envelope joint realization
 remain open.
 
 A tenth, 18-check joint-carrier audit connects that result to the existing
-spectral selector. The joint algebra is `M_8(C)^{oplus 4}`, so every faithful
+spectral selector in the root-free abstract-module class. The joint algebra
+is `M_8(C)^{oplus 4}`, so every faithful
 carrier has dimension `8*(m_1+m_2+m_3+m_4)` with all multiplicities positive.
 Its unique minimum is 32 at `(1,1,1,1)`, attained by the internal JGR
 realization. The external tensor-record control has dimension 64. If all
@@ -143,8 +160,9 @@ candidates share the frozen positive 32-dimensional compression, the
 unnormalized heat trace penalizes that duplicate by an exact factor 2, or
 `log(2)` in complexity. A normalized trace erases the penalty, and changing
 the compression can reverse it. Hence the same-envelope class follows
-conditionally from the already declared selector, but common physical
-ownership and Nature occupation of those premises remain open.
+conditionally from the already declared selector, but it does not select the
+carrier of a supplied faithful cyclic GNS root. Common physical ownership and
+Nature occupation of those premises remain open.
 
 An eleventh, 19-check spectral-priority-origin audit removes three
 formula-level choices under an explicit structural packet. A positive linear
@@ -159,8 +177,8 @@ nonintertwining and nonlinear-functional controls delimit the theorem. The
 result proves structural uniqueness on the declared class, not that the
 physical source owns that class or that Nature occupies its minimizer.
 
-A twelfth, 20-check dagger-functorial Hodge audit derives the remaining
-common-compression premise from a more primitive source condition. If the
+A twelfth, 20-check dagger-functorial Hodge audit derives common compression
+for operators already known to come from a more primitive source condition. If the
 same finite graded star grammar contains an odd nilpotent differential `q`
 and its star, a degree-preserving isometric full-star intertwiner transports
 `d`, `d^*`, the Hodge Laplacian, its harmonic projector and therefore
@@ -168,8 +186,126 @@ and its star, a degree-preserving isometric full-star intertwiner transports
 forward cochain map alone fails: an explicit complement-to-source incidence
 preserves `d_X J = J d_0` while changing `d_X^*` and the Hodge compression.
 Nonisometric and independent-projector controls expose the other necessary
-premises. The current role--record JGR packet has not yet been shown to own
-this star-closed differential generator on the same physical carrier.
+premises. This theorem does not identify its Hodge operator with the frozen
+P3 choice `N_ext tensor I_2`.
+
+A thirteenth, 25-check typed-ownership audit proves the exact correction. The
+P3 role algebra already contains many nonzero odd nilpotents,
+`q_ab=(g_a+i g_b)/2`, but the frozen relations do not select one and each such
+mode has unit Laplacian. More generally, `Delta_q+P_H,q` is invertible for
+every finite nilpotent differential, whereas `N_ext tensor I_2` has a
+two-dimensional kernel. Exterior creation and the number operator are also
+outside the left `Cl_7` role image. Therefore the frozen P3 Hodge operator is
+not generated by the current JGR differential route. The exact positive
+completion is the seven-mode CAR star grammar on the 256-dimensional
+exterior--record carrier, where `g_a=epsilon_a+iota_a` and
+`N_ext=sum_a epsilon_a iota_a`. A faithful CAR_7 carrier has dimension at
+least 128, so this completion cannot be internal to the 32-dimensional
+minimal JGR module. This is only an apparent physical fork: the 32-dimensional
+module does not realize the declared faithful trace by one cyclic root.
+
+A fourteenth, 20-check seed--Boolean audit closes the mathematical form of
+the remaining bridge. If the occupied seven-role seed owns all 128 pointed,
+oriented Boolean/exterior words and the base faithfully transports the seven
+colour-resolved insertion/deletion incidences, those incidences obey CAR_7;
+their sum is one nilpotent global boundary and their quadratic sum is
+`N_ext`. The binary record then gives the frozen 256-dimensional carrier.
+This is not implied by the global boundary alone. A nontrivial `O(6)` rotation
+fixes that boundary, its Laplacian and `N_ext` while rotating the typed modes,
+and deleting one Boolean face breaks CAR. Current MVP results therefore
+supply the uncoloured boundary but not the complete typed Boolean ownership.
+Physical source ownership and Nature occupation remain open.
+
+A fifteenth, 22-check trace--GNS audit resolves that apparent fork. For the
+four-block algebra, faithfulness makes the GNS null ideal zero, so the cyclic
+root orbit has dimension `dim_C A = 256`. Blockwise, a vector in
+`C^8 tensor C^m` induces a density of rank at most `m`; the normalized trace
+has rank eight, forcing `m >= 8` in each of the four blocks. Hence the
+32-dimensional one-copy module is a valid faithful abstract representation
+but cannot be the faithful trace--GNS root carrier. On the resulting
+256-dimensional packet, ordered Clifford words form an orthonormal basis and
+word-degree projection splits each typed `g_a` uniquely into creation and
+annihilation parts obeying CAR_7. Thus complete Boolean/exterior closure is
+derived once the typed Clifford frame and faithful trace--GNS root are owned.
+The unresolved physical statement is Nature selection and occupation of that
+enriched pointed packet, not a free choice between 32 and 256 dimensions.
+
+A sixteenth, 24-check source-natural pointed-realization audit composes the
+remaining internal chain. Five source statements are sufficient: oriented
+multiplicity-free seed composition, positive no-bypass Hodge realization,
+the exchangeable binary Frobenius record, full within-block and block-exchange
+naturality, and pointed cyclic occupation whose root vector state is that same
+invariant state. Together they force the complete
+256-dimensional P3 trace--GNS packet, typed CAR_7 grammar and `N_ext` up to
+typed unitary equivalence. The audit retains explicit symmetric/tensor,
+non-Hodge, recordless, faithful-nontracial, unequal-weight and spectator
+controls. Therefore the mathematical composition is closed conditionally;
+the unrestricted physical parent has not been shown to own those five source
+statements, and Nature occupation remains open.
+
+A seventeenth, 14-check existing-action audit separates this conditional
+occupation result from actual source selection. It proves the general
+fibrewise no-go: if the source packet is not varied, a target-satisfying and a
+target-failing source fibre with the same narrow reduct and attainable action
+floor cannot be distinguished by the response Euler--Lagrange equations, even
+when each fibre has a unique response minimizer. The registered-action matrix
+then shows that unchanged `P3-RL6` has an exact 32D/256D same-zero control,
+`P3-RL6F` closes only a supplied pointed class, `L_P3^min` fixes its source
+domain/state/root, and `Gamma_CLP3` imports that packet through `JLC5`.
+The constrained heat-trace priority only orders a predeclared
+common-compression candidate class, while `L_1src` cannot self-certify its own
+residual language. `L_P3^min` and `Gamma_CLP3` remain valid conditional occupation laws; no
+audited unchanged action selects all five SNPR premises from the narrow
+reduct. The exact next mathematical target is one endpoint-blind upstream
+source variational domain over those five alternatives.
+
+An eighteenth, 11-check upstream joint-action audit now constructs that common
+domain and also sharpens its limitation. A source-varying action that factors
+through the narrow reduct is constant on every same-reduct fibre, so source
+variation alone cannot select the pointed packet. The explicit endpoint-blind
+action `A_SNPR=sum_i lambda_i D_i`, with five exact nonnegative source defects
+and fixed positive weights, has only the all-premise SNPR pattern as its zero.
+Deleting any component leaves the matching premise-deletion control at zero,
+so all five are irredundant. This is conditional variational-domain closure,
+not a derivation of the five defects from one primitive parent operator;
+common physical origin, Nature occupation and ambient-parent exhaustivity
+remain open.
+
+The accompanying source-language no-go prevents a cosmetic closure: an action
+cannot derive the typed grammar already used to define its own model space.
+Comparing exterior, symmetric, tensor, recordless or differently pointed
+languages requires a prior meta-domain and comparison law. The minimal
+nonrecursive candidate therefore places the oriented exterior/binary-record/
+pointing grammar in the one enriched seed, positivity, dagger/Hodge response,
+the action unit and source-frame naturality in the base, and stable
+actualization in their joint action. This split is conditional and not claimed
+to be uniquely selected or occupied by Nature.
+
+A nineteenth, 15-check ownership-refinement audit reduces that primitive
+assignment. A homogeneous fixed base and invariant seed passed through an
+equivariant unique response remain invariant, so an occupied orientation or
+nonzero pointing requires non-invariant source data on that branch. The full
+exterior algebra need not be listed in the seed: oriented multiplicity-free
+primitive composition generates it. Separately, in a predeclared nontrivial
+family of exchangeable finite dagger--Frobenius logical record alphabets with common
+compression, the unnormalized positive log-heat-trace cost is
+`constant + log(n)` and uniquely selects `n=2`. Allowing `n=1`, normalizing
+the trace, or changing compression removes that selection. The result does
+not select physical copy-port count.
+
+A twentieth, 21-check operational record-origin audit closes the copy-law
+form inside a stronger declared carrier class. Exact per-port decoding,
+one-loss stability, independently composable local changes, a complete
+source-faithful joint decoder, primitive deterministic occupation and the
+common dagger metric force `Y_(m,k)=A_m^(tensor k)` and the diagonal copy map.
+At two ports this is exactly the special commutative dagger--Frobenius TMB
+law. Applying the same unnormalized priority to the full product carrier gives
+`C(m,k)=constant+k log(m)` and conditionally selects `(m,k)=(2,2)`, or two
+ports for a fixed nontrivial alphabet. One-port, normalized-trace,
+diagonal-only and changed-compression controls delimit the result. A
+same-marginal correlated/independent counterpair proves that the PUSC and
+record packets still do not select their common incidence; one typed
+no-bypass `j_PR` remains physically open, as does Nature occupation.
 
 The P3/CLP3 file exports only a `BaseSeedPacketCandidate`. Its ownership
 certificate explicitly forbids promotion to a physical `BaseSeedPacket` until

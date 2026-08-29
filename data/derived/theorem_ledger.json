@@ -240,8 +240,168 @@
     },
     {
       "id": "PSR48",
+      "status": "corrected_open",
+      "claim": "DHF-P1 transports any supplied star-closed differential Hodge operator, but it does not identify that operator with the frozen P3 N_ext compression. Physical ownership, typed compatibility and Nature occupation remain open."
+    },
+    {
+      "id": "PSR49",
+      "status": "proved_internal_finite",
+      "claim": "The P3 role Clifford algebra contains explicit nonzero odd nilpotents q_ab=(g_a+i g_b)/2 with q_ab^2=0 and {q_ab,q_ab^*}=1; therefore nilpotent existence was not the missing algebraic fact."
+    },
+    {
+      "id": "PSR50",
+      "status": "proved_no_go",
+      "claim": "The frozen role-record relations admit multiple distinct q_ab and do not select one complete differential grammar. For every explicit q_ab the Hodge Laplacian is the identity, not the frozen exterior number operator."
+    },
+    {
+      "id": "PSR51",
+      "status": "proved_no_go",
+      "claim": "No finite odd nilpotent differential on the frozen graded P3 carrier can obey Delta_q+P_H,q=N_ext tensor I_2: the left side is strictly positive while the frozen P3 operator has a two-dimensional record-doubled kernel."
+    },
+    {
+      "id": "PSR52",
+      "status": "proved_no_go",
+      "claim": "In the regular exterior representation, exterior creation and N_ext are not elements of the left Cl_7 role image; hence no star-polynomial or spectral functional of a role-algebra differential can recover the frozen P3 Hodge operator."
+    },
+    {
+      "id": "PSR53",
+      "status": "proved_conditional",
+      "claim": "The seven-mode CAR star extension on the same 256-dimensional exterior-record carrier recovers both g_a=epsilon_a+iota_a and N_ext=sum_a epsilon_a iota_a; a full-star intertwiner therefore transports the frozen P3 Hodge operator without a separate gain."
+    },
+    {
+      "id": "PSR54",
+      "status": "proved_no_go_open",
+      "claim": "Faithful CAR_7 requires a carrier of dimension at least 128 and cannot be internal to the 32-dimensional minimal JGR envelope. The MVP seed boundary supplies a conditional nonzero recovery incidence, but its typed identification with the seven-mode P3 CAR polarization and Nature occupation remain open."
+    },
+    {
+      "id": "PSR55",
+      "status": "proved_conditional",
+      "claim": "If the occupied seven-role seed owns the complete pointed oriented Boolean word grammar and the base faithfully realizes every colored incidence, exterior insertion and deletion obey CAR_7; their global boundary is nilpotent, their number sum is N_ext, and the record factor yields the 256-dimensional P3 carrier."
+    },
+    {
+      "id": "PSR56",
+      "status": "proved_no_go",
+      "claim": "One global boundary, its adjoint, scalar Hodge Laplacian and N_ext do not select the seven typed CAR modes: a nontrivial O(6) family fixes all global data while rotating the colored mode frame."
+    },
+    {
+      "id": "PSR57",
+      "status": "proved_no_go",
+      "claim": "In the standard subset-word realization, deleting one Boolean face violates a diagonal CAR identity; a generic non-total seed order complex therefore does not imply the complete exterior grammar."
+    },
+    {
+      "id": "PSR58",
       "status": "open",
-      "claim": "The current joint role-record grammar has not been shown to co-own the nilpotent differential generator and its star on the same physical carrier; Nature occupation and BaseSeedPacket export remain unauthorized."
+      "claim": "Current MVP results supply one transported uncolored nilpotent boundary, not physical ownership of the complete pointed typed Boolean closure and its seven colored incidences. Nature occupation and packet export remain open."
+    },
+    {
+      "id": "PSR59",
+      "status": "proved",
+      "claim": "For A=M_8(C)^{oplus 4} with a faithful source-natural state, the GNS null left ideal is zero and every cyclic vector realization of that state has orbit dimension dim_C A=256, uniquely up to pointed unitary equivalence."
+    },
+    {
+      "id": "PSR60",
+      "status": "proved_no_go_correction",
+      "claim": "The 32-dimensional one-copy-per-block module is a faithful abstract representation but no vector on it induces a faithful state on an M_8 block. JCM-P1 therefore selects only a root-free module class and cannot replace the declared faithful trace-GNS root carrier."
+    },
+    {
+      "id": "PSR61",
+      "status": "proved_conditional",
+      "claim": "On the faithful pointed trace-GNS carrier, the seven typed Clifford generators have an orthonormal ordered-word basis; word-degree raising/lowering uniquely derives the Boolean exterior CAR_7 grammar and N_ext. Physical source ownership and Nature occupation of the pointed packet remain open."
+    },
+    {
+      "id": "PSR62",
+      "status": "proved_conditional_composition",
+      "claim": "SNPR1--SNPR5 jointly force the complete 256-dimensional pointed P3 trace-GNS packet up to typed unitary: oriented multiplicity-free seed composition, positive no-bypass Hodge realization, binary Frobenius record, full source naturality and pointed cyclic occupation compose without terminal input."
+    },
+    {
+      "id": "PSR63",
+      "status": "proved_no_go",
+      "claim": "The narrow primitive inventory, Clifford relations, discrete exchanges, full orbit rank and source nonloss do not imply SNPR1--SNPR5: symmetric/tensor, non-Hodge, recordless, nontracial, unequal-weight, rootless and spectator controls preserve the relevant reducts while failing the target packet."
+    },
+    {
+      "id": "PSR64",
+      "status": "open",
+      "claim": "The unrestricted physical base-seed parent has not been proved to own and occupy SNPR1--SNPR5. This is now the exact physical source statement; another carrier, coefficient or terminal score does not close it."
+    },
+    {
+      "id": "PSR65",
+      "status": "proved_no_go",
+      "claim": "If a source packet is external to the varied response fibre, equal attainable minima on target-satisfying and target-failing source fibres prove that fibrewise Euler-Lagrange equations cannot select the target source property, even when each response minimizer is unique."
+    },
+    {
+      "id": "PSR66",
+      "status": "proved_action_domain_audit",
+      "claim": "No action in the audited SNPR-relevant set varies and forces SNPR1--SNPR5 from the narrow reduct: unchanged P3-RL6 has the exact carrier/root same-zero control; P3-RL6F, L_P3^min and Gamma_CLP3 import pointed source data; source-fidelity/Hodge and constrained heat-trace work only in supplied source classes; and L_1src cannot self-certify its residual language."
+    },
+    {
+      "id": "PSR67",
+      "status": "proved_conditional_boundary",
+      "claim": "L_P3^min and Gamma_CLP3 remain valid conditional law-to-occupation results after their source packet is supplied. The next mathematical target is one endpoint-blind upstream source variational domain over the five SNPR alternatives; Nature occupation remains open."
+    },
+    {
+      "id": "PSR68",
+      "status": "proved_no_go",
+      "claim": "Even when the source packet belongs to the variational domain, any source action A_red=a after R that factors through the narrow reduct is constant on each same-reduct fibre and cannot uniquely select the SNPR class when a premise-deletion control exists."
+    },
+    {
+      "id": "PSR69",
+      "status": "proved_conditional",
+      "claim": "Given five exact nonnegative endpoint-blind source defects, strictly positive source-fixed weights and an attainable simultaneous zero, A_SNPR=sum_i lambda_i D_i has the typed-unitary SNPR packet as its exact global-zero class."
+    },
+    {
+      "id": "PSR70",
+      "status": "proved_irredundant_open_origin",
+      "claim": "Every component of the five-defect SNPR action is necessary in the direct-sum residual class, because deleting one admits the corresponding premise-deletion control as a target-failing zero. Packaging the residuals into one norm does not derive their common parent origin; Nature occupation remains open."
+    },
+    {
+      "id": "PSR71",
+      "status": "proved_no_go",
+      "claim": "A source action cannot independently derive a structural property already built into the typed language of its own model space. Comparing inequivalent source grammars requires a prior meta-domain and cross-language comparison law."
+    },
+    {
+      "id": "PSR72",
+      "status": "candidate_conditional",
+      "claim": "The minimal nonrecursive enriched completion candidate assigns oriented exterior, binary-record and pointing grammar to the one universal seed; positive dagger-Hodge realization, the action unit and source-frame naturality to the base; and stable no-bypass, state-lock and cyclic actualization to their joint action. SNPR closure follows conditionally, but uniqueness and Nature occupation are open."
+    },
+    {
+      "id": "PSR73",
+      "status": "proved_conditional_symmetry_ownership",
+      "claim": "On a homogeneous-base, invariant-seed, equivariant unique-response branch, the occupied response is group fixed. A non-invariant orientation or pointing therefore requires a non-invariant source datum, explicit law breaking, or a separately selected nonunique spontaneous branch."
+    },
+    {
+      "id": "PSR74",
+      "status": "proved_conditional_compression",
+      "claim": "Oriented multiplicity-free primitive composition with no additional source relations derives the complete exterior algebra and empty root, so the expanded exterior-word list need not be primitive seed data in that class."
+    },
+    {
+      "id": "PSR75",
+      "status": "proved_conditional_record_selection",
+      "claim": "Over a predeclared nontrivial family of exchangeable n-point special commutative dagger-Frobenius logical record alphabets with common compression, ordinary unnormalized trace and positive logarithmic priority give C(n)=constant+log n and uniquely select n=2. This n is logical-alternative cardinality, not physical port count."
+    },
+    {
+      "id": "PSR76",
+      "status": "proved_no_go_open_ownership",
+      "claim": "Logical binary-record selection is premise-sensitive: allowing n=1 selects the trivial record, normalized trace makes cardinalities tie, and changed compression can select a larger record. The one-axis selector does not derive physical port count, common PUSC occupation or Nature occupation."
+    },
+    {
+      "id": "PSR77",
+      "status": "proved_conditional_operational_copy",
+      "claim": "Exact complete multiport record axioms force Y_(m,k) isomorphic to A_m tensor-power k and Delta_(m,k)e_i=e_i tensor-power k. At k=2 the common dagger metric yields the special commutative dagger-Frobenius TMB copy law without assuming it algebraically."
+    },
+    {
+      "id": "PSR78",
+      "status": "proved_conditional_record_port_selection",
+      "claim": "On the nontrivial redundant full-product carrier with common compression, ordinary unnormalized trace and positive logarithmic priority give C(m,k)=constant+k log m and uniquely select (m,k)=(2,2); for fixed m at least two, k=2 is unique. Allowing one port, normalized trace, diagonal-only scoring or changed compression defeats the conclusion."
+    },
+    {
+      "id": "PSR79",
+      "status": "proved_no_go_open_incidence",
+      "claim": "Identical PUSC and copied-record marginal packets admit correlated and independent common completions, so they do not select their typed cross-incidence. One no-bypass map j_PR suffices for the earlier Schur-neutral graph action, but its physical ownership and Nature occupation remain open."
+    },
+    {
+      "id": "PSR80",
+      "status": "proved_standard_no_go",
+      "claim": "Finite normalized GNS Gram data reconstruct an abstract ray family only; PSD, rank, Bargmann phases and graph spectra do not certify the physical source algebra, probe semantics, seed or Nature occupation."
     }
   ]
 }

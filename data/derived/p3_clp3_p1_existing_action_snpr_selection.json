@@ -1,0 +1,97 @@
+{
+  "schema": "tau_core_p1_existing_action_snpr_selection_v1",
+  "source_freeze_payload": {
+    "candidate_id": "P3-CLP3-P1-EXISTING-ACTION-SNPR-SELECTION-v1",
+    "upstream_snpr_fingerprint_sha256": "befb53ffa081c539ccd22720bf7b6422280e698493db3b062369e03bd073f561",
+    "terminal_data_used": false,
+    "endpoint_fitted_parameters": [],
+    "selection_status_vocabulary": {
+      "varied_and_forced": "the source datum is a variable in one common candidate domain and every global minimum has the target property",
+      "fixed_input": "the datum is supplied by the law packet or admissible domain; the action proves only conditional occupation",
+      "not_forced": "an exact same-zero control violates the target property",
+      "outside_domain": "the action contains no variable of this source type"
+    },
+    "premises": [
+      "SNPR1",
+      "SNPR2",
+      "SNPR3",
+      "SNPR4",
+      "SNPR5"
+    ],
+    "action_coverage": {
+      "P3_RL6_unchanged": [
+        "fixed_input",
+        "fixed_input",
+        "fixed_input",
+        "not_forced",
+        "not_forced"
+      ],
+      "P3_RL6F": [
+        "fixed_input",
+        "fixed_input",
+        "fixed_input",
+        "fixed_input",
+        "fixed_input"
+      ],
+      "L_P3_min": [
+        "fixed_input",
+        "fixed_input",
+        "fixed_input",
+        "fixed_input",
+        "fixed_input"
+      ],
+      "Gamma_CLP3": [
+        "fixed_input",
+        "fixed_input",
+        "fixed_input",
+        "fixed_input",
+        "fixed_input"
+      ],
+      "source_fidelity_Hodge": [
+        "fixed_input",
+        "fixed_input",
+        "outside_domain",
+        "fixed_input",
+        "outside_domain"
+      ],
+      "constrained_heat_trace_priority": [
+        "fixed_input",
+        "fixed_input",
+        "fixed_input",
+        "fixed_input",
+        "fixed_input"
+      ],
+      "L_1src_single_source_realization_action": [
+        "fixed_input",
+        "fixed_input",
+        "fixed_input",
+        "fixed_input",
+        "outside_domain"
+      ]
+    },
+    "exact_action_domain_reading": {
+      "P3_RL6_unchanged": "the relation and two-leg record defects do not vary the root-state Gram",
+      "P3_RL6F": "the explicit Gram defect closes the metric lock only in the supplied pointed class",
+      "L_P3_min": "D_SF, the faithful separating state and Omega_empty are in the law packet",
+      "Gamma_CLP3": "JLC5 imports L_P3_min including support, ports, decoder, operator square and root",
+      "source_fidelity_Hodge": "the reference state and Hodge source class are supplied; record and root are absent",
+      "constrained_heat_trace_priority": "the priority orders an already declared common-compression candidate class; grammar, record domain and root eligibility are supplied",
+      "L_1src_single_source_realization_action": "the action realizes a supplied complete residual language and cannot self-certify that language or select pointing"
+    },
+    "general_no_go": {
+      "name": "EAS-SNPR-N1 external-source variational nonselection",
+      "premise": "two source fibres share the narrow reduct and attainable action floor but disagree on the target source property",
+      "conclusion": "fibrewise Euler-Lagrange equations cannot select the property when the source datum is not varied and no cross-fibre law is supplied",
+      "status": "proved_no_go"
+    },
+    "claim_boundary": {
+      "Gamma_CLP3_conditional_occupation_valid": true,
+      "SNPR_joint_sufficiency_valid": true,
+      "one_audited_unchanged_action_selects_all_five_from_narrow_reduct": false,
+      "nature_occupation_proved": false,
+      "ambient_parent_exhaustivity_proved": false
+    },
+    "exact_next_mathematical_target": "one endpoint-blind upstream source variational domain containing grammar, positive realization, binary record, invariant state and pointing alternatives"
+  },
+  "source_fingerprint_sha256": "0f9090ad91f3b923a491fd5f585d600db962960487fef84782eca8bcf5b66bb3"
+}

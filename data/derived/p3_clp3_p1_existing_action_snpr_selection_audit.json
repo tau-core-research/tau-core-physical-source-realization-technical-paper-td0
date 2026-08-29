@@ -1,0 +1,45 @@
+{
+  "checks": {
+    "fingerprint_matches_payload": true,
+    "upstream_SNPR_packet_is_fingerprint_locked": true,
+    "endpoint_blind_freeze": true,
+    "both_source_fibres_have_attainable_zero": true,
+    "each_source_fibre_has_unique_distinct_response_minimum": true,
+    "equal_floor_does_not_select_external_source_label": true,
+    "exact_P3_carrier_control_contains_32D_and_256D_readings": true,
+    "32D_vector_state_fails_faithful_trace_root_clause": true,
+    "Gamma_CLP3_imports_all_five_source_data_in_this_audit": true,
+    "heat_trace_priority_requires_a_predeclared_candidate_and_root_class": true,
+    "single_source_realization_action_does_not_self_certify_pointed_language": true,
+    "no_audited_action_varies_and_forces_all_five": true,
+    "conditional_occupation_is_retained": true,
+    "Nature_occupation_and_exhaustivity_remain_open": true
+  },
+  "passed": 14,
+  "total": 14,
+  "verdict": "NO_AUDITED_UNCHANGED_ACTION_SELECTS_SNPR1_TO_SNPR5_FROM_THE_NARROW_REDUCT_GAMMA_CLP3_REMAINS_CONDITIONAL_OCCUPATION_LAW",
+  "diagnostics": {
+    "fibre_minima": {
+      "target": 0.0,
+      "control": 0.0
+    },
+    "fibre_argmins": {
+      "target": -1.0,
+      "control": 2.0
+    },
+    "fully_selected": {
+      "P3_RL6_unchanged": false,
+      "P3_RL6F": false,
+      "L_P3_min": false,
+      "Gamma_CLP3": false,
+      "source_fidelity_Hodge": false,
+      "constrained_heat_trace_priority": false,
+      "L_1src_single_source_realization_action": false
+    },
+    "abstract_module_dimension": 32,
+    "trace_GNS_dimension": 256
+  },
+  "exact_next_mathematical_target": "one endpoint-blind upstream source variational domain containing grammar, positive realization, binary record, invariant state and pointing alternatives",
+  "physical_source_ownership": "OPEN",
+  "nature_level_occupation": false
+}

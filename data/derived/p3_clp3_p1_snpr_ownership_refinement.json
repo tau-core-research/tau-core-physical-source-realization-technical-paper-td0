@@ -1,0 +1,57 @@
+{
+  "source_freeze_payload": {
+    "theorem_packet": "USA-SNPR-C2/C3/N3",
+    "upstream_joint_action_fingerprint_sha256": "33d728387f6d4b995f471783d5369f1a4c003be7682f9a8e2968a599477321a7",
+    "symmetry_branch": {
+      "base_state_is_group_fixed": true,
+      "response_law_is_equivariant": true,
+      "selected_response_is_unique": true,
+      "target_contains_noninvariant_orientation_or_pointing": true,
+      "conclusion": "noninvariant_source_datum_required",
+      "unrestricted_escape_routes": [
+        "inhomogeneous_base",
+        "explicit_law_breaking",
+        "nonunique_spontaneous_branch_with_independent_selector"
+      ]
+    },
+    "exterior_refinement": {
+      "primitive_data": [
+        "finite_primitive_space_V",
+        "unital_associative_composition",
+        "odd_interchange",
+        "multiplicity_exclusion_v_squared_zero",
+        "no_additional_source_relations"
+      ],
+      "derived_completion": "Lambda_bullet_V_with_empty_root"
+    },
+    "record_meta_domain": {
+      "candidate_class": "exchangeable_finite_special_commutative_dagger_Frobenius_records",
+      "eligible_cardinalities": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "nontrivial_record_required": true,
+      "common_compression": "K_n=K_0_tensor_I_n",
+      "trace": "ordinary_unnormalized",
+      "priority": "positive_log_heat_trace",
+      "selected_cardinality": 2
+    },
+    "terminal_data_used": false,
+    "endpoint_fitted_parameters": [],
+    "claim_boundary": {
+      "asymmetry_localized_to_seed_on_declared_branch": true,
+      "full_exterior_word_list_is_primitive_seed_data": false,
+      "binary_record_selected_conditionally": true,
+      "physical_record_copy_law_derived": false,
+      "meta_law_physically_owned": false,
+      "common_PUSC_record_occupation": false,
+      "nature_occupation": false
+    }
+  },
+  "source_fingerprint_sha256": "970c2f2dbfa755986c011e6fa6da41b6ef1d7a31528bea4c5f9f2bfaf32ba3fd"
+}

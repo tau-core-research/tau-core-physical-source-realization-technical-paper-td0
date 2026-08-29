@@ -1,0 +1,39 @@
+{
+  "checks": {
+    "fingerprint_matches_payload": true,
+    "upstream_SNPR_packet_is_fingerprint_locked": true,
+    "endpoint_blind_freeze": true,
+    "all_32_premise_patterns_are_compared": true,
+    "reduct_factored_action_is_constant_on_the_fibre": true,
+    "full_joint_action_has_zero_floor": true,
+    "full_joint_action_has_only_the_all_premise_zero_pattern": true,
+    "all_five_weights_are_strictly_positive": true,
+    "every_component_is_irredundant": true,
+    "conditional_selection_is_not_reported_as_common_origin": true,
+    "old_bare_Nature_and_exhaustivity_claims_remain_false": true
+  },
+  "passed": 11,
+  "total": 11,
+  "verdict": "REDUCT_FACTORISATION_NO_GO_AND_CONDITIONAL_FIVE_DEFECT_ZERO_SET_CLOSURE_PASS",
+  "diagnostics": {
+    "candidate_count": 32,
+    "global_minimizers": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "deletion_controls": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "primitive_common_origin": "OPEN",
+  "nature_level_occupation": false
+}

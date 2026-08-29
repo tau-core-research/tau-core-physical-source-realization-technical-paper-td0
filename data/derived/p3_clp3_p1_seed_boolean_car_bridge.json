@@ -1,0 +1,57 @@
+{
+  "schema": "tau_core_p1_seed_boolean_car_bridge_v1",
+  "source_freeze_payload": {
+    "candidate_id": "P3-CLP3-P1-SEED-BOOLEAN-CAR-BRIDGE-v1",
+    "upstream_role_record_hodge_fingerprint_sha256": "9fc54ec24244fd9635c4bf06bcb63fc5712a3b9439d22b11871edab4e30e6a77",
+    "upstream_p3_fingerprint_sha256": "fec6f6490202649e249d2cc791d6f919f3a071e80c3de02f6b4dd83622aa3b72",
+    "terminal_data_used": false,
+    "endpoint_fitted_parameters": [],
+    "source_owned_premises": {
+      "typed_degree_one_frame": "E_P3=direct_sum_{a=1}^7 L_a with ordered one-dimensional source-owned role lines",
+      "complete_pointed_boolean_closure": "every subset S of {1,...,7}, including the empty root, is an occupied admissible exterior word; no face is bypassed",
+      "oriented_insertion_deletion": "epsilon_a inserts role a with the source order sign and iota_a=epsilon_a^dagger deletes it",
+      "faithful_hodge_realization": "the complete body map preserves the pointed exterior carrier, its positive Hodge metric, and all seven colored incidences",
+      "record_completion": "the independently typed binary record factor is tensored once and does not duplicate seed alternatives"
+    },
+    "conditional_theorem": {
+      "name": "seed Boolean CAR refinement",
+      "carrier": "Lambda^bullet(C^7) tensor C^2_record",
+      "carrier_dimension": 256,
+      "relations": [
+        "{epsilon_a,epsilon_b}=0",
+        "{iota_a,iota_b}=0",
+        "{iota_a,epsilon_b}=delta_ab I",
+        "partial=sum_a iota_a and partial^2=0",
+        "{partial,partial^dagger}=7 I",
+        "N_ext=sum_a epsilon_a iota_a"
+      ],
+      "conclusion": "the seven colored incidences give the full CAR_7 star algebra, recover the frozen P3 Clifford generators and exterior number operator, and reproduce the 256-dimensional exterior-record carrier",
+      "status": "proved_conditional"
+    },
+    "nonentailment_theorem": {
+      "name": "global boundary decomposition no-go",
+      "statement": "one global MVP boundary partial, even together with its adjoint, Hodge Laplacian and exterior number operator, does not select the seven typed colored incidences",
+      "countermodel": "a nontrivial orthogonal rotation on the six-plane perpendicular to the all-ones boundary direction fixes partial, its Laplacian, N_ext and the CAR relations while changing every rotated typed mode",
+      "status": "proved_no_go"
+    },
+    "face_completeness_theorem": {
+      "statement": "removing an allowed Boolean face while retaining compressed insertions/deletions violates a diagonal CAR identity; a general non-total order complex therefore does not imply the full P3 CAR_7 grammar",
+      "status": "proved_no_go"
+    },
+    "mvp_relation": {
+      "what_MVP_SHRCHAINCLOSE1_supplies": "one transported nonzero nilpotent alternating boundary partial=N_s",
+      "what_it_does_not_supply": "the source-owned seven-color decomposition, full Boolean face completion, and typed faithful Hodge realization",
+      "exact_bridge_condition": "MVP-to-P3 CAR refinement holds exactly on the declared class when the occupied seed complex is the complete pointed oriented Boolean closure of the seven typed role lines and the base realizes each colored incidence faithfully"
+    },
+    "claim_boundary": {
+      "conditional_MVP_to_CAR7_bridge_is_explicit": true,
+      "single_global_boundary_selects_typed_CAR7": false,
+      "generic_seed_order_complex_implies_boolean_closure": false,
+      "current_physical_seed_owns_complete_typed_boolean_closure": false,
+      "nature_occupation_proved": false,
+      "physical_base_seed_packet_export_authorized": false
+    },
+    "exact_remaining_source_datum": "prove from the physical base-seed action that the occupied seven-role seed owns the complete pointed oriented Boolean closure and its seven colored incidences, not merely their uncolored sum N_s"
+  },
+  "source_fingerprint_sha256": "85a91a446c6bc0aaeaf4deacadeba75080f2fe50a8d0c6bfea5c9a0742eaf32e"
+}

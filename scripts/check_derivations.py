@@ -77,6 +77,18 @@ def main():
     K_role = np.eye(2)
     checks["spectral_selector_role_blind_control"] = np.allclose(role_rotation @ K_role @ role_rotation.T, K_role)
 
+    gram_identity = np.eye(4)
+    gram_collective = np.ones((4, 4))
+    checks["finite_gram_counterpair_is_admissible"] = (
+        np.allclose(np.diag(gram_identity), 1.0)
+        and np.allclose(np.diag(gram_collective), 1.0)
+        and np.linalg.eigvalsh(gram_identity).min() >= -1e-12
+        and np.linalg.eigvalsh(gram_collective).min() >= -1e-12
+    )
+    checks["finite_gram_converse_does_not_select_source"] = (
+        np.linalg.matrix_rank(gram_identity) != np.linalg.matrix_rank(gram_collective)
+    )
+
     contract = json.loads((DERIVED / "interface_contract.json").read_text())
     p3_packet = json.loads(
         (DERIVED / "p3_clp3_complete_seed_presentation.json").read_text()
@@ -169,6 +181,66 @@ def main():
         (
             DERIVED
             / "p3_clp3_p1_hodge_functorial_origin_audit.json"
+        ).read_text()
+    )
+    p1_role_record_hodge_ownership = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_role_record_hodge_ownership.json"
+        ).read_text()
+    )
+    p1_role_record_hodge_ownership_audit = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_role_record_hodge_ownership_audit.json"
+        ).read_text()
+    )
+    p1_seed_boolean_car_bridge = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_seed_boolean_car_bridge.json"
+        ).read_text()
+    )
+    p1_seed_boolean_car_bridge_audit = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_seed_boolean_car_bridge_audit.json"
+        ).read_text()
+    )
+    p1_existing_action_snpr_selection = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_existing_action_snpr_selection.json"
+        ).read_text()
+    )
+    p1_existing_action_snpr_selection_audit = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_existing_action_snpr_selection_audit.json"
+        ).read_text()
+    )
+    p1_snpr_ownership_refinement = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_snpr_ownership_refinement.json"
+        ).read_text()
+    )
+    p1_snpr_ownership_refinement_audit = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_snpr_ownership_refinement_audit.json"
+        ).read_text()
+    )
+    p1_operational_record_origin = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_operational_record_origin.json"
+        ).read_text()
+    )
+    p1_operational_record_origin_audit = json.loads(
+        (
+            DERIVED
+            / "p3_clp3_p1_operational_record_origin_audit.json"
         ).read_text()
     )
     single_source_law = json.loads(
@@ -502,7 +574,196 @@ def main():
         is False
         and p1_hodge_functorial_origin["source_freeze_payload"][
             "claim_boundary"
-        ]["current_joint_role_record_grammar_contains_q_and_q_star"]
+        ]["current_joint_role_record_grammar_contains_nonzero_odd_nilpotents"]
+        is True
+        and p1_hodge_functorial_origin["source_freeze_payload"][
+            "claim_boundary"
+        ]["current_joint_role_record_grammar_selects_complete_differential"]
+        is False
+    )
+    checks["p1_role_record_hodge_ownership_audit_passes"] = (
+        p1_role_record_hodge_ownership_audit["passed"]
+        == p1_role_record_hodge_ownership_audit["total"]
+        == 25
+    )
+    checks["p1_role_algebra_has_nilpotents_but_does_not_select_one"] = (
+        p1_role_record_hodge_ownership_audit["checks"][
+            "q01_is_nonzero_nilpotent"
+        ]
+        and p1_role_record_hodge_ownership_audit["checks"][
+            "distinct_nilpotents_are_not_selected_by_relations"
+        ]
+    )
+    checks["p1_frozen_hodge_is_not_single_differential_generated"] = (
+        p1_role_record_hodge_ownership_audit["checks"][
+            "explicit_dhf_hodge_differs_from_frozen_p3_hodge"
+        ]
+        and p1_role_record_hodge_ownership_audit["checks"][
+            "frozen_number_operator_has_record_kernel"
+        ]
+        and p1_role_record_hodge_ownership["source_freeze_payload"][
+            "claim_boundary"
+        ]["dhf_generates_the_frozen_p3_hodge"]
+        is False
+    )
+    checks["p1_car7_is_a_conditional_same_exterior_carrier_completion"] = (
+        p1_role_record_hodge_ownership_audit["checks"][
+            "car_completion_recovers_role_generators"
+        ]
+        and p1_role_record_hodge_ownership_audit["checks"][
+            "car_completion_recovers_number_operator"
+        ]
+        and p1_role_record_hodge_ownership_audit["checks"][
+            "full_star_transport_derives_number_transport"
+        ]
+    )
+    checks["p1_car7_cannot_be_internal_to_minimal_m32_carrier"] = (
+        p1_role_record_hodge_ownership_audit["checks"][
+            "faithful_car7_cannot_fit_32_dimensional_carrier"
+        ]
+        and p1_role_record_hodge_ownership_audit["physical_source_ownership"]
+        == "OPEN"
+    )
+    checks["p1_seed_boolean_car_bridge_audit_passes"] = (
+        p1_seed_boolean_car_bridge_audit["passed"]
+        == p1_seed_boolean_car_bridge_audit["total"]
+        == 20
+    )
+    checks["p1_complete_typed_boolean_seed_conditionally_derives_car7"] = (
+        p1_seed_boolean_car_bridge_audit["checks"][
+            "complete_boolean_car_mixed_relations_hold"
+        ]
+        and p1_seed_boolean_car_bridge_audit["checks"][
+            "empty_root_generates_all_boolean_words"
+        ]
+        and p1_seed_boolean_car_bridge_audit["checks"][
+            "binary_record_doubles_carrier_to_256"
+        ]
+    )
+    checks["p1_global_boundary_and_number_do_not_select_colored_modes"] = (
+        p1_seed_boolean_car_bridge_audit["checks"][
+            "global_boundary_does_not_select_colored_modes"
+        ]
+        and p1_seed_boolean_car_bridge_audit["checks"][
+            "number_operator_does_not_select_colored_modes"
+        ]
+    )
+    checks["p1_boolean_face_completeness_is_not_optional"] = (
+        p1_seed_boolean_car_bridge_audit["checks"][
+            "one_missing_boolean_face_breaks_car"
+        ]
+        and p1_seed_boolean_car_bridge["source_freeze_payload"][
+            "claim_boundary"
+        ]["generic_seed_order_complex_implies_boolean_closure"]
+        is False
+        and p1_seed_boolean_car_bridge_audit["physical_source_ownership"]
+        == "OPEN"
+    )
+    checks["p1_existing_action_snpr_selection_audit_passes"] = (
+        p1_existing_action_snpr_selection_audit["passed"]
+        == p1_existing_action_snpr_selection_audit["total"]
+    )
+    checks["p1_existing_actions_do_not_select_all_five_from_narrow_reduct"] = (
+        p1_existing_action_snpr_selection_audit["checks"][
+            "no_audited_action_varies_and_forces_all_five"
+        ]
+        and p1_existing_action_snpr_selection["source_freeze_payload"][
+            "claim_boundary"
+        ]["one_audited_unchanged_action_selects_all_five_from_narrow_reduct"]
+        is False
+    )
+    checks["p1_conditional_clp3_occupation_survives_domain_no_go"] = (
+        p1_existing_action_snpr_selection_audit["checks"][
+            "conditional_occupation_is_retained"
+        ]
+        and p1_existing_action_snpr_selection_audit["nature_level_occupation"]
+        is False
+    )
+    checks["p1_snpr_ownership_refinement_audit_passes"] = (
+        p1_snpr_ownership_refinement_audit["passed"]
+        == p1_snpr_ownership_refinement_audit["total"]
+    )
+    checks["p1_snpr_asymmetry_is_localized_only_on_declared_branch"] = (
+        p1_snpr_ownership_refinement_audit["checks"][
+            "fixed_base_and_seed_give_fixed_response"
+        ]
+        and p1_snpr_ownership_refinement_audit["checks"][
+            "explicit_bias_escape_breaks_equivariance"
+        ]
+        and p1_snpr_ownership_refinement["source_freeze_payload"][
+            "claim_boundary"
+        ]["asymmetry_localized_to_seed_on_declared_branch"]
+    )
+    checks["p1_binary_record_selection_has_all_three_controls"] = (
+        p1_snpr_ownership_refinement_audit["checks"][
+            "smallest_nontrivial_record_is_binary"
+        ]
+        and p1_snpr_ownership_refinement_audit["checks"][
+            "allowing_trivial_record_selects_n1"
+        ]
+        and p1_snpr_ownership_refinement_audit["checks"][
+            "normalized_trace_erases_cardinality_priority"
+        ]
+        and p1_snpr_ownership_refinement_audit["checks"][
+            "changed_compression_can_select_larger_record"
+        ]
+    )
+    checks["p1_snpr_refinement_is_endpoint_blind_and_nature_bounded"] = (
+        p1_snpr_ownership_refinement["source_freeze_payload"][
+            "terminal_data_used"
+        ]
+        is False
+        and p1_snpr_ownership_refinement_audit["physical_meta_law_ownership"]
+        == "OPEN"
+        and p1_snpr_ownership_refinement_audit["nature_level_occupation"]
+        is False
+    )
+    checks["p1_operational_record_origin_audit_passes"] = (
+        p1_operational_record_origin_audit["passed"]
+        == p1_operational_record_origin_audit["total"]
+    )
+    checks["p1_operational_record_axioms_force_copy_law"] = (
+        p1_operational_record_origin_audit["checks"][
+            "primitive_exact_recovery_forces_diagonal_copy"
+        ]
+        and p1_operational_record_origin_audit["checks"]["copy_is_special"]
+        and p1_operational_record_origin_audit["checks"][
+            "frobenius_left_identity"
+        ]
+        and p1_operational_record_origin["source_freeze_payload"][
+            "claim_boundary"
+        ]["copy_law_derived_inside_operational_class"]
+    )
+    checks["p1_full_carrier_priority_selects_m2_k2_with_controls"] = (
+        p1_operational_record_origin_audit["checks"][
+            "full_carrier_priority_selects_m2_k2"
+        ]
+        and p1_operational_record_origin_audit["checks"][
+            "allowing_one_port_selects_k1"
+        ]
+        and p1_operational_record_origin_audit["checks"][
+            "normalized_trace_erases_selector"
+        ]
+        and p1_operational_record_origin_audit["checks"][
+            "diagonal_only_score_is_port_blind"
+        ]
+        and p1_operational_record_origin_audit["checks"][
+            "changed_compression_can_change_selected_pair"
+        ]
+    )
+    checks["p1_common_PUSC_record_incidence_remains_open"] = (
+        p1_operational_record_origin_audit["checks"][
+            "same_marginals_do_not_fix_common_incidence"
+        ]
+        and p1_operational_record_origin["source_freeze_payload"][
+            "claim_boundary"
+        ]["common_PUSC_record_incidence_derived"]
+        is False
+        and p1_operational_record_origin_audit[
+            "physical_PUSC_record_incidence"
+        ]
+        == "OPEN"
+        and p1_operational_record_origin_audit["nature_level_occupation"]
         is False
     )
     checks["single_source_law_audit_passes"] = single_source_audit["passed"] == single_source_audit["total"]
@@ -577,7 +838,39 @@ def main():
             {"id": "PSR45", "status": "proved_conditional", "claim": "For finite graded star representations of one nilpotent differential grammar, a degree-preserving isometric full-star intertwiner automatically transports the differential, codifferential and Hodge Laplacian."},
             {"id": "PSR46", "status": "proved_conditional", "claim": "The same dagger-functorial intertwiner transports the harmonic spectral projector and therefore the dimensionless positive Hodge operator Delta+P_H; multiplying by the common action unit preserves the result and derives common compression."},
             {"id": "PSR47", "status": "proved_no_go", "claim": "Intertwining the unstarred differential alone is insufficient because complement-to-source incidence can change the codifferential and Hodge compression. Nonisometric intertwiners and independently assigned harmonic projectors are also insufficient."},
-            {"id": "PSR48", "status": "open", "claim": "The current joint role-record grammar has not been shown to co-own the nilpotent differential generator and its star on the same physical carrier; Nature occupation and BaseSeedPacket export remain unauthorized."},
+            {"id": "PSR48", "status": "corrected_open", "claim": "DHF-P1 transports any supplied star-closed differential Hodge operator, but it does not identify that operator with the frozen P3 N_ext compression. Physical ownership, typed compatibility and Nature occupation remain open."},
+            {"id": "PSR49", "status": "proved_internal_finite", "claim": "The P3 role Clifford algebra contains explicit nonzero odd nilpotents q_ab=(g_a+i g_b)/2 with q_ab^2=0 and {q_ab,q_ab^*}=1; therefore nilpotent existence was not the missing algebraic fact."},
+            {"id": "PSR50", "status": "proved_no_go", "claim": "The frozen role-record relations admit multiple distinct q_ab and do not select one complete differential grammar. For every explicit q_ab the Hodge Laplacian is the identity, not the frozen exterior number operator."},
+            {"id": "PSR51", "status": "proved_no_go", "claim": "No finite odd nilpotent differential on the frozen graded P3 carrier can obey Delta_q+P_H,q=N_ext tensor I_2: the left side is strictly positive while the frozen P3 operator has a two-dimensional record-doubled kernel."},
+            {"id": "PSR52", "status": "proved_no_go", "claim": "In the regular exterior representation, exterior creation and N_ext are not elements of the left Cl_7 role image; hence no star-polynomial or spectral functional of a role-algebra differential can recover the frozen P3 Hodge operator."},
+            {"id": "PSR53", "status": "proved_conditional", "claim": "The seven-mode CAR star extension on the same 256-dimensional exterior-record carrier recovers both g_a=epsilon_a+iota_a and N_ext=sum_a epsilon_a iota_a; a full-star intertwiner therefore transports the frozen P3 Hodge operator without a separate gain."},
+            {"id": "PSR54", "status": "proved_no_go_open", "claim": "Faithful CAR_7 requires a carrier of dimension at least 128 and cannot be internal to the 32-dimensional minimal JGR envelope. The MVP seed boundary supplies a conditional nonzero recovery incidence, but its typed identification with the seven-mode P3 CAR polarization and Nature occupation remain open."},
+            {"id": "PSR55", "status": "proved_conditional", "claim": "If the occupied seven-role seed owns the complete pointed oriented Boolean word grammar and the base faithfully realizes every colored incidence, exterior insertion and deletion obey CAR_7; their global boundary is nilpotent, their number sum is N_ext, and the record factor yields the 256-dimensional P3 carrier."},
+            {"id": "PSR56", "status": "proved_no_go", "claim": "One global boundary, its adjoint, scalar Hodge Laplacian and N_ext do not select the seven typed CAR modes: a nontrivial O(6) family fixes all global data while rotating the colored mode frame."},
+            {"id": "PSR57", "status": "proved_no_go", "claim": "In the standard subset-word realization, deleting one Boolean face violates a diagonal CAR identity; a generic non-total seed order complex therefore does not imply the complete exterior grammar."},
+            {"id": "PSR58", "status": "open", "claim": "Current MVP results supply one transported uncolored nilpotent boundary, not physical ownership of the complete pointed typed Boolean closure and its seven colored incidences. Nature occupation and packet export remain open."},
+            {"id": "PSR59", "status": "proved", "claim": "For A=M_8(C)^{oplus 4} with a faithful source-natural state, the GNS null left ideal is zero and every cyclic vector realization of that state has orbit dimension dim_C A=256, uniquely up to pointed unitary equivalence."},
+            {"id": "PSR60", "status": "proved_no_go_correction", "claim": "The 32-dimensional one-copy-per-block module is a faithful abstract representation but no vector on it induces a faithful state on an M_8 block. JCM-P1 therefore selects only a root-free module class and cannot replace the declared faithful trace-GNS root carrier."},
+            {"id": "PSR61", "status": "proved_conditional", "claim": "On the faithful pointed trace-GNS carrier, the seven typed Clifford generators have an orthonormal ordered-word basis; word-degree raising/lowering uniquely derives the Boolean exterior CAR_7 grammar and N_ext. Physical source ownership and Nature occupation of the pointed packet remain open."},
+            {"id": "PSR62", "status": "proved_conditional_composition", "claim": "SNPR1--SNPR5 jointly force the complete 256-dimensional pointed P3 trace-GNS packet up to typed unitary: oriented multiplicity-free seed composition, positive no-bypass Hodge realization, binary Frobenius record, full source naturality and pointed cyclic occupation compose without terminal input."},
+            {"id": "PSR63", "status": "proved_no_go", "claim": "The narrow primitive inventory, Clifford relations, discrete exchanges, full orbit rank and source nonloss do not imply SNPR1--SNPR5: symmetric/tensor, non-Hodge, recordless, nontracial, unequal-weight, rootless and spectator controls preserve the relevant reducts while failing the target packet."},
+            {"id": "PSR64", "status": "open", "claim": "The unrestricted physical base-seed parent has not been proved to own and occupy SNPR1--SNPR5. This is now the exact physical source statement; another carrier, coefficient or terminal score does not close it."},
+            {"id": "PSR65", "status": "proved_no_go", "claim": "If a source packet is external to the varied response fibre, equal attainable minima on target-satisfying and target-failing source fibres prove that fibrewise Euler-Lagrange equations cannot select the target source property, even when each response minimizer is unique."},
+            {"id": "PSR66", "status": "proved_action_domain_audit", "claim": "No action in the audited SNPR-relevant set varies and forces SNPR1--SNPR5 from the narrow reduct: unchanged P3-RL6 has the exact carrier/root same-zero control; P3-RL6F, L_P3^min and Gamma_CLP3 import pointed source data; source-fidelity/Hodge and constrained heat-trace work only in supplied source classes; and L_1src cannot self-certify its residual language."},
+            {"id": "PSR67", "status": "proved_conditional_boundary", "claim": "L_P3^min and Gamma_CLP3 remain valid conditional law-to-occupation results after their source packet is supplied. The next mathematical target is one endpoint-blind upstream source variational domain over the five SNPR alternatives; Nature occupation remains open."},
+            {"id": "PSR68", "status": "proved_no_go", "claim": "Even when the source packet belongs to the variational domain, any source action A_red=a after R that factors through the narrow reduct is constant on each same-reduct fibre and cannot uniquely select the SNPR class when a premise-deletion control exists."},
+            {"id": "PSR69", "status": "proved_conditional", "claim": "Given five exact nonnegative endpoint-blind source defects, strictly positive source-fixed weights and an attainable simultaneous zero, A_SNPR=sum_i lambda_i D_i has the typed-unitary SNPR packet as its exact global-zero class."},
+            {"id": "PSR70", "status": "proved_irredundant_open_origin", "claim": "Every component of the five-defect SNPR action is necessary in the direct-sum residual class, because deleting one admits the corresponding premise-deletion control as a target-failing zero. Packaging the residuals into one norm does not derive their common parent origin; Nature occupation remains open."},
+            {"id": "PSR71", "status": "proved_no_go", "claim": "A source action cannot independently derive a structural property already built into the typed language of its own model space. Comparing inequivalent source grammars requires a prior meta-domain and cross-language comparison law."},
+            {"id": "PSR72", "status": "candidate_conditional", "claim": "The minimal nonrecursive enriched completion candidate assigns oriented exterior, binary-record and pointing grammar to the one universal seed; positive dagger-Hodge realization, the action unit and source-frame naturality to the base; and stable no-bypass, state-lock and cyclic actualization to their joint action. SNPR closure follows conditionally, but uniqueness and Nature occupation are open."},
+            {"id": "PSR73", "status": "proved_conditional_symmetry_ownership", "claim": "On a homogeneous-base, invariant-seed, equivariant unique-response branch, the occupied response is group fixed. A non-invariant orientation or pointing therefore requires a non-invariant source datum, explicit law breaking, or a separately selected nonunique spontaneous branch."},
+            {"id": "PSR74", "status": "proved_conditional_compression", "claim": "Oriented multiplicity-free primitive composition with no additional source relations derives the complete exterior algebra and empty root, so the expanded exterior-word list need not be primitive seed data in that class."},
+            {"id": "PSR75", "status": "proved_conditional_record_selection", "claim": "Over a predeclared nontrivial family of exchangeable n-point special commutative dagger-Frobenius logical record alphabets with common compression, ordinary unnormalized trace and positive logarithmic priority give C(n)=constant+log n and uniquely select n=2. This n is logical-alternative cardinality, not physical port count."},
+            {"id": "PSR76", "status": "proved_no_go_open_ownership", "claim": "Logical binary-record selection is premise-sensitive: allowing n=1 selects the trivial record, normalized trace makes cardinalities tie, and changed compression can select a larger record. The one-axis selector does not derive physical port count, common PUSC occupation or Nature occupation."},
+            {"id": "PSR77", "status": "proved_conditional_operational_copy", "claim": "Exact complete multiport record axioms force Y_(m,k) isomorphic to A_m tensor-power k and Delta_(m,k)e_i=e_i tensor-power k. At k=2 the common dagger metric yields the special commutative dagger-Frobenius TMB copy law without assuming it algebraically."},
+            {"id": "PSR78", "status": "proved_conditional_record_port_selection", "claim": "On the nontrivial redundant full-product carrier with common compression, ordinary unnormalized trace and positive logarithmic priority give C(m,k)=constant+k log m and uniquely select (m,k)=(2,2); for fixed m at least two, k=2 is unique. Allowing one port, normalized trace, diagonal-only scoring or changed compression defeats the conclusion."},
+            {"id": "PSR79", "status": "proved_no_go_open_incidence", "claim": "Identical PUSC and copied-record marginal packets admit correlated and independent common completions, so they do not select their typed cross-incidence. One no-bypass map j_PR suffices for the earlier Schur-neutral graph action, but its physical ownership and Nature occupation remain open."},
+            {"id": "PSR80", "status": "proved_standard_no_go", "claim": "Finite normalized GNS Gram data reconstruct an abstract ray family only; PSD, rank, Bargmann phases and graph spectra do not certify the physical source algebra, probe semantics, seed or Nature occupation."},
         ],
     }
     (DERIVED / "theorem_ledger.json").write_text(json.dumps(ledger, indent=2) + "\n")

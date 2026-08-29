@@ -1,0 +1,43 @@
+{
+  "checks": {
+    "fingerprint_matches_payload": true,
+    "upstream_ownership_refinement_is_fingerprint_locked": true,
+    "freeze_is_endpoint_blind": true,
+    "primitive_exact_recovery_forces_diagonal_copy": true,
+    "copy_is_isometric": true,
+    "copy_is_cocommutative": true,
+    "copy_is_coassociative": true,
+    "copy_is_special": true,
+    "frobenius_left_identity": true,
+    "frobenius_right_identity": true,
+    "left_counit_identity": true,
+    "right_counit_identity": true,
+    "full_carrier_priority_selects_m2_k2": true,
+    "fixed_nontrivial_alphabet_selects_two_ports": true,
+    "allowing_one_port_selects_k1": true,
+    "normalized_trace_erases_selector": true,
+    "diagonal_only_score_is_port_blind": true,
+    "changed_compression_can_change_selected_pair": true,
+    "same_marginals_do_not_fix_common_incidence": true,
+    "copy_law_is_claimed_only_inside_operational_class": true,
+    "common_incidence_and_Nature_claims_remain_false": true
+  },
+  "passed": 21,
+  "total": 21,
+  "verdict": "OPERATIONAL_COPY_LAW_PROVED_AND_M2_K2_SELECTED_CONDITIONALLY;_COMMON_PUSC_RECORD_INCIDENCE_OPEN",
+  "diagnostics": {
+    "selected_pair": [
+      2,
+      2
+    ],
+    "changed_compression_selected_pair": [
+      6,
+      5
+    ],
+    "correlated_mutual_information_nats": 0.6931471805599453,
+    "independent_mutual_information_nats": 0.0
+  },
+  "physical_operational_class_ownership": "OPEN",
+  "physical_PUSC_record_incidence": "OPEN",
+  "nature_level_occupation": false
+}

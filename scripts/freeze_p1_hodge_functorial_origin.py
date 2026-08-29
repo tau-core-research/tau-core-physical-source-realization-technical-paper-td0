@@ -75,14 +75,17 @@ def build_packet() -> dict[str, object]:
         },
         "claim_boundary": {
             "finite_dagger_functorial_theorem_proved": True,
-            "current_joint_role_record_grammar_contains_q_and_q_star": False,
+            "current_joint_role_record_grammar_contains_nonzero_odd_nilpotents": True,
+            "current_joint_role_record_grammar_selects_complete_differential": False,
+            "dhf_hodge_identified_with_frozen_p3_hodge": False,
             "physical_source_owns_complete_star_differential_grammar": False,
             "nature_occupation_proved": False,
             "physical_base_seed_packet_export_authorized": False,
         },
         "exact_remaining_source_datum": (
-            "physical co-ownership of the joint role-record grammar and the "
-            "complete star-closed differential generator on the same carrier"
+            "physical co-ownership of a selected complete star-closed differential "
+            "grammar and identification of its Hodge operator with the relevant "
+            "source compression on the same typed carrier"
         ),
     }
     fingerprint = hashlib.sha256(canonical_bytes(payload)).hexdigest()

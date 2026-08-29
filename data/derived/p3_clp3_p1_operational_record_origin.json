@@ -1,0 +1,61 @@
+{
+  "source_freeze_payload": {
+    "theorem_packet": "USA-SNPR-C4/C5/N4",
+    "upstream_ownership_refinement_fingerprint_sha256": "970c2f2dbfa755986c011e6fa6da41b6ef1d7a31528bea4c5f9f2bfaf32ba3fd",
+    "operational_record_axioms": [
+      "exact_common_logical_decoder_on_every_port",
+      "exact_recovery_after_loss_of_all_but_one_port",
+      "independently_composable_port_local_changes",
+      "source_faithful_product_complete_joint_decoder",
+      "primitive_deterministic_occupation",
+      "common_positive_trace_Hodge_metric_and_dagger_closure"
+    ],
+    "declared_consequences": {
+      "joint_carrier": "Y_mk_isomorphic_to_A_m_tensor_power_k",
+      "copy_map": "Delta_mk_e_i_equals_e_i_tensor_power_k",
+      "two_port_law": "special_commutative_dagger_Frobenius"
+    },
+    "selector": {
+      "logical_alternatives": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "physical_ports": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "compression": "K_mk=K_0_tensor_I_(m_power_k)",
+      "trace": "ordinary_unnormalized",
+      "priority": "positive_log_heat_trace",
+      "selected_pair": [
+        2,
+        2
+      ]
+    },
+    "incidence_control": {
+      "PUSC_alternatives": 2,
+      "record_alternatives": 2,
+      "models": [
+        "perfectly_correlated",
+        "independent"
+      ],
+      "same_marginals_required": true
+    },
+    "terminal_data_used": false,
+    "endpoint_fitted_parameters": [],
+    "claim_boundary": {
+      "copy_law_derived_inside_operational_class": true,
+      "two_alternatives_two_ports_selected_conditionally": true,
+      "operational_class_physically_owned": false,
+      "full_carrier_priority_physically_owned": false,
+      "common_PUSC_record_incidence_derived": false,
+      "nature_occupation": false
+    }
+  },
+  "source_fingerprint_sha256": "64c884e5299fa338502c5daa27e092158a62e195297b17d170a7a5e402fed2f2"
+}

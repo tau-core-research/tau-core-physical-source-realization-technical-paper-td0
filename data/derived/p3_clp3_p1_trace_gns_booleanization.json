@@ -1,0 +1,45 @@
+{
+  "schema": "tau_core_p1_trace_gns_booleanization_v1",
+  "source_freeze_payload": {
+    "candidate_id": "P3-CLP3-P1-TRACE-GNS-BOOLEANIZATION-v1",
+    "upstream_p3_fingerprint_sha256": "fec6f6490202649e249d2cc791d6f919f3a071e80c3de02f6b4dd83622aa3b72",
+    "upstream_boolean_fingerprint_sha256": "85a91a446c6bc0aaeaf4deacadeba75080f2fe50a8d0c6bfea5c9a0742eaf32e",
+    "terminal_data_used": false,
+    "endpoint_fitted_parameters": [],
+    "typed_input": {
+      "source_algebra": "A=M_8(C) direct_sum M_8(C) direct_sum M_8(C) direct_sum M_8(C)",
+      "source_state": "tau_sym=(1/4) sum_alpha tr_8 on the four source-natural blocks",
+      "physical_root_clause": "the occupied carrier is the cyclic GNS orbit closure of one root Omega whose vector state is tau_sym",
+      "typed_clifford_frame": "seven source-owned generators g_a"
+    },
+    "theorems": {
+      "faithful_gns_dimension": {
+        "statement": "for a faithful state on a finite-dimensional star algebra, the GNS null left ideal is zero, hence dim H_GNS=dim_C A=256",
+        "status": "proved"
+      },
+      "minimal_module_control": {
+        "statement": "a 32-dimensional one-copy-per-block faithful module exists, but no vector on it induces a faithful state on any M_8 block; therefore it is not the declared faithful cyclic GNS-root carrier",
+        "status": "proved_no_go"
+      },
+      "clifford_word_booleanization": {
+        "statement": "the 128 ordered Clifford words g_S Omega form an orthonormal basis of the Clifford part; word degree splits every g_a uniquely into degree-raising epsilon_a and degree-lowering iota_a, which obey CAR_7 and recover the pointed exterior/Boolean grammar",
+        "status": "proved_conditional"
+      }
+    },
+    "carrier_typing_correction": {
+      "abstract_minimal_faithful_module_dimension": 32,
+      "faithful_trace_gns_carrier_dimension": 256,
+      "conclusion": "JCM-P1 selects 32 only in a root-free abstract representation class. It cannot select the carrier of the already declared faithful trace-GNS root. In the root-preserving class the 256-dimensional regular GNS carrier is forced up to unitary equivalence."
+    },
+    "claim_boundary": {
+      "trace_gns_root_implies_256_carrier": true,
+      "typed_clifford_plus_degree_implies_boolean_car": true,
+      "global_boundary_alone_selects_typed_frame": false,
+      "narrow_old_bare_tau_owns_trace_gns_root": false,
+      "nature_occupation_proved": false,
+      "physical_base_seed_packet_export_authorized": false
+    },
+    "exact_remaining_physical_datum": "show that the unrestricted physical base-seed law owns and occupies the source-natural faithful trace-GNS root together with the typed seven-role Clifford frame; the representation-theoretic 32-versus-256 ambiguity is then closed, but Nature-level source selection is not"
+  },
+  "source_fingerprint_sha256": "d09b0bf5936e5656ad56b2bdd66afec6bc99329898b98e5fd4b92c890aa25771"
+}

@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "fingerprint_matches_payload": true,
+    "upstream_joint_action_is_fingerprint_locked": true,
+    "freeze_is_endpoint_blind": true,
+    "Z2_response_is_equivariant": true,
+    "fixed_base_and_seed_give_fixed_response": true,
+    "noninvariant_seed_supplies_oriented_pair": true,
+    "explicit_bias_escape_breaks_equivariance": true,
+    "spontaneous_escape_is_nonunique": true,
+    "common_compression_heat_trace_scales_as_n": true,
+    "smallest_nontrivial_record_is_binary": true,
+    "allowing_trivial_record_selects_n1": true,
+    "normalized_trace_erases_cardinality_priority": true,
+    "changed_compression_can_select_larger_record": true,
+    "copy_law_and_meta_law_ownership_remain_open": true,
+    "common_occupation_and_Nature_claims_remain_false": true
+  },
+  "passed": 15,
+  "total": 15,
+  "verdict": "ASYMMETRY_LOCALIZED_ON_DECLARED_BRANCH_AND_BINARY_RECORD_SELECTED_ONLY_IN_NONTRIVIAL_COMMON_COMPRESSION_CLASS",
+  "diagnostics": {
+    "fixed_response": 0.0,
+    "asymmetric_responses": [
+      -1.0,
+      1.0
+    ],
+    "selected_nontrivial_cardinality": 2,
+    "selected_if_trivial_allowed": 1,
+    "selected_with_changed_compression": 8,
+    "normalized_trace_spread": 0.0
+  },
+  "physical_meta_law_ownership": "OPEN",
+  "nature_level_occupation": false
+}

@@ -169,7 +169,15 @@ def main() -> None:
     )
     checks["physical_star_differential_ownership_remains_open"] = (
         payload["claim_boundary"][
-            "current_joint_role_record_grammar_contains_q_and_q_star"
+            "current_joint_role_record_grammar_contains_nonzero_odd_nilpotents"
+        ]
+        is True
+        and payload["claim_boundary"][
+            "current_joint_role_record_grammar_selects_complete_differential"
+        ]
+        is False
+        and payload["claim_boundary"][
+            "dhf_hodge_identified_with_frozen_p3_hodge"
         ]
         is False
         and payload["claim_boundary"][

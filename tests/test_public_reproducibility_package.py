@@ -37,6 +37,22 @@ def test_publication_files_exist():
         "data/derived/p3_clp3_p1_spectral_priority_origin_audit.json",
         "data/derived/p3_clp3_p1_hodge_functorial_origin.json",
         "data/derived/p3_clp3_p1_hodge_functorial_origin_audit.json",
+        "data/derived/p3_clp3_p1_role_record_hodge_ownership.json",
+        "data/derived/p3_clp3_p1_role_record_hodge_ownership_audit.json",
+        "data/derived/p3_clp3_p1_seed_boolean_car_bridge.json",
+        "data/derived/p3_clp3_p1_seed_boolean_car_bridge_audit.json",
+        "data/derived/p3_clp3_p1_trace_gns_booleanization.json",
+        "data/derived/p3_clp3_p1_trace_gns_booleanization_audit.json",
+        "data/derived/p3_clp3_p1_source_natural_pointed_realization.json",
+        "data/derived/p3_clp3_p1_source_natural_pointed_realization_audit.json",
+        "data/derived/p3_clp3_p1_existing_action_snpr_selection.json",
+        "data/derived/p3_clp3_p1_existing_action_snpr_selection_audit.json",
+        "data/derived/p3_clp3_p1_snpr_upstream_joint_action.json",
+        "data/derived/p3_clp3_p1_snpr_upstream_joint_action_audit.json",
+        "data/derived/p3_clp3_p1_snpr_ownership_refinement.json",
+        "data/derived/p3_clp3_p1_snpr_ownership_refinement_audit.json",
+        "data/derived/p3_clp3_p1_operational_record_origin.json",
+        "data/derived/p3_clp3_p1_operational_record_origin_audit.json",
         "data/derived/p3_clp3_single_source_law.json",
         "data/derived/p3_clp3_single_source_law_audit.json",
         "arxiv_submission_source.zip",
@@ -52,7 +68,7 @@ def test_claim_ledger_is_bounded():
     assert ledger["nature_level_validation"] is False
     assert ledger["unrestricted_parent_selection_derived"] is False
     assert ledger["empirical_data_used"] is False
-    assert len(ledger["results"]) == 48
+    assert len(ledger["results"]) == 80
 
 
 def test_p3_clp3_source_freeze_is_endpoint_blind_and_bounded():
@@ -391,7 +407,225 @@ def test_p1_hodge_transport_is_dagger_functorial_but_not_yet_owned():
     assert payload["claim_boundary"][
         "physical_source_owns_complete_star_differential_grammar"
     ] is False
+    assert payload["claim_boundary"][
+        "current_joint_role_record_grammar_contains_nonzero_odd_nilpotents"
+    ] is True
+    assert payload["claim_boundary"][
+        "dhf_hodge_identified_with_frozen_p3_hodge"
+    ] is False
     assert audit["physical_source_ownership"] == "OPEN"
+
+
+def test_role_record_nilpotents_do_not_generate_the_frozen_p3_hodge():
+    packet = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_role_record_hodge_ownership.json"
+        ).read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_role_record_hodge_ownership_audit.json"
+        ).read_text()
+    )
+    payload = packet["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 25
+    assert audit["checks"]["q01_is_nonzero_nilpotent"]
+    assert audit["checks"]["distinct_nilpotents_are_not_selected_by_relations"]
+    assert audit["checks"]["explicit_dhf_hodge_differs_from_frozen_p3_hodge"]
+    assert audit["checks"]["exterior_creation_is_not_in_left_role_image"]
+    assert audit["checks"]["number_operator_is_not_in_left_role_image"]
+    assert audit["checks"]["car_completion_recovers_number_operator"]
+    assert audit["checks"]["faithful_car7_cannot_fit_32_dimensional_carrier"]
+    assert payload["claim_boundary"]["dhf_generates_the_frozen_p3_hodge"] is False
+    assert payload["claim_boundary"]["physical_source_owns_car7_completion"] is False
+    assert audit["physical_source_ownership"] == "OPEN"
+
+
+def test_seed_boolean_closure_conditionally_refines_mvp_boundary_to_car7():
+    packet = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_seed_boolean_car_bridge.json"
+        ).read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_seed_boolean_car_bridge_audit.json"
+        ).read_text()
+    )
+    payload = packet["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 20
+    assert audit["checks"]["complete_boolean_car_mixed_relations_hold"]
+    assert audit["checks"]["global_boundary_is_nilpotent"]
+    assert audit["checks"]["empty_root_generates_all_boolean_words"]
+    assert audit["checks"]["binary_record_doubles_carrier_to_256"]
+    assert audit["checks"]["global_boundary_does_not_select_colored_modes"]
+    assert audit["checks"]["number_operator_does_not_select_colored_modes"]
+    assert audit["checks"]["one_missing_boolean_face_breaks_car"]
+    assert payload["claim_boundary"][
+        "current_physical_seed_owns_complete_typed_boolean_closure"
+    ] is False
+    assert audit["physical_source_ownership"] == "OPEN"
+
+
+def test_trace_gns_root_forces_256_and_derives_boolean_car7():
+    packet = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_trace_gns_booleanization.json"
+        ).read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_trace_gns_booleanization_audit.json"
+        ).read_text()
+    )
+    payload = packet["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 22
+    assert audit["diagnostics"]["abstract_minimal_faithful_module_dimension"] == 32
+    assert audit["diagnostics"]["root_preserving_dimension_lower_bound"] == 256
+    assert audit["checks"]["one_copy_vector_state_is_rank_one_and_nonfaithful"]
+    assert audit["checks"]["four_block_trace_gns_orbit_has_rank_256"]
+    assert audit["checks"]["degree_split_recovers_each_clifford_generator"]
+    assert audit["checks"]["degree_split_obeys_mixed_car"]
+    assert audit["checks"]["degree_split_recovers_exterior_number"]
+    assert payload["claim_boundary"]["narrow_old_bare_tau_owns_trace_gns_root"] is False
+    assert audit["physical_source_ownership"] == "OPEN"
+
+
+def test_source_natural_pointed_packet_composes_all_internal_p3_steps():
+    packet = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_source_natural_pointed_realization.json"
+        ).read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_source_natural_pointed_realization_audit.json"
+        ).read_text()
+    )
+    payload = packet["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 24
+    assert audit["checks"]["finite_inner_frame_twirl_is_normalized_trace"]
+    assert audit["checks"]["transitive_block_exchange_equalizes_weights"]
+    assert audit["checks"]["nontracial_control_fails_inner_frame_naturality"]
+    assert audit["checks"]["unequal_central_weights_fail_block_exchange"]
+    assert audit["checks"]["spectator_extension_breaks_no_bypass_occupation"]
+    assert audit["checks"]["typed_clifford_degree_recovers_boolean_car"]
+    assert payload["composition_theorem"]["status"] == "proved_conditional_composition"
+    assert payload["claim_boundary"]["physical_parent_owns_SNPR1_to_SNPR5"] is False
+    assert audit["physical_source_ownership"] == "OPEN"
+
+
+def test_existing_action_audit_separates_occupation_from_source_selection():
+    packet = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_existing_action_snpr_selection.json"
+        ).read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_existing_action_snpr_selection_audit.json"
+        ).read_text()
+    )
+    payload = packet["source_freeze_payload"]
+    assert audit["passed"] == audit["total"] == 14
+    assert audit["checks"]["equal_floor_does_not_select_external_source_label"]
+    assert audit["checks"]["no_audited_action_varies_and_forces_all_five"]
+    assert audit["checks"]["conditional_occupation_is_retained"]
+    assert payload["action_coverage"]["Gamma_CLP3"] == ["fixed_input"] * 5
+    assert payload["claim_boundary"][
+        "one_audited_unchanged_action_selects_all_five_from_narrow_reduct"
+    ] is False
+    assert audit["physical_source_ownership"] == "OPEN"
+
+
+def test_upstream_joint_action_closes_zero_set_but_not_common_origin():
+    packet = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_snpr_upstream_joint_action.json"
+        ).read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_snpr_upstream_joint_action_audit.json"
+        ).read_text()
+    )
+    boundary = packet["source_freeze_payload"]["claim_boundary"]
+    assert audit["passed"] == audit["total"] == 11
+    assert audit["checks"]["reduct_factored_action_is_constant_on_the_fibre"]
+    assert audit["checks"][
+        "full_joint_action_has_only_the_all_premise_zero_pattern"
+    ]
+    assert audit["checks"]["every_component_is_irredundant"]
+    assert boundary["common_source_variational_domain_constructed"] is True
+    assert boundary["defects_derived_from_one_parent_operator"] is False
+    assert audit["primitive_common_origin"] == "OPEN"
+    assert audit["nature_level_occupation"] is False
+
+
+def test_snpr_ownership_refinement_is_conditional_and_controlled():
+    packet = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_snpr_ownership_refinement.json"
+        ).read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_snpr_ownership_refinement_audit.json"
+        ).read_text()
+    )
+    boundary = packet["source_freeze_payload"]["claim_boundary"]
+    assert audit["passed"] == audit["total"] == 15
+    assert audit["checks"]["Z2_response_is_equivariant"]
+    assert audit["checks"]["fixed_base_and_seed_give_fixed_response"]
+    assert audit["checks"]["smallest_nontrivial_record_is_binary"]
+    assert audit["checks"]["allowing_trivial_record_selects_n1"]
+    assert audit["checks"]["normalized_trace_erases_cardinality_priority"]
+    assert audit["checks"]["changed_compression_can_select_larger_record"]
+    assert boundary["full_exterior_word_list_is_primitive_seed_data"] is False
+    assert boundary["physical_record_copy_law_derived"] is False
+    assert audit["physical_meta_law_ownership"] == "OPEN"
+    assert audit["nature_level_occupation"] is False
+
+
+def test_operational_record_origin_is_typed_conditional_and_bounded():
+    packet = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_operational_record_origin.json"
+        ).read_text()
+    )
+    audit = json.loads(
+        (
+            ROOT
+            / "data/derived/p3_clp3_p1_operational_record_origin_audit.json"
+        ).read_text()
+    )
+    boundary = packet["source_freeze_payload"]["claim_boundary"]
+    assert audit["passed"] == audit["total"] == 21
+    assert audit["checks"]["primitive_exact_recovery_forces_diagonal_copy"]
+    assert audit["checks"]["copy_is_coassociative"]
+    assert audit["checks"]["frobenius_left_identity"]
+    assert audit["checks"]["full_carrier_priority_selects_m2_k2"]
+    assert audit["checks"]["diagonal_only_score_is_port_blind"]
+    assert audit["checks"]["same_marginals_do_not_fix_common_incidence"]
+    assert boundary["copy_law_derived_inside_operational_class"] is True
+    assert boundary["operational_class_physically_owned"] is False
+    assert boundary["common_PUSC_record_incidence_derived"] is False
+    assert audit["nature_level_occupation"] is False
 
 
 def test_derivation_audit_passes():

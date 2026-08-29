@@ -44,12 +44,14 @@
     },
     "claim_boundary": {
       "finite_dagger_functorial_theorem_proved": true,
-      "current_joint_role_record_grammar_contains_q_and_q_star": false,
+      "current_joint_role_record_grammar_contains_nonzero_odd_nilpotents": true,
+      "current_joint_role_record_grammar_selects_complete_differential": false,
+      "dhf_hodge_identified_with_frozen_p3_hodge": false,
       "physical_source_owns_complete_star_differential_grammar": false,
       "nature_occupation_proved": false,
       "physical_base_seed_packet_export_authorized": false
     },
-    "exact_remaining_source_datum": "physical co-ownership of the joint role-record grammar and the complete star-closed differential generator on the same carrier"
+    "exact_remaining_source_datum": "physical co-ownership of a selected complete star-closed differential grammar and identification of its Hodge operator with the relevant source compression on the same typed carrier"
   },
-  "source_fingerprint_sha256": "92c1e7e480a19a0c58541b30bd67917ff8ffe4a8f2f73a75eb433cd8729e4238"
+  "source_fingerprint_sha256": "ea68d781634ab6d816e58c7798c97fb273ec2e6601d049bc44ad9491cdfde8cf"
 }
