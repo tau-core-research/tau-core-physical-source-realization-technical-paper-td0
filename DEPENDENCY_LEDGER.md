@@ -173,3 +173,13 @@ Schur-neutral PUSC--record action. They do not derive the remaining typed
 cross-incidence `j_PR`; `USA-SNPR-N4` proves non-entailment by a
 same-marginal correlated/independent counterpair. No terminal data or Nature
 selection enters this refinement.
+
+The post-body response dependency is now exact rather than schematic. With
+response Hessian `H` and mixed source--response Hessian `B`, implicit
+stationarity gives `Gamma=-H^-1 B`. SBTCL106 specializes this to
+`Gamma=J_OS` with zero source Schur remainder. A declared active coordinate
+descends through a frozen precursor `F` iff
+`p_s J_OS|ker(DF)=0`. The identical-reduct lambda family shows that positive
+response Hessian, common mediator topology and Schur neutrality do not imply
+this condition. TD-0 therefore owns the source-selection boundary, not a
+physical proof of the vertical jet, `Q_OS`, calibration or Nature occupation.

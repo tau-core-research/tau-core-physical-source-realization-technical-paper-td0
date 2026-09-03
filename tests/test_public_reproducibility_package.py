@@ -647,6 +647,14 @@ def test_manuscript_scope_markers():
     tex = (ROOT / "physical_source_submission_source/main.tex").read_text()
     assert "Tau Core Physical Source Realization" in tex
     assert "Nature-level" in tex and "occupation remains open" in tex
+    assert "Mixed-Hessian response reduction and the vertical-jet boundary" in tex
+    assert "\\Gamma:=D_YZ_*=-H^{-1}B" in tex
+    assert "p_s\\Gamma\\vert_{\\ker DF}=0" in tex
+    assert "positivity, common mediation, no-anchor structure and Schur neutrality" in tex
+    assert "Generalized internal-measurement source boundary" in tex
+    assert "eq:td0-generalized-backaction-source" in tex
+    assert "same-context and clamped-target" in tex
+    assert "reselect the already frozen morphological body" in tex
     forbidden = ["Tau Core is proven", "empirically validates Tau Core", "Nature necessarily selects"]
     assert all(item not in tex for item in forbidden)
 

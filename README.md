@@ -1,5 +1,12 @@
 # Tau Core Physical Source Realization
 
+**Morphology convention:** this package exports a carrier plus base-readable
+seed/load packet whose downstream result is the complete stabilized
+morphological response configuration. “Morphological body” is shorthand;
+literal traversal and observer time require separate laws.
+MRC-DEF2 treats those source objects as typed pregeometric relational
+candidates, not ordinary spacetime bodies; Nature occupation remains open.
+
 An unnumbered technical companion that precedes the existing seed--body,
 body--readout and terminal-readout packages.
 
@@ -15,6 +22,24 @@ source-to-terminal quotient conditionally, but it imports this paper's P1
 source-language premise.  The action cannot certify ambient source
 exhaustivity or Nature occupation; the stable terminal-blind extension is the
 exact retained countermodel.
+
+The downstream action audit is now sharper. On a regular post-body response,
+the complete source jet is \(\Gamma=-H^{-1}B\). For the existing SBTCL106
+Bregman graph action, \(\Gamma=J_{OS}\) and the source Schur remainder is
+exactly zero. A requested active terminal descends through its frozen
+precursor \(F\) only if \(p_sJ_{OS}|_{\ker DF}=0\). An explicit
+identical-reduct \(\lambda\)-family proves that positivity, common mediation
+and Schur neutrality do not select this vertical source jet. Thus no new free
+solder action is needed, but physical source ownership, nonzero occupation,
+the full-terminal fibre condition, \(Q_{OS}\) and calibration remain open.
+
+The generalized internal-measurement case has the same source boundary. Once
+a regular post-body functional is supplied, `D_o x_*=-H_X^-1 C_XO` is exact;
+what remains unproved is whether the physical source law selects and occupies
+the typed observer--target block `C_XO`. A terminal change may be direct
+context dependence, and terminal silence may hide response. The exact hard
+record control is same-context and clamped-target, and no downstream result
+may reselect the frozen morphological body.
 
 ## Main claim
 
