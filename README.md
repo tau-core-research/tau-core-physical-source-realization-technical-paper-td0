@@ -58,6 +58,26 @@ semantics, seed or occupation. Thus a Graph/Hilbert packet can audit a frozen
 readout representation; it cannot replace the P1 source-language theorem or
 the stronger pointed-GNS occupation premises.
 
+## ECTR Legendre--Riesz Source Boundary
+
+The expansion-conditioned readout theorem introduces one explicit post-body
+source action whose dual Hessian enforces
+`G=K_src/(2A_*)=k_(c,O)^2 A_(0,M)^-1`. This is a valid conditional
+source-to-readout completion after the base--seed spatial block, stabilized
+body symbol and observer/source crossover have been supplied.
+
+The candidate action conditionally co-generates the metric-scale and
+terminal-weight laws. Observed expansion is therefore a downstream readout
+and possible modulator, not evidence that selects the source action or typed
+terminal semantics.
+
+TD-0 does not promote that completion to the physical source law. The same
+seed, body and coframe allow a modified source pairing and hence a different
+Q spectrum. The current source inventory also does not jointly select the
+TLKR development, normalized coevaluation, nonzero R1 access and global
+cosmological atlas. These are one explicit Nature-occupation gate, not facts
+deduced from observed expansion.
+
 ## Does not claim
 
 - that old-bare Tau forces the constrained heat-trace minimum principle;
@@ -376,3 +396,23 @@ This is a conditional physical-source realization calculus and a precise
 non-entailment boundary. Foundation Paper IV and the parent-theory hub retain
 ownership of unrestricted physical parent selection. This companion creates
 no new Roman numeral.
+
+<!-- BEGIN OBSERVER UPDATE 20260914 -->
+## Observer realization update (2026-09-14)
+
+The occupied observer--source context is relational instance data, not a uniquely selected observer identity inferred from the universal seed alone. Physical source realization and record preparation remain separate from conditional closure.
+
+The manuscript distinguishes inherited BRAC contact, conditional coherent-state
+selection and interacting local covariance from physical observer identification,
+preparation and stable resolution. Those physical claims remain open. No
+empirical score was changed. The [dependency and source-result ledger](data/derived/observer_update_2026_09_14.json) records the assumptions and controls.
+<!-- END OBSERVER UPDATE 20260914 -->
+
+<!-- BEGIN LAB UPDATE 20260915 -->
+## Finite lab integration (2026-09-15)
+
+The manuscript imports the scope-specific source, body, observer or terminal
+result from the current lab. Supplied priors, conditional recovery and physical
+selection remain separate. No SI constant, viable universe or Tau-specific
+signal is newly established. See the [source and ownership ledger](data/derived/lab_update_2026_09_15.json).
+<!-- END LAB UPDATE 20260915 -->

@@ -402,6 +402,16 @@
       "id": "PSR80",
       "status": "proved_standard_no_go",
       "claim": "Finite normalized GNS Gram data reconstruct an abstract ray family only; PSD, rank, Bargmann phases and graph spectra do not certify the physical source algebra, probe semantics, seed or Nature occupation."
+    },
+    {
+      "id": "PSR81",
+      "status": "proved_conditional_source_action",
+      "claim": "Given the frozen body symbol, positive source stiffness, normalized Legendre--Riesz coevaluation and positive action scale, the post-body source action has a unique stationary response whose dual Hessian is G=K_src/(2 A_*)=k_(c,O)^2 A_(0,M)^(-1); no terminal fit is used."
+    },
+    {
+      "id": "PSR82",
+      "status": "proved_same_reduct_no_go",
+      "claim": "A modified coevaluation preserves the frozen seed, body and coframe reduct while changing the dual generator to C^* Ahat_(0,M)^(-1) C. The reduct therefore does not select the ECTR lock, and nonzero access, atlas compatibility and Nature occupation remain open."
     }
   ]
 }

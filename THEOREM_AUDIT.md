@@ -256,3 +256,13 @@ physical null are supplied. Its response is
 `ker J_term=N_phys`. The stable terminal-blind extension
 `A -> A + q w^2/2 - j w` proves that neither condition can certify ambient
 source-language exhaustivity or Nature occupation.
+
+## ECTR Legendre--Riesz boundary
+
+The ECTR Legendre--Riesz completion obeys the same boundary. Its stationary
+dual Hessian exactly produces the inverse spectral lock and hence a common
+mathematical ancestor for the Q filter and metric coframe. A modified
+coevaluation preserves the seed/body/coframe reduct while changing the Q
+spectrum, so the reduct does not select the law. The current physical source
+has not been shown to occupy the coevaluation, positive access and global
+atlas jointly; observed expansion cannot close that upstream gate.

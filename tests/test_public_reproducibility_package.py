@@ -68,7 +68,7 @@ def test_claim_ledger_is_bounded():
     assert ledger["nature_level_validation"] is False
     assert ledger["unrestricted_parent_selection_derived"] is False
     assert ledger["empirical_data_used"] is False
-    assert len(ledger["results"]) == 80
+    assert len(ledger["results"]) == 82
 
 
 def test_p3_clp3_source_freeze_is_endpoint_blind_and_bounded():
@@ -679,3 +679,13 @@ def test_arxiv_zip_is_source_only():
     assert "figures/fig_physical_source_contract.pdf" in names
     assert not any(name.endswith("main.pdf") for name in names)
     assert not any(name.endswith((".aux", ".log", ".out")) for name in names)
+
+
+def test_ectr_legendre_riesz_source_boundary():
+    tex = (ROOT / "physical_source_submission_source/main.tex").read_text()
+    assert "ECTR Legendre--Riesz source completion and non-selection" in tex
+    assert "eq:td0-ectr-dual-lock" in tex
+    assert "eq:td0-ectr-control" in tex
+    ledger = json.loads((ROOT / "data/derived/theorem_ledger.json").read_text())
+    ids = {item["id"] for item in ledger["results"]}
+    assert {"PSR81", "PSR82"} <= ids

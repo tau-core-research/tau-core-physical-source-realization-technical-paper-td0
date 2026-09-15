@@ -183,3 +183,13 @@ descends through a frozen precursor `F` iff
 response Hessian, common mediator topology and Schur neutrality do not imply
 this condition. TD-0 therefore owns the source-selection boundary, not a
 physical proof of the vertical jet, `Q_OS`, calibration or Nature occupation.
+
+## ECTR common-spectrum export boundary
+
+The ECTR-T0AA--T0AD completion consumes the TD-0 source discipline but is not
+an unconditional TD-0 output. Its post-body Legendre--Riesz action derives
+`G=K_src/(2A_*)=k_(c,O)^2 A_(0,M)^-1` only after the body symbol and normalized
+source pairing are supplied. A same-body/coframe modified-pairing control
+changes `G`, while zero access removes strict loss. Physical selection of the
+complete development--coevaluation--access--atlas packet and Nature
+occupation remain open.
