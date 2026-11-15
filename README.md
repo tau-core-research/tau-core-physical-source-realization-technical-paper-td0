@@ -433,3 +433,18 @@ Foundation VII-A retains the detailed response derivation and compact receipts.
 Negative controls, numerical warning qualifications and physical-selection,
 particle, spatial/renormalized, stability and cosmology gaps remain explicit.
 This is a local manuscript/PDF update, not a publication or new empirical score.
+
+## Once-counted Schur dilation, slot metric, and source-scale invariance (2026-11-12)
+
+The manuscript now imports the upstream source implications of the finite
+foundations audit `F17--F20` (`sec:foundations-f17-f20-td0-20261112`, PDF
+destination `f17f20td0`):
+- **Once-counted Schur dilation (`F18-T1`, unconditional) and `OCSR-H1` (conditional):** $K_0 = H_b + C_{\text{FSJ}} = I_4 + \frac{\sqrt{3}}{24}\operatorname{diag}(1,13,4,4) \succ 0$ gives $\operatorname{Schur}_q(\mathcal{M}_{\text{WR-T13}}) = H_b$ (`D3`, inertia `(7,0,0)`), while `D1` ($K_0 - 2C_{\text{FSJ}}$) double-subtracts $C_{\text{FSJ}}$ (inertia `(6,1,0)`). Under `OCSR-H1`, $H_b$ is selected on $k=4$, whereas the $k=4$ vs $k=5$ jet-order extension boundary remains open (`F6`).
+- **Pre-body Clifford slot metric and two-sided fold island (`F17-T1/T2`, unconditional; `SMSD-H1`, conditional):** The `PUSC` `Cl(10)` normalized trace and `base_body_action` slot normalization define $G_{\text{slot}} = A_\tau(I_4 \oplus I_6)$, cancelling $A_\tau$ from the staged generator with positive inter-stage gap `0.521889`, while simultaneous continuation is bounded by the two-sided fold island $\varepsilon \in (-0.02027043, +0.02905216)$.
+- **Singlet seed-orientation activation and $A_\tau$/$\tau$-invariance (`F19--F20`):** Under `COCA-H1` ($\|E\cdot\text{common}\|_2 = \sqrt{5}$ on $\hat{u}_{\text{singlet}}$), all homogeneous parent-unit ratios are fixed and all operational differential clock observables are strictly invariant under $A_\tau > 0$ and $\tau > 0$ (`F20-T1`). Physical source ownership, SI units, and Nature occupation remain open.
+
+## Crowning Upstream Postulate Reduction & Superset Alignment (2026-11-14)
+
+- **Excess internal-measurement backaction boundary:** Ports the decomposition $C_{XO}^{\mathrm{tot}} = C_{XO}^{\mathrm{std}} + \Delta C_{XO}^{\tau}$ and global non-reproducibility criterion $d_\Omega(y_\tau, \overline{\mathcal{Y}_{\mathrm{std}}}) > 0$ so `TD-0` Standalone is a strict mathematical superset of the condensed companion.
+- **Canonical $C^*$--Clifford--Chung metric unity (`Theorem U1`):** Chung's normalized graph Laplacian on $K_4$, $\widehat{\Delta}_{K_4} = D_{K_4}^{-1/2} L_{K_4} D_{K_4}^{-1/2} = \frac{4}{3}P_\perp$, equals the Clifford Gram matrix $G_{\mathrm{Cl}}$, establishing `C2` $\equiv$ `C1` ($\|\frac{1}{4}e_i\|_{\widehat{\Delta}_{K_4}} = 1/4$) and eliminating the raw $\mathbb{R}^4$ projection artifact ($\sqrt{3}/8$).
+- **Projector-manifold normality & single ontic postulate (`Theorems F1, U2, U4`):** Rank-one projector idempotency $\Pi^2 = \Pi \implies \dot{r} \equiv 0$ proves that $\Gamma'_{1\text{-loop}}(1/4) < 0$ is strictly normal to $\mathcal{P}_1(M_2(\mathbb{C})) \cong S^2_{r=1/2}$ (tangential Hessian $4I_2 \succ 0$), locking $r_{\mathrm{seed}} = 1/4$, while intensive KMS modular periodicity and simplicial coupling universality fix $\eta_{\mathrm{hor}} \equiv 1$ and exterior Kodama--Hayward holonomy, reducing upstream conditional assumptions to one single ontic existence postulate (`POST-OCC-NU1`) while Nature-level occupation remains open (`NATURE_LEVEL_CLOSURE = false`).

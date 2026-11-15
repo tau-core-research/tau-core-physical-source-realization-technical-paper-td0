@@ -4,9 +4,16 @@
     {
       "source": "physical_source_submission_source/main.tex",
       "role": "source",
-      "source_sha256": "3708228e5a80152d25520b89f9b2a1535f916aa9ecb93df5db8fb40282494523",
+      "source_sha256": "3b7f170a95088605e6b5899482d070954f4f971298ce2d76c1e1e8cdf12107b6",
       "source_sha256_before_full_chain_20261110": "72edb73ba177b5008c1cf9b57bef8d8fd2536aebb852bb276dfe6932e7c9076f",
-      "current_source_update": "2026-11-10 full HRZ-HSL bounded chain import"
+      "current_source_update": "F16-F49 discrete projector norm bifurcation, <20s vectorized Boltzmann + RECFAST v1.5, 165-cluster HSC-XXL+SPT forensics & timestamp dossier propagation (2026-11-13 v19)",
+      "source_sha256_before_f16_f20_20261112": "3708228e5a80152d25520b89f9b2a1535f916aa9ecb93df5db8fb40282494523",
+      "source_sha256_before_f33_f40_20261113": "10fd345e01acf100c75fa14c38cd48a4e7232dd34916a79f3b34b983dd7d56cf",
+      "source_sha256_before_f41_f43_20261113": "122701f8180a8612dddd912701cae623ea01d7512733bb9f2c8fc36cdc839984",
+      "source_sha256_before_figures_20261113": "93a56c2e12bef1db3dc89b2e74c2bb76b42e621d4eda1f7130a33e9d7a7d6e4d",
+      "source_sha256_before_f46_20261113": "e6b2d15f9eb97ed9955f090fb4dd89cf3ed36e9038a4945444cb5bfb4bcd61b2",
+      "source_sha256_before_f49_20261113": "afb10c8a050c75df0f644b8a1b4c472a64a0e4d396c9873cd743e574aa31b79a",
+      "source_sha256_before_20261114": "309f274b49ae3c3248713205f51ea141ac8ea199941d73cd35befc3ed5fc1d3b"
     }
   ],
   "empirical_scores_changed": false,
